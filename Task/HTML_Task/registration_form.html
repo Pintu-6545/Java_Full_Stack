@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body bgcolor="blue">
+    <form> 
+        <fieldset>
+            <legend>Registration Form</legend>
+            <br>
+            <div>
+            <label for="fn">Firstname:</label>
+            <input type="text" required  pattern="[A-Za-z]{3,15}" placeholder="Enter Firstname" id="fn" title="Firstname" minlength="3" maxlength="15">
+            </div><br>
+            <div>
+                <label for="mn">Middlename:</label>
+                <input type="text" required pattern="[A-Za-z]{3,15}" placeholder="Enter Middlename" id="mn" title="Middlename" minlength="3" maxlength="15">
+            </div><br>
+            <div>
+                <label for="ln">Lastname:</label>
+                <input type="text" required pattern="[A-Za-z]{3,15}" placeholder="Enter Lastname" id="ln" title="Lastname" minlength="3" maxlength="15">
+            </div><br>
+            <div>
+                <label for="e">Course:</label>
+                <select required id="e"  title="Course"> 
+                            <option value="Select your Course:" disabled selected>Select your Course</option>
+                            <option value="BCA">BCA</option>
+                            <option value="MCA">MCA</option>
+                            <option value="B.COM">B.COM</option>
+                            <option value="M.COM">M.COM</option>
+                            <option value="MSC IT">MSC IT</option>
+                            <option value="PGDCA">PGDCA</option>
+                            <option value="B.TECH">B.TECH</option>
+                            <option value="M.TECH">M.TECH</option>
+                            <option value="BE">BE</option>
+                            <option value="BA">BA</option>
+                            <option value="MA">MA</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="gn">Gender:</label><br>
+                <input type="radio" name="gender" required id="gn">Male<br>
+                <input type="radio" name="gender" required >Female<br>
+                <input type="radio" name="gender" required >Other
+            </div><br>
+            <div>
+                <label for="p">Phone:</label>
+                <select>
+                    <option value="+91">+91</option>
+                </select>
+                <input type="text" required pattern="[6789][0-9]{9}" id="p" placeholder="Enter your Phone Nubmer" minlength="10" maxlength="10">
+            </div><br>
+            <div>
+                <label for="aa">Address:</label><br>
+                <textarea required rows="4" cols="80" id="aa" placeholder="Enter your Address"></textarea>
+            </div><br>
+            <div>
+                <label for="e1">Email:</label>
+                <input type="email" required pattern="[a-z0-9.]+[@][a-z]+[.][a-z]{2,3}" id="e1" placeholder="Enter your Email">
+            </div><br>
+            <div>
+                <label for="p2">Password:</label>
+                <input type="password" required pattern="[A-Z][A-Za-z0-9]{7,15}" id="p2" placeholder="Enter your Password" minlength="7" maxlength="15">
+            </div><br>
+            <div>
+                <label for="p3">Re-type password:</label>
+                <input type="password" required pattern="[A-Z][A-Za-z0-9]{7,15}" id="p3" placeholder="Enter your Re-type password" minlength="7" maxlength="15" size="25">
+            </div><br>
+            <div>
+            <input type="submit">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

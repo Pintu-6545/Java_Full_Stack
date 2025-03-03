@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <table border="3" align="center">
+        <th align="center" colspan="5" size="90">Registration Form</th>
+        <form>
+              <tr>
+                <th><label for="v">Full Name</label></th>
+                <td colspan="4"><input type="text" placeholder="Enter Full Name" id="v" required="required" minlength="15" maxlength="50" size="47"> </td>
+              </tr>
+              <tr>
+                <th><label for="b">First Name</label></th>
+                <td><input type="text" placeholder="Enter First Name"id="b" required="required" minlength="5" maxlength="15" size="47"></td>
+              </tr>
+              <tr>
+                <th><label for="c">Last Name</label></th>
+                <td><input type="text" placeholder="Enter Last Name" id="c" required="required" minlength="5" maxlength="15" size="47"></td>
+              </tr>
+              <tr>
+                <th><label for="d">Father Name</label></th>
+                <td><input type="text" placeholder="Enter Father Name" id="d" required="required" minlength="5" maxlength="15" size="47" ></td>
+              </tr>
+              <tr>
+                <th><label for="e">Mother Name</label></th>
+                <td><input type="text" placeholder="Enter Mother Name" id="e" required="required" minlength="5" maxlength="15" size="47"></td>
+              </tr>
+              <tr>
+                <th><label for="f" for="">Gender</label></th>
+                <td><input type="radio" name="gender" id="f" required="required">Male
+                    <label for="g"><input type="radio" name="gender" id="g" required="required">Female</label>
+                    <label for="h"><input type="radio" name="gender" id="h" required="required">Others</label></td>
+              </tr>
+              <tr>
+                <th><label for="i">Mobile No.</label></th>
+                <td><input type="text" required="required" id="i" minlength="10" maxlength="10" size="47"></td>
+              </tr>
+              <tr><th><label for="t">Email</label></th>
+                <td><input type="email"placeholder="Enter the Email" id="t" required="required" minlength="10" maxlength="50" size="47"></td>
+              </tr>
+              <tr>
+                <th><label for="nb">Password</label></th>
+                <td><input type="password" placeholder="Enter the Password" pattern="[A-Z][A-Za-z0-9]{8,15}" id="nb" required="required" minlength="8"  size="47"></td>
+              </tr>
+              <tr>
+                <th><label for="hh"> Confirm Password</label></th>
+                <td><input type="password" placeholder="Enter the Confirm Password" id="hh" required="required" minlength="8" size="47"></td>
+              </tr>
+              <tr>
+                <th><label for="dd"> DOB</label></th>
+                <td><input type="date" required="required" id="dd"></td>
+              </tr>
+              <tr>
+                <tr>
+                    <th><lable for="">Address</lable></th>
+                    <td><textarea rows="5" cols="45"  placeholder="Enter your Address" required="required" minlength="8"></textarea></td>
+                </tr>
+                <tr>
+                    <th><label for="cc">Country</label></th>
+                    <td><select id="cc">
+                          <option disabled selected >---------------Select your Country----------------</option>
+                          <option value="INDIA" >INDIA</option>
+                          <option value="JAPAN">JAPAN</option>
+                          <option value="RUSSIA">RUSSIA</option>
+                          <option value="SOUTH KOREA" >INDIA</option>
+                          <option value="AMERICA">JAPAN</option>
+                          <option value="SHREE LANKA">RUSSIA</option>
+                          <option value="INDONESIA" >INDIA</option>
+                          <option value="MALESIA">JAPAN</option>
+                          <option value="RUSSIA">RUSSIA</option>
+                          <option value="PAKISTAN" >INDIA</option>
+                          <option value="CANADA">JAPAN</option>
+                          <option value="FRANSH">RUSSIA</option>
+                          <option value="BANGLADESH" >INDIA</option>
+                          <option value="NEPAL">JAPAN</option>
+                          <option value="UNITED KINGDOM">RUSSIA</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <th><label for="mnb">State</label></th>
+                    <td><select id="mnb">
+                        <option disabled selected>---------------Select your State--------------------</option>
+                        <option value="GUJARAT" >GUJARAT</option>
+                        <option value="RAJSTHAN">RAJSTHAN</option>
+                        <option value="DELHI">DELHI</option>
+                        <option value="UTTER PRADESH">UTTER PRADESH</option>
+                        <option value="MADHYA PREDESH">MADHYA PRADESH</option>
+                        <option value="MAHARASTRA">MAHARASTRA</option>
+                        <option value="KARNATAK">KARNATAK</option>
+                        <option value="TAMIL NADU">TAMIL NADU</option>
+                        <option value="KERAL">KERAL</option>
+                        <option value="BIHAR">BIHAR</option>
+                        <option value="JHARKHAND">JHARKHAND</option>
+                        <option value="HIMACHAL PRADESH">KARNATAK</option>
+                        <option value="PUNJAB">PUNJAB</option>
+                        <option value="NAGALAND">NAGALAND</option>
+                        <option value="TRIPURA">TRIPURA</option>
+                        <option value="MIJORAM">MIJORAM</option>
+                        <option value="HARIYANA">KARNATAK</option>
+                        <option value="SIKKIM">KARNATAK</option>
+                        <option value="WEST BANGOL">WEST BENGOL</option>
+                  </select></td></td>
+                  </tr>
+                  <tr>
+                    <th><label for="vbm">City</label></th>
+                    <td><select id="vbm">
+                        <option disabled selected>-----------------Select your City--------------------</option>
+                        <option value="AHMEDABAD" >AHMEDABAD</option>
+                        <option value="RAJSTHAN">JAIPUR</option>
+                        <option value="DELHI">DELHI</option>
+                        <option value="LUCKNOW">LUCKNOW</option>
+                        <option value="BHOPAL">BHOPAL</option>
+                        <option value="MUMBAI">MUMBAI</option>
+                        <option value="BANGLORE">BANGLORE</option>
+                        <option value="CHENNAI">CHENNAI</option>
+                        <option value="TRIVERIPURAM">TRIVERIPURAM</option>
+                        <option value="PATNA">PATNA</option>
+                        <option value="RANCHI">RANCHI</option>
+                        <option value="SIMLA">SIMLA</option>
+                        <option value="CHANDIGADH">CHANDIGADH</option>
+                        <option value="KOIMA">KOIMA</option>
+                        <option value="AGARTALA">AGARTALA</option>
+                        <option value="AAIJOL">AAIJOL</option>
+                        <option value="GANGTOK">GANGTOK</option>
+                        <option value="KOLKATTA">KOLKATTA</option>
+                  </select></td></td>
+                  </tr>
+                  <tr>
+                    <th><label for="lkl" required="required">Pincode</label></th>
+                    <td><input type="text" placeholder="Enter Pincode" id="lkl" minlength="6" maxlength="6" size="47"></td>
+                  </tr>
+                <tr>
+                    <th><label for="kkj">Religin</label></th>
+                    <td><input type="text" placeholder="Enter your Religin" id="kkj" required="required" minlength="4" maxlength="15" size="47"></td>
+                </tr>
+              <tr>
+                    <th><label for="bhy">Education</label></th>
+                    <td><select id="bhy">
+                            <option  disabled selected>---------------Select your Education--------------</option>
+                            <option value="BCA">BCA</option>
+                            <option value="MCA">MCA</option>
+                            <option value="BE">BE</option>
+                            <option value="B.TECH">B.TECH</option>
+                            <option value="M.TECH">M.TECH</option>
+                            <option value="B.COM">B.COM</option>
+                            <option value="BSC">BSC</option>
+                            <option value="MAS IT">MSC IT</option>
+                            <option value="BA">BA</option>
+                    </select></td>
+                </tr>
+                <tr><th><label for="sdg">Skiils</label></th>
+                <td><input type="checkbox" required="required" id="sdg">HTML
+                    <label for="gtn"><input type="checkbox" required="required" id="gtn">BOOSTRAP</label>
+                    <label for="ewq"><input type="checkbox" required="required" id="ewq">JAVASCRIPT</label>
+                    <label for="ewd"><input type="checkbox" id="ewd">PHP</label><BR>
+                      <label for="ybn"><input type="checkbox" id="ybn" required>REACT JS</label>
+                      <label for="qas"><input type="checkbox"  id="qas">NEXT JS</label></td>
+              </tr>
+              <tr>
+                <th>Upload Document</th>
+                <td><input type="file" multiple="multiple" required="required"></td>
+                <!-- <td></td> -->
+              </tr>
+              
+              <tr>
+                <th align="center"><input type="submit"><input type="reset"></td>
+              </tr>
+        </form>
+    </table>
+</body>
+</html>

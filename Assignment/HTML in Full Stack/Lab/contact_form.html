@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contack Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <table>
+            <tr>
+                <td colspan="2" align="center"><h2>Cotact Form</h2></td>
+            </tr>
+        <tr>
+            <th><label for="nm">Full Name</label></th>
+            <td><input type="text" placeholder="Enter your Full Name" title=" Full Name" required pattern="[A-Za-z ]{7,20}" id="nm" size="27" maxlength="20"></td>
+        </tr>
+    <tr>
+           <th><label for="">Email</label></th>
+           <td><input type="email" title="Email" placeholder="Enter your Email" required pattern="[a-z0-9.]+[@][a-z]+[.][a-z]{2,3}"></td>
+    </tr>
+    <tr>
+        <th><label for="">Phone Number</label></th>
+        <td><input type="tel" required pattern="[6789][0-9]{9}" title="Phone Number" placeholder="Enter your Phone Number" minlength="10" maxlength="10"  size="27"></td>
+    </tr>
+    <tr>
+        <th><label for="">Subject</label></th>
+        <td><select required>
+                    <option value="Select your Subject" disabled selected aria-required>---------Select your Subject----------</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Support Request">Support Request</option>
+                    <option value="Complain">Complain</option>
+                    <option value="Event Registration">Event Registration</option>
+                    <option value="Product Information">Product Information</option>
+                    <option value="Service Request">Service Request</option>
+                    <option value="Collaboration Opportunities">Collaboration Opportunities </option>
+                    <option value="Partnership Inquiries">Partnership Inquiries</option>
+        </select></td>
+    </tr>
+    <tr>
+        <th><label for="sc">Message:</label></th>
+        <td><textarea rows="5"  cols="28" placeholder="Enter your Address" required="required"  id="sc" minlength="10"></textarea></td>
+    </tr>
+    <tr>
+        <td align="center" colspan="5"><input type="submit"></td>
+    </tr>
+</table>
+</fieldset> 
+    </form>
+</body>
+</html>

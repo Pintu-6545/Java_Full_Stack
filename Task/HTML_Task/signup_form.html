@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+        <form>
+            <fieldset>
+            <table>
+                <tr align="center">
+                    <th colspan="2"><h2 >Sign Up</h2></th>
+                </tr>
+                <tr>
+                    <td><label for="f">First Last Name:</label></td>
+                    <td><input type="text" required pattern="[A-Za-z]{3,15}" id="f" placeholder="Enter the First Name" minlength="3" > <input type="text" pattern="[A-Za-z]{3,15}" required placeholder="Enter Last Name" minlength="3"></td>
+                </tr>
+                <tr>
+                    <td><label for="e">Email Address:</label></td>
+                    <td><input type="email" required pattern="[a-z0-9.]+[@][a-z]+[.][a-z]{2,3}" id="e" placeholder="Enter your Email Address "></td>
+                </tr>
+                <tr>
+                    <td><label for="o">Organization:</label></td>
+                    <td><input type="text" required pattern="[A-Za-z]{5,11}" id="o" placeholder="Enter your Organization"  minlength="5"></td>
+                </tr>
+                <tr>
+                    <td><label for="wp">Work Phone:</label></td>
+                    <td><input type="tel" required pattern="[654321][0-9]{9}" id="wp" placeholder="Enter your Work Phone" minlength="10" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td><label for="hp">House Phone:</label></td>
+                    <td><input type="tel" required id="hp" pattern="[654321][0-9]{9}" placeholder="Enter your House Phone" minlength="10" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td><label for="cp">Cell Phone:</label></td>
+                    <td><input type="tel" id="cp" required pattern="[6789][0-9]{9}" placeholder="Enter your Cell Phone" minlength="10" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td><label for="fa">Fax:</label></td>
+                    <td><input type="text"  id="fa" required  placeholder="Enter your Fax"></td>
+                </tr>
+                <tr>
+                    <td><label for="ad">Address 1*:</label></td>
+                    <td><textarea  rows="2" cols="32" id="ad" required placeholder="Enter your Address" minlength="7" maxlength="40"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="ad1">Address 2:</label></td>
+                    <td><textarea   rows="2" cols="32" id="ad1" required placeholder="Enter your Address"  minlength="7" maxlength="40" ></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="c">City*:</label></td>
+                    <td><input type="text" id="c" required pattern="[A-Za-z]{3,15}" placeholder="Enter your City" ></td>
+                </tr>
+                <tr>
+                    <td><label for="s">State Prefrence:</label></td>
+                    <td><input type="text" id="s" required pattern="[A-Za-z]{3,15}" placeholder="Enter your State"></td>
+                </tr>
+                <tr>
+                    <td><label for="z">Zip Postal Code:</label></td>
+                    <td><input type="text"  pattern="[0-9]{1,6}" id="z" required placeholder="Enter your Postal Code" minlength="6" maxlength="6"></td>
+                </tr>
+                <tr>
+                    <td><label for="cc">Country*:</label></td>
+                    <td><input type="text"  required pattern="[A-Za-z]{3,15}" id="cc" placeholder="Enter your Country"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><pre>               <input type="submit"></pre></td>
+                </tr>
+            </table>
+            </fieldset>
+        </form>
+</body>
+</html>
