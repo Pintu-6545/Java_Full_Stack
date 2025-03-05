@@ -1,0 +1,47 @@
+<!-- Lab Assignment(Task) 
+Create a audio video tag 
+ Also applied properties like muted loop autoplay  
+ Create some shape using canvas tag in html 
+ Create some shape using svg tag in html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Audio and Video tag</title>
+</head>
+<body>
+        <h1>Multimedia Elements Using Audio Element</h1>
+        <!-- Using Audio element -->
+        <audio src="./23.mp3" controls muted loop autoplay></audio>
+        <h1>Multimedia Elements Using Video Element</h1>
+        <!-- Using Video Element -->
+        <video src="./24.mp4" controls  width="500px"  muted loop autoplay></video><br><br>
+
+        <h1> Example of Canvas</h1>
+        <!-- Using canvas Element -->
+        <canvas id="canavs" width="300px" height="200px" style="border:solid black"></canvas>
+            <script>
+                var cnv=document.getElementById("canavs")
+                var big=cnv.getContext('2d')
+                big.fillStyle='red';
+                big.fillRect(20,20,130,70);
+                big.stroke();
+        </script>
+        <br><br>
+        <h1> Example of SVG </h1>
+        <!-- Using svg Element -->
+        <svg width="300px" height="300px" style="border:solid black;" 
+            viewBox="-90 0 300 100"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="red"
+            fill="grey">
+            <circle cx="50" cy="50" r="70" />
+       
+    
+      </svg>
+</body>
+</body>
+
+</html>
