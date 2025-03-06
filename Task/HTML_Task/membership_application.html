@@ -7,6 +7,83 @@
 </head>
 <body>
     <form action="">
+        <table border="5">
+            <tr>
+                <th align="center" colspan="2"><h3>Membership Application</h3>To apply for membership please complete all questions </th>
+            </tr>
+            <tr>
+                <th rowspan="2"><label for="">Name</label></th>
+                <td><input type="text" id="first" required pattern="[A-Za-z]{3,15}"  minlength="3" size="18"> <input type="text" id="first" required pattern="[A-Za-z]{3,15}"  minlength="3" size="29"></td>
+            </tr>
+            <tr>
+                <td><label for="" style="margin-right: 88px;">First Name</label>
+                    <label for="" >Last Name</label></td>
+            </tr>
+            <tr>
+                <th rowspan="4"><label for="">Address</label></th>
+                <td><textarea  rows="2" cols="62" id="ad" required  minlength="7" maxlength="40"></textarea><br>
+                <label for="">Street Address</label></td>
+            </tr>
+            <tr>
+                <td><textarea  rows="2" cols="62" id="ad" required  minlength="7" maxlength="40"></textarea><br>
+                    <label for="">Street Address Line 2</label></td>
+            </tr>
+            <tr>
+                <td><textarea  rows="2" cols="30" id="ad" required  minlength="7" maxlength="40"></textarea> <textarea  rows="2" cols="30" id="ad" required  minlength="7" maxlength="40"></textarea><br>
+                    <label for="" style="margin-right:210px;">City</label> <label for="">State / Province</label></td>
+            </tr>
+                <tr>
+                    <td><input type="text" required  minlength="6" maxlength="6" style="margin-right: 68px;"> <select> <option value="Please select" selected disabled>Please Select</option><option value="India">India</option><option value="Japan">Japan</option><option value="America">America</option><option value="China">China</option></select><br>
+                    <label for="" style="margin-right: 130px;">Postal / Zip Code</label> <label for="">Country</label><br> </td>
+                </tr>
+                <tr>
+                    <th><label for="e">Email:</label></th>
+                    <td><input type="email" required pattern="[a-z0-9.]+[@][a-z]+[.][a-z]{2,3}" id="e" placeholder="ex: myname@gmailexample.com" size="42"></td>
+                  </tr>
+                <tr>
+                    <th rowspan="2"><label for="">Home Number</label></th>
+                    <td><input type="text" size="15"> - <input type="tel" size="27" required></td>
+                </tr>
+                <tr>
+                    <td><label for="" style="margin-right: 80px;">Area Code</label>
+                    <label for="">Phone Number</label></td>
+                </tr>
+                <tr>
+                    <th rowspan="2"><label for="">Cellular Number</label></th>
+                    <td><input type="text" size="15"> - <input type="tel" size="27" required></td>
+                </tr>
+                <tr>
+                    <td><label for="" style="margin-right: 80px;">Area Code</label>
+                    <label for="">Phone Number</label></td>
+                </tr>
+                <tr>
+                    <th rowspan="2"><label for="">Work Number</label></th>
+                    <td><input type="text" size="15"> - <input type="tel" size="27" required></td>
+                </tr>
+                <tr>
+                    <td><label for="" style="margin-right: 80px;">Area Code</label>
+                    <label for="">Phone Number</label></td>
+                </tr>
+                <tr>
+                    <th><label for="">Website</label></th>
+                    <td><input type="text" size="50" required></td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2" ><input type="submit" value="Submit"> <input type="reset" value="Cencal"> </td>
+                </tr>
+        </table>
+    </form>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Application</title>
+</head>
+<body>
+    <form action="">
         <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Membership Application</h2>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To apply for membership please complete all questions.</p>
         <hr> <br><br>
@@ -56,4 +133,6 @@
     </div>
     </form>
 </body>
-</html>
+</html> 
+s -->
+
