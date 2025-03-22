@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Task Using Transform Property</title>
+    <style>
+        .main{
+            display: flex;
+        }
+        .container{
+              height: 300px;
+              width:500px;
+              /* border:2px solid; */
+              /* margin:200px auto; */
+              overflow: hidden;
+              background-image: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_1.jpg);
+              /* overflow: hidden; */
+             }
+        .data1{
+            height: 300px;
+            width: 500px;
+            border:2px solid;
+            background-color: rgba(0,0,0,0.3);
+            transform: translate(100%,-100%);
+            transition: .5s;
+
+        }
+        .container:hover .data1{
+             transform:translate(0%,0%);
+        }
+        .data2{
+            height: 300px;
+            width:500px;
+            border: 2px solid;
+            background-color: rgba(0,0,0,0.3);
+            transform: translate(-100%,0%);
+            transition:.5s;
+        }
+        .container:hover .data2{
+             transform: translate(0%,-100%);
+        }
+        .container1{
+              height: 300px;
+              width:500px;
+              /* border:2px solid; */
+              /* margin:200px auto; */
+              overflow: hidden;
+              background-image: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_2.jpg);
+              /* overflow: hidden; */
+             }
+        .data1{
+            height: 300px;
+            width: 500px;
+            border:2px solid;
+            background-color: rgba(0,0,0,0.3);
+            transform: translate(100%,-100%);
+            transition: .5s;
+
+        }
+        .container1:hover .data1{
+             transform:translate(0%,0%);
+        }
+        .data2{
+            height: 300px;
+            width:500px;
+            border: 2px solid;
+            background-color: rgba(0,0,0,0.3);
+            transform: translate(-100%,0%);
+            transition:.5s;
+        }
+        .container1:hover .data2{
+             transform: translate(0%,-100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+      <div class="container">
+           <div class="data1"></div>
+           <div class="data2"></div>
+      </div>
+      <div class="container1">
+        <div class="data1"></div>
+        <div class="data2"></div>
+   </div>
+   </div>
+
+</body>
+</html>

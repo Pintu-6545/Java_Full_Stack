@@ -1,0 +1,29 @@
+        .form {
+            width: fit-content;
+            background-color: aqua;
+            border: 3px solid;
+            padding: 2rem;
+            margin: auto auto;
+            /* padding-right: 30px; */
+        } 
+             
+         tr td .vel {
+            margin: auto auto;
+            text-align: center;
+        }
+        tr td input{
+                border-radius: 5px;      
+        }
+
+        tr td #address {
+            border-radius: 5px;
+        }
+
+        tr td #sc {
+            border-radius: 5px;
+        } 
+
+    .b {
+            border-radius: 5px;
+            
+        }

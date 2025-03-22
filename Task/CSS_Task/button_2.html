@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+        .main{
+            height: 200px;
+            width:300px;
+            border:2px solid green;
+            background-color:yellow;
+        }
+        .vel{
+            height: 50px;
+            width:115px;
+            border:2px solid aqua;
+            margin-top:20px;
+            margin-left:90px;
+            transform: translateY(55px);
+            transition: .5s;
+        }
+        input{
+            height: 55px;
+            width: 120px;
+            background-color: aqua;
+            color:white;
+            font-size: 17px;
+            border: none;
+            letter-spacing: 2px;
+            margin-left:89px;
+        }
+        .vel:hover{
+            transform:translateY(55px) scaleX(1.2) scaleY(1.4)
+        }
+
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="vel"></div>
+      <input type="submit" value="Shop Now">
+  </div>
+</body>
+</html>
