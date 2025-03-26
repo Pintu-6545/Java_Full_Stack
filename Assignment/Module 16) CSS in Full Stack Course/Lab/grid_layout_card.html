@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creating a Grud Layout Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <style>
         *{
             margin:0;
@@ -14,35 +18,44 @@
             display: grid;
             grid-template-columns: repeat(3,1fr);
             width:1200px;
-            gap: 10px;
+            gap: 12px;
             margin:200px auto;
         }
         .product{
            background-color: white;
            padding: 20px;
-           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+           box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
            transition: transform 0.3s;
         }
     .product img {
                 width: 100%;
                 border-radius: 10px;
+                background-repeat: no-repeat;
         }
         
-     .product h2 {
+     .product h2 a{
                 margin: 25px;
                 /* font-size: 20px; */
                 font-size: 2.6rem;
+                text-align: center;
+                text-decoration: none;
                 color: rgb(15, 177, 123);
          }
      .product p{
+             padding-top: 20px;
+             /* margin-top: 20px; */
              font-size: 2.2rem;
              font-weight: bold;
              margin-left:25px;
-             color:blue;
+             color:rgb(1, 1, 10);
+             text-align: center;
      }
      .product:hover{
             transform: scale(1.3);
             transition: .6s;
+        }
+        h2:hover a{
+         color:brown;
         }
     </style>
 </head>
@@ -50,48 +63,48 @@
      <div class="main-container">
         <div class="product">
                 <img src="https://p3-ofp.static.pub//fes/cms/2025/03/07/eei514ix7lm2spy2eq4xyc14tcpzw0875955.png" alt="">
-                <h2>Lenove Tab 1501</h2>
-                <p>22500</p>
+                <h2><a href="#">Lenove Tab 1501</a></h2>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> 22500</p>
         </div>
         <div class="product">
             <img src="https://th.bing.com/th/id/OIP.L5IT1_JUGHZmGWY9xarhJAHaFj?rs=1&pid=ImgDetMain" alt="">
-            <h2>LG Tab G42</h2>
-            <p>17500</p>
+            <h2><a href="">LG Tablet Prime</a></h2>
+            <p><i class="fa-solid fa-indian-rupee-sign"></i> 17500</p>
      </div>
       <div class="product">
-        <img src="https://pngimg.com/uploads/tablet/tablet_PNG8567.png" alt="">
-        <h2>Lenovo Tab G45</h2>
-        <p>12500</p>
+        <img src="https://media.istockphoto.com/id/171297491/photo/tablet-computer.jpg?s=612x612&w=0&k=20&c=PoZb8b435SGVhpDV7GM1J3cC6REyN5AmVY3iQDngXmE=" alt="">
+        <h2><a href="">LenovoTab G45</a></h2>
+        <p><i class="fa-solid fa-indian-rupee-sign"></i> 12500</p>
      </div>
      <div class="product">
         <img src="https://th.bing.com/th/id/OIP.FAIexuU654jPVl8xPbanrwHaFS?rs=1&pid=ImgDetMain" alt="">
-        <h2>HP Laptop G840</h2>
-        <p>25000</p>
+        <h2><a href=""> HP Laptop G840</a></h2>
+        <p><i class="fa-solid fa-indian-rupee-sign"></i> 25000</p>
      </div>
      <div class="product">
         <img src="https://laptopmedia.com/wp-content/uploads/2017/11/obrazek-680x474.jpg" alt="">
-        <h2>Dell Laptop G45</h2>
-        <p>40000</p>
+        <h2><a href=""> Dell Laptop G45</a></h2>
+        <p><i class="fa-solid fa-indian-rupee-sign"></i> 40000</p>
      </div>
      <div class="product">
         <img src="https://www.notebookcheck.net/fileadmin/Notebooks/HP/ProBook_470_G5/HP_Probook_470_G5_Ansicht2.jpg" alt="">
-        <h2>HP Notebook</h2>
-        <p>45000</p>
+        <h2><a href="">HP Victus Prime</a></h2>
+        <p><i class="fa-solid fa-indian-rupee-sign"></i> 45000</p>
      </div>
      <div class="product">
         <img src="https://images.philips.com/is/image/PhilipsConsumer/39PFL5708_F7-IMS-en_US?$jpglarge$&wid=1250" alt="">
-        <h2>Sony Altra G26</h2>
-        <p>45000</p>
+        <h2><a href=""> Sony Altra G26</a></h2>
+        <p><i class="fa-solid fa-indian-rupee-sign"></i> 45000</p>
      </div>
      <div class="product">
         <img src="https://media.istockphoto.com/photos/smart-lcd-television-picture-id180867478?k=6&m=180867478&s=612x612&w=0&h=VF9gqzBZlSg3-a4lIPyR6vRlt8Z1v3QlhhnKlVEdc0c=" alt="">
-        <h2>LG Light G526</h2>
-        <p>50000</p>
+        <h2><a href="">Sony Light G526</a></h2>
+        <p><i class="fa-solid fa-indian-rupee-sign"></i> 50000</p>
      </div>
      <div class="product">
         <img src="https://cdn.media.amplience.net/i/xcite/602634-02?img404=default&w=2048&qlt=75&fmt=auto" alt="">
-        <h2>Onida LCD G63</h2>
-        <p>70000</p>
+        <h2><a href=""> Onida LCD G63</a></h2>
+        <p><i class="fa-solid fa-indian-rupee-sign"></i> 70000</p>
      </div>
      </div>
 </body>
