@@ -1,0 +1,149 @@
+<!-- Lab Assignment
+
+Task: Build a responsive webpage that includes:
+    o A navigation bar.
+    o A content section with two columns.
+    o A footer.
+Additional Requirements:
+o Use media queries to make the webpage responsive for mobile devices.
+o On smaller screens (below 768px), stack the columns vertically.
+o Adjust the font sizes and padding to improve readability on mobile. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Creating a Responsive Webpage</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      .navbar {
+         background-color: rgb(17, 196, 236);
+         color: aqua;
+         padding: 15px;
+         /* border: 2px solid black; */
+         
+      }
+
+      .container{
+         width: 100%;
+         /* border: 2px solid black; */
+      }
+
+      .navbar ul {
+         list-style: none;
+         display: flex;
+         justify-content: space-around;
+         color: pink;
+         
+         /* background-color: rgba(0,0,0,0.4) */
+      }
+
+      .navbar ul li a {
+         text-decoration: none;
+         color: white;
+         padding: 10px 10px;
+         font-size: 20px;
+      }
+
+      .navbar ul li:hover a {
+         background-color: chartreuse;
+         transition: 0.6s;
+      }
+
+      .section-content {
+         display: flex;
+         /* flex-direction: column; */
+         justify-content: space-around;
+         gap: 10px;
+         padding: 22px;
+         /* background-color: aqua; */
+      }
+
+      .content-1,
+      .content-2,
+      .content-3 {
+         background-color: pink;
+         padding: 16px;
+         border-radius: 5px;
+      }
+
+      .content-1 h1,
+      .content-2 h1,
+      .content-3 h1 {
+         font-size: clamp(10px, 5vw, 80px);
+      }
+
+      .content-1 p,
+      .content-2 p,
+      .content-3 p {
+         font-size: clamp(7px, 2vw, 20px);
+      }
+
+      .footer {
+         padding: 30px;
+         background-color: black;
+         color: white;
+         bottom: 0;
+         width: 100%;
+         position: fixed;
+         text-align: center;
+      }
+
+      /* Media Query scrollbars */
+
+      @media only screen and (max-width:576px) {
+         .section-content {
+            flex-direction: column;
+            justify-content: left;
+         }
+         .navbar ul {
+            display: block;
+            text-align: center;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <!-- Navigation bar -->
+      <nav class="navbar">
+         <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Help</a></li>
+         </ul>
+      </nav>
+   </div>
+   <!-- Section Part -->
+   <section class="section-content">
+      <div class="content-1">
+         <h1>Website Development</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="content-2">
+         <h1>Web Application Development</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="content-3">
+         <h1>Mobile Application Development</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+   </section>
+   <footer class="footer">
+      <p>&copy; 2025 Your Company. All rights reserved.</p>
+   </footer>
+
+</body>
+
+</html>
