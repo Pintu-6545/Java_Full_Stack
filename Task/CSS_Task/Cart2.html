@@ -4,34 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart 2 Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+      #best-services 
+      {
+        margin:0 250px;
+      }
+       .heading-part
+       {
+        font-size: 50px;
+        text-align: center;
+        font-weight: 700;
+        color: #3b3663;
+        font-family:"Kumbh Sans",sans-serif;
+       }
+      
         .main-container{
-              height: 500px;
-              width:300px;
-              /* border: 2px solid; */
-              margin: 10% auto;
-              box-shadow: 0px 0px 20px black;
+              display: inline-block;
+              height: 560px;
+              width:430px;
+              margin: 50px 20px;
+              font-family:"Kumbh Sans",sans-serif;
+              position: relative;
+              box-shadow: 0px 0px 15px black;
+        }
+        /*  Image Part-1 in  CSS   */
+        .main-container .image-1 {
+              width:430px;
+              height: 290px;
               overflow: hidden;
+              position: absolute;
         }
-        .image {
-             height:250px;
-             width:300px;
-             background-image: url("https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/blog1.jpg");
-             background-position: 100% 100%;
-             background-size: cover;
-             background-repeat: no-repeat;
-             /* transform: scale(1); */
-             transition: .7s;
+        .image-1 img{
+              width:439px;
+              height: 290px;
+              transition: 0.9s;
         }
-        .image:hover{
-           transform: scale(1.2);
+        .image-1:hover img{
+              transform: scale(1.1);
+        }
+
+        /*  Image Part-2 in  CSS   */
+         .main-container .image-2 {
+              width:430px;
+              height: 290px;
+              overflow: hidden;
+              position: absolute;
+        }
+        .image-2 img{
+              width:439px;
+              height: 290px;
+              transition: 0.9s;
+        }
+        .image-2:hover img{
+              transform: scale(1.1);
+        }
+        /*  Image Part-3 in  CSS   */
+        .main-container .image-3 {
+                width:430px;
+                height: 290px;
+                overflow: hidden;
+                position: absolute;
+        }
+        .image-3 img{
+                width:439px;
+                height: 290px;
+                transition: 0.9s;
+        }
+        .image-3:hover img{
+                transform: scale(1.1);
+        }
+        /* heading part in CSS */
+         .best-web .web-a
+        {
+          font-size: 25px;
+          text-decoration: none;
+          color: #3b3663;
+          position: absolute;
+          font-weight: 600;
+          margin: 328px 25px;
+        }
+        .best-web:hover .web-a
+        {
+          color: #ff668a;
+        }
+        /* Icon to calender in CSS */
+        .icon .fa-calendar-days
+        {
+          position: absolute;
+          font-size: 20px;
+          margin:380px 25px;
+          color:#949494;
+        }
+        .icon .date
+        {
+          position: absolute;
+          font-size: 20px;
+          font-weight: 700;
+          color:#949494;
+          margin:380px 50px;
+        }
+        /* Card Content in CSS */
+        .content .data
+        {
+          position: absolute;
+          font-size: 18px;
+          color:#696687;
+          margin:430px 25px;
+        }
+        /* read-more data in CSS */
+        .read-more .read
+        {
+          position: absolute;
+          font-size: 18px;
+          font-weight: 600;
+          color: #3b3663;
+          text-decoration: none;
+          border-bottom: 2px solid #ff668a;;
+          margin:500px 25px;
+          transition: 0.5s;
+        }
+        .read-more:hover .read
+        {
+          transform: scaleY(1);
+          letter-spacing: 5px;
         }
     </style>
 </head>
 <body>
+     <section id="best-services">
+          <h3 class="heading-part">See what’s going on</h3>
+          <!-- Image Part-1  -->
       <div class="main-container">
-        <div class="image"> 
+        <div class="image-1"> 
+                  <img src="https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/blog1.jpg">
         </div>
+        <div class="best-web">
+           <a href="#" class="web-a" alt="">Best free Web templates</a>
+        </div>
+        <div class="icon">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span class="date">March 30, 2025</span>
+        </div>
+            <div class="content">
+              <p class="data">Lorem ipsum dolor sit amet ad minus libero ullam ipsam quas earum!</p>
+            </div>
+              <div class="read-more">
+                     <a href="" class="read">Read More</a>
+              </div>
       </div>
+      <!-- Image Part-2 -->
+      <div class="main-container">
+        <div class="image-2"> 
+             <img src="https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/blog2.jpg">
+        </div>
+        <div class="best-web">
+           <a href="#" class="web-a" alt="">Skills to become a Designer</a>
+        </div>
+        <div class="icon">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span class="date">March 30, 2025</span>
+        </div>
+            <div class="content">
+              <p class="data">Lorem ipsum dolor sit amet ad minus libero ullam ipsam quas earum!</p>
+            </div>
+              <div class="read-more">
+                     <a href="" class="read">Read More</a>
+              </div>
+      </div>
+      <!-- Part Image-3 -->
+      <div class="main-container">
+        <div class="image-3"> 
+           <img src="https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/blog3.jpg">
+        </div>
+        <div class="best-web">
+           <a href="#" class="web-a" alt="">How to make 404 error page?</a>
+        </div>
+        <div class="icon">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span class="date">March 30, 2025</span>
+        </div>
+            <div class="content">
+              <p class="data">Lorem ipsum dolor sit amet ad minus libero ullam ipsam quas earum!</p>
+            </div>
+              <div class="read-more">
+                     <a href="" class="read">Read More</a>
+              </div>
+      </div>
+      </section>
 </body>
 </html>

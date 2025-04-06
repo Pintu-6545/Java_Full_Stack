@@ -3,47 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart3</title>
+    <title>Cart 3 </title>
     <style>
-        .main-container{
-            height: 750px;
-            width: 600px;
-            border:4px solid;
-            background-image: url("https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/p5.jpg");
-            /* background-size: cover; */
-            background-repeat: no-repeat;
-            background-position: 100% 100%;
-            margin: 200px auto;
-            /* transition: 0.6s; */
+        #wel
+        {
+                 margin-left: 120px;
         }
-     .text, .mobile{
-              margin-top:70%;
-              font-size: 3rem;
-              font-family: sans-serif;
-              font-weight: bold;
-              text-align: center;
-              /* word-spacing: 2px; */
-              text-align: center;
-              text-decoration: none;
-              color: black;
-              /* opacity: 0; */
+        .container
+        {
+            height: 480px;
+            width:350px;
+            margin:0px auto;
+            display: inline-block;
+             background-image: url("https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/p1.jpg");
+            background-size: 100% 100%;
+            /* box-shadow: 0,0,0,15; */
+             overflow: hidden;
+            position: relative;
         }
-        .text:hover .mobile{
-            color:palevioletred;
+        .shadow
+        {   height: 500px;
+            width:350px;
+            background-color: rgba(0,0,0,0.3);
+            opacity: 0;
+            position: absolute;
+            transition: .6s;
+
         }
-        p{
-            /* opacity: 0; */
-            font-size: 42px;
-            text-align: center;
+        .shadow:hover{
+            transform: translate(50px 35px);
+            opacity: 1;
         }
+
+        .shadow .content .e1
+       {
+        font-size: 30px;
+        color:white;
+        font-weight: 700;
+        position: absolute;
+        margin: 290px 33px;
+        text-decoration: none;
+      }
+      .content:hover .e1
+      {
+        color:#ff668a;
+      }
+      
+     .shadow .content .text
+     {
+        font-size: 23px;
+        color:white;
+        position: absolute;
+        margin:340px 33px;
+     }
+     .fruit
+        {
+            height: 480px;
+            width:350px;
+            margin:0px auto;
+            display: inline-block;
+             background-image: url("https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/p2.jpg");
+            background-size: 100% 100%;
+            /* box-shadow: 0,0,0,15; */
+             overflow: hidden;
+            position: relative;
+        }
+        .shoes
+        {
+            height: 480px;
+            width:350px;
+            margin:0px auto;
+            display: inline-block;
+             background-image: url("https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/p3.jpg");
+            background-size: 100% 100%;
+            /* box-shadow: 0,0,0,15; */
+             overflow: hidden;
+            position: relative;
+        }
+        .headphone
+        {
+            height: 480px;
+            width:350px;
+            margin:0px auto;
+            display: inline-block;
+             background-image: url("https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/p4.jpg");
+            background-size: 100% 100%;
+            /* box-shadow: 0,0,0,15; */
+             overflow: hidden;
+            position: relative;
+        }
+        .iphone
+        {
+            height: 480px;
+            width:350px;
+            margin:0px auto;
+            display: inline-block;
+             background-image: url("https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/p5.jpg");
+            background-size: 100% 100%;
+            /* box-shadow: 0,0,0,15; */
+             overflow: hidden;
+            position: relative;
+        }
+        .ideas
+        {
+            height: 480px;
+            width:350px;
+            margin:0px auto;
+            display: inline-block;
+             background-image: url("https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/p6.jpg");
+            background-size: 100% 100%;
+            /* box-shadow: 0,0,0,15; */
+             overflow: hidden;
+            position: relative;
+        }
+        .Creativity
+        {
+            height: 480px;
+            width:350px;
+            margin:0px auto;
+            display: inline-block;
+             background-image: url("https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/p8.jpg");
+            background-size: 100% 100%;
+            /* box-shadow: 0,0,0,15; */
+             overflow: hidden;
+            position: relative;
+        }
+        .fation
+        {
+            height: 480px;
+            width:350px;
+            margin:0px auto;
+            display: inline-block;
+             background-image: url("https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/p7.jpg");
+            background-size: 100% 100%;
+            /* box-shadow: 0,0,0,15; */
+             overflow: hidden;
+            position: relative;
+        }
+
     </style>
 </head>
 <body>
-    <div class="main-container">
-        <div class="text">
-            <a href="" class="mobile">Mobile app</a>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+    <section id="wel">
+    <div class="container">
+            <div class="shadow">
+                   <div class="content">
+                    <a href="#" class="e1">UI experience</a>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+                   </div>
+            </div>
     </div>
+    <div class="fruit">
+        <div class="shadow">
+               <div class="content">
+                <a href="#" class="e1">Wordpress</a>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+               </div>
+           </div>
+     </div>
+     <div class="shoes">
+        <div class="shadow">
+               <div class="content">
+                <a href="#" class="e1">Ecommerce</a>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+               </div>
+           </div>
+     </div>
+     <div class="headphone">
+        <div class="shadow">
+               <div class="content">
+                <a href="#" class="e1">Headphones</a>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+               </div>
+           </div>
+     </div>
+     <div class="iphone">
+        <div class="shadow">
+               <div class="content">
+                <a href="#" class="e1">Mobile App</a>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+               </div>
+           </div>
+     </div>
+     <div class="ideas">
+        <div class="shadow">
+               <div class="content">
+                <a href="#" class="e1">Modern Ideas</a>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+               </div>
+           </div>
+     </div>
+     <div class="Creativity">
+        <div class="shadow">
+               <div class="content">
+                <a href="#" class="e1">Creativity</a>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+               </div>
+           </div>
+     </div>
+     <div class="fation">
+        <div class="shadow">
+               <div class="content">
+                <a href="#" class="e1">Fashion design</a>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia.</p>
+               </div>
+           </div>
+     </div>
+     
+</section>
 </body>
 </html>

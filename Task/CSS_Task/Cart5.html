@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerating a Card 5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+            /* to design a heading */
+            .future-h1
+            {
+                font-size: 102px;
+                text-align: center;
+            }
+
+           /* To Arrange one row  all the boxes than used flex  */
+           .indusrial
+           {
+            /* border: 2px solid; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+           }
+           /* all container width and height provided  */
+            .container
+            {
+                height: 360px;
+                width: 570px;
+                margin:20px 0;
+                box-shadow: 0 0 20px  black;
+                position: relative;
+                background-color: rgba(208, 199, 199, 0.5);
+                
+            }
+            /* Background color hovering that used */
+            .container:hover
+            {
+                background-color: #ff9900;
+            }
+            /*  First Icon to provide font size fa-pen-fancy */
+            .shadow-color .icon .fa-pen-fancy
+            {
+                font-size: 45px;
+                color: #ff9900;
+                margin:75px 50px;
+                position: absolute;
+            }
+             /*  First Icon to provide  Hover */
+           .container:hover .shadow-color .icon .fa-pen-fancy
+            {
+                color:white;
+            }
+             /*  Second Icon to provide font size fa-layer-group */
+            .shadow-color .icon .fa-layer-group
+            {
+                font-size: 45px;
+                color: #ff9900;
+                margin:75px 50px;
+                position: absolute;
+            }
+             /*  Second Icon to provide Hover */
+           .container:hover .shadow-color .icon .fa-layer-group
+            {
+                color:white;
+            }
+            /*  Second Icon to provide font size fa-luggage-cart */
+            .shadow-color .icon .fa-luggage-cart
+            {
+                font-size: 45px;
+                color: #ff9900;
+                margin:75px 50px;
+                position: absolute;
+            }
+              /*  Third Icon to provide Hover */
+           .container:hover .shadow-color .icon .fa-luggage-cart
+            {
+                color:white;
+            }
+            /* Font size provide to h2 */
+            .icon .manager-a
+            {
+                font-size: 35px;
+                position: absolute;
+                margin:140px 50px;
+                text-decoration: none;
+                color: black;
+            }
+            /* font size to provide text  */
+            .icon .text
+            {
+                font-size: 30px;
+                font-weight: 500;
+                margin:200px 50px;
+                position: absolute;
+                color:gray;
+            }
+            /* Text to provide the hover effect*/
+            .container:hover .text
+            {
+                color:white;
+            }
+             
+    </style>
+</head>
+<body>
+    <section class="industrial-future">
+                <h1 class="future-h1">We Help Build On Past & Prepare For Your Future.</h1>
+    <div class="indusrial">
+        <div class="container">
+            <div class="shadow-color">
+                  <div class="icon">
+                <i class="fas fa-pen-fancy"></i>
+                <h2><a href="" class="manager-a">Construction Manage</a></h2>
+                <p class="text">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="shadow-color">
+                  <div class="icon">
+                <i class="fas fa-layer-group"></i>
+                <h2><a href="" class="manager-a">Architecture & Building</a></h2>
+                <p class="text">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="shadow-color">
+                  <div class="icon">
+                <i class="fas fa-luggage-cart"></i>
+                <h2><a href="" class="manager-a">Owner's Representation</a></h2>
+                <p class="text">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

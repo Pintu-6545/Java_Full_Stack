@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart 4</title>
+    <style>
+        #industry
+        {
+            display: grid;
+            border:  2px solid;
+           grid-template-columns: repeat(3, 0fr);
+           /* width:80%; */
+           margin:0 150px;
+        } 
+        /* Container Part-1 in CSS */
+        .container-1
+        {
+            height: 300px;
+            width: 450px;
+            background-image: url("https://wp.w3layouts.com/factorship/wp-content/themes/factorship/assets/images/g1.jpg");
+            background-size: 100% 100%;
+            margin:20px 20px;
+            position: relative;
+            border:2px solid;
+        }
+        .container-1 .shadow-color
+        {
+            height: 300px;
+            width: 450px;
+            background-color: rgba(0,0,0,0.3);
+            transition: 0.6s;
+            position: absolute;
+            transform: scale(0);
+        }
+        .container-1:hover .shadow-color
+        {
+            transition: 0.6s;
+            transform: scale(1);
+        }
+        .shadow-color .content .work
+        {
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 700;
+            color:white;
+            position: absolute;
+            margin:130px 165px;
+            transform: scale(0);
+        }
+        .shadow-color .content .data
+        {
+            font-size: 15px;
+            font-weight: 400;
+            color:white;
+            position: absolute;
+            margin:180px 180px;
+            transform: scale(0);
+        }
+        .container-1:hover .content .work
+        {
+            transition: 0.9s;
+            transform: scale(1.5);
+        }
+        .container-1:hover .content .data
+        {
+            transition: 0.9s;
+            transform: scale(1.4);
+        }
+
+        /* Container Part-2 in CSS */
+        .container-2
+        {
+            height: 300px;
+            width: 450px;
+            background-image: url("https://wp.w3layouts.com/factorship/wp-content/themes/factorship/assets/images/g2.jpg");
+            background-size: 100% 100%;
+            margin:20px 20px;
+            position: relative;
+            border:2px solid;
+        }
+        .container-2 .shadow-color
+        {
+            height: 300px;
+            width: 450px;
+            background-color: rgba(0,0,0,0.3);
+            transition: 0.6s;
+            position: absolute;
+            transform: scale(0);
+        }
+        .container-2:hover .shadow-color
+        {
+            transition: 0.6s;
+            transform: scale(1);
+        }
+        .shadow-color .content .work
+        {
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 700;
+            color:white;
+            position: absolute;
+            margin:130px 165px;
+            transform: scale(0);
+        }
+        .shadow-color .content .data
+        {
+            font-size: 15px;
+            font-weight: 400;
+            color:white;
+            position: absolute;
+            margin:180px 180px;
+            transform: scale(0);
+        }
+        .container-2:hover .content .work
+        {
+            transition: 0.9s;
+            transform: scale(1.5);
+        }
+        .container-2:hover .content .data
+        {
+            transition: 0.9s;
+            transform: scale(1.4);
+        }
+        /* Container Part-3 in CSS */
+        .container-3
+        {
+            height: 300px;
+            width: 450px;
+            background-image: url("https://wp.w3layouts.com/factorship/wp-content/themes/factorship/assets/images/g3.jpg");
+            background-size: 100% 100%;
+            margin:20px 20px;
+            position: relative;
+            border:2px solid;
+        }
+        .container-3 .shadow-color
+        {
+            height: 300px;
+            width: 450px;
+            background-color: rgba(0,0,0,0.3);
+            transition: 0.6s;
+            position: absolute;
+            transform: scale(0);
+        }
+        .container-3:hover .shadow-color
+        {
+            transition: 0.6s;
+            transform: scale(1);
+        }
+        .shadow-color .content .work
+        {
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 700;
+            color:white;
+            position: absolute;
+            margin:130px 165px;
+            transform: scale(0);
+        }
+        .shadow-color .content .data
+        {
+            font-size: 15px;
+            font-weight: 400;
+            color:white;
+            position: absolute;
+            margin:180px 180px;
+            transform: scale(0);
+        }
+        .container-3:hover .content .work
+        {
+            transition: 0.9s;
+            transform: scale(1.5);
+        }
+        .container-3:hover .content .data
+        {
+            transition: 0.9s;
+            transform: scale(1.4);
+        }
+        /* Container Part-4 in CSS */
+        .container-4
+        {
+            height: 300px;
+            width: 450px;
+            background-image: url("https://wp.w3layouts.com/factorship/wp-content/themes/factorship/assets/images/g4.jpg");
+            background-size: 100% 100%;
+            margin:20px 20px;
+            position: relative;
+            border:2px solid;
+        }
+        .container-4 .shadow-color
+        {
+            height: 300px;
+            width: 450px;
+            background-color: rgba(0,0,0,0.3);
+            transition: 0.6s;
+            position: absolute;
+            transform: scale(0);
+        }
+        .container-4:hover .shadow-color
+        {
+            transition: 0.6s;
+            transform: scale(1);
+        }
+        .shadow-color .content .work
+        {
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 700;
+            color:white;
+            position: absolute;
+            margin:130px 165px;
+            transform: scale(0);
+        }
+        .shadow-color .content .data
+        {
+            font-size: 15px;
+            font-weight: 400;
+            color:white;
+            position: absolute;
+            margin:180px 180px;
+            transform: scale(0);
+        }
+        .container-4:hover .content .work
+        {
+            transition: 0.9s;
+            transform: scale(1.5);
+        }
+        .container-4:hover .content .data
+        {
+            transition: 0.9s;
+            transform: scale(1.4);
+        }
+         /* Container Part-5 in CSS */
+         .container-5
+        {
+            height: 300px;
+            width: 450px;
+            background-image: url("https://wp.w3layouts.com/factorship/wp-content/themes/factorship/assets/images/g5.jpg");
+            background-size: 100% 100%;
+            margin:20px 20px;
+            position: relative;
+            border:2px solid;
+        }
+        .container-5 .shadow-color
+        {
+            height: 300px;
+            width: 450px;
+            background-color: rgba(0,0,0,0.3);
+            transition: 0.6s;
+            position: absolute;
+            transform: scale(0);
+        }
+        .container-5:hover .shadow-color
+        {
+            transition: 0.6s;
+            transform: scale(1);
+        }
+        .shadow-color .content .work
+        {
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 700;
+            color:white;
+            position: absolute;
+            margin:130px 165px;
+            transform: scale(0);
+        }
+        .shadow-color .content .data
+        {
+            font-size: 15px;
+            font-weight: 400;
+            color:white;
+            position: absolute;
+            margin:180px 180px;
+            transform: scale(0);
+        }
+        .container-5:hover .content .work
+        {
+            transition: 0.9s;
+            transform: scale(1.5);
+        }
+        .container-5:hover .content .data
+        {
+            transition: 0.9s;
+            transform: scale(1.4);
+        }
+         /* Container Part-6 in CSS */
+         .container-6
+        {
+            height: 300px;
+            width: 450px;
+            background-image: url("https://wp.w3layouts.com/factorship/wp-content/themes/factorship/assets/images/g6.jpg");
+            background-size: 100% 100%;
+            margin:20px 20px;
+            position: relative;
+            border:2px solid;
+        }
+        .container-6 .shadow-color
+        {
+            height: 300px;
+            width: 450px;
+            background-color: rgba(0,0,0,0.3);
+            transition: 0.6s;
+            position: absolute;
+            transform: scale(0);
+        }
+        .container-6:hover .shadow-color
+        {
+            transition: 0.6s;
+            transform: scale(1);
+        }
+        .shadow-color .content .work
+        {
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 700;
+            color:white;
+            position: absolute;
+            margin:130px 165px;
+            transform: scale(0);
+        }
+        .shadow-color .content .data
+        {
+            font-size: 15px;
+            font-weight: 400;
+            color:white;
+            position: absolute;
+            margin:180px 180px;
+            transform: scale(0);
+        }
+        .container-6:hover .content .work
+        {
+            transition: 0.9s;
+            transform: scale(1.5);
+        }
+        .container-6:hover .content .data
+        {
+            transition: 0.9s;
+            transform: scale(1.4);
+        }
+         /* Container Part-7 in CSS */
+         .container-7
+        {
+            height: 300px;
+            width: 450px;
+            background-image: url("https://wp.w3layouts.com/factorship/wp-content/themes/factorship/assets/images/g7.jpg");
+            background-size: 100% 100%;
+            margin:20px 20px;
+            position: relative;
+            border:2px solid;
+        }
+        .container-7 .shadow-color
+        {
+            height: 300px;
+            width: 450px;
+            background-color: rgba(0,0,0,0.3);
+            transition: 0.6s;
+            position: absolute;
+            transform: scale(0);
+        }
+        .container-7:hover .shadow-color
+        {
+            transition: 0.6s;
+            transform: scale(1);
+        }
+        .shadow-color .content .work
+        {
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 700;
+            color:white;
+            position: absolute;
+            margin:130px 165px;
+            transform: scale(0);
+        }
+        .shadow-color .content .data
+        {
+            font-size: 15px;
+            font-weight: 400;
+            color:white;
+            position: absolute;
+            margin:180px 180px;
+            transform: scale(0);
+        }
+        .container-7:hover .content .work
+        {
+            transition: 0.9s;
+            transform: scale(1.5);
+        }
+        .container-7:hover .content .data
+        {
+            transition: 0.9s;
+            transform: scale(1.4);
+        }
+         /* Container Part-4 in CSS */
+         .container-8
+        {
+            height: 300px;
+            width: 450px;
+            background-image: url("https://wp.w3layouts.com/factorship/wp-content/themes/factorship/assets/images/g8.jpg");
+            background-size: 100% 100%;
+            margin:20px 20px;
+            position: relative;
+            border:2px solid;
+        }
+        .container-8 .shadow-color
+        {
+            height: 300px;
+            width: 450px;
+            background-color: rgba(0,0,0,0.3);
+            transition: 0.6s;
+            position: absolute;
+            transform: scale(0);
+        }
+        .container-8:hover .shadow-color
+        {
+            transition: 0.6s;
+            transform: scale(1);
+        }
+        .shadow-color .content .work
+        {
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 700;
+            color:white;
+            position: absolute;
+            margin:130px 165px;
+            transform: scale(0);
+        }
+        .shadow-color .content .data
+        {
+            font-size: 15px;
+            font-weight: 400;
+            color:white;
+            position: absolute;
+            margin:180px 180px;
+            transform: scale(0);
+        }
+        .container-8:hover .content .work
+        {
+            transition: 0.9s;
+            transform: scale(1.5);
+        }
+        .container-8:hover .content .data
+        {
+            transition: 0.9s;
+            transform: scale(1.4);
+        }
+         /* Container Part-9 in CSS */
+         .container-9
+        {
+            height: 300px;
+            width: 450px;
+            background-image: url("https://wp.w3layouts.com/factorship/wp-content/themes/factorship/assets/images/g9.jpg");
+            background-size: 100% 100%;
+            margin:20px 20px;
+            position: relative;
+            border:2px solid;
+        }
+        .container-9 .shadow-color
+        {
+            height: 300px;
+            width: 450px;
+            background-color: rgba(0,0,0,0.3);
+            transition: 0.6s;
+            position: absolute;
+            transform: scale(0);
+        }
+        .container-9:hover .shadow-color
+        {
+            transition: 0.6s;
+            transform: scale(1);
+        }
+        .shadow-color .content .work
+        {
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 700;
+            color:white;
+            position: absolute;
+            margin:130px 165px;
+            transform: scale(0);
+        }
+        .shadow-color .content .data
+        {
+            font-size: 15px;
+            font-weight: 400;
+            color:white;
+            position: absolute;
+            margin:180px 180px;
+            transform: scale(0);
+        }
+        .container-9:hover .content .work
+        {
+            transition: 0.9s;
+            transform: scale(1.5);
+        }
+        .container-9:hover .content .data
+        {
+            transition: 0.9s;
+            transform: scale(1.4);
+        }
+    </style> 
+</head>
+<body>
+    <section id="industry">
+        <!-- Image Part-1 -->
+     <div class="container-1">
+        <div class="shadow-color">
+            <div class="content">
+                <a href="" class="work">Factorship</a>
+                <p class="data">Lorem lpsum</p>
+            </div>
+        </div>
+     </div>
+       <!-- Image Part-2 -->
+     <div class="container-2">
+        <div class="shadow-color">
+            <div class="content">
+                <a href="" class="work">Factorship</a>
+                <p class="data">Lorem lpsum</p>
+            </div>
+        </div>
+     </div>
+       <!-- Image Part-3 -->
+     <div class="container-3">
+        <div class="shadow-color">
+            <div class="content">
+                <a href="" class="work">Factorship</a>
+                <p class="data">Lorem lpsum</p>
+            </div>
+        </div>
+     </div>
+       <!-- Image Part-4 -->
+     <div class="container-4">
+        <div class="shadow-color">
+            <div class="content">
+                <a href="" class="work">Factorship</a>
+                <p class="data">Lorem lpsum</p>
+            </div>
+        </div>
+     </div>
+       <!-- Image Part-5 -->
+     <div class="container-5">
+        <div class="shadow-color">
+            <div class="content">
+                <a href="" class="work">Factorship</a>
+                <p class="data">Lorem lpsum</p>
+            </div>
+        </div>
+     </div>
+       <!-- Image Part-6 -->
+     <div class="container-6">
+        <div class="shadow-color">
+            <div class="content">
+                <a href="" class="work">Factorship</a>
+                <p class="data">Lorem lpsum</p>
+            </div>
+        </div>
+     </div>
+       <!-- Image Part-7 -->
+     <div class="container-7">
+        <div class="shadow-color">
+            <div class="content">
+                <a href="" class="work">Factorship</a>
+                <p class="data">Lorem lpsum</p>
+            </div>
+        </div>
+     </div>
+       <!-- Image Part-8 -->
+     <div class="container-8">
+        <div class="shadow-color">
+            <div class="content">
+                <a href="" class="work">Factorship</a>
+                <p class="data">Lorem lpsum</p>
+            </div>
+        </div>
+     </div>
+       <!-- Image Part-9 -->
+     <div class="container-9">
+        <div class="shadow-color">
+            <div class="content">
+                <a href="" class="work">Factorship</a>
+                <p class="data">Lorem lpsum</p>
+            </div>
+        </div>
+     </div>
+     </section>
+</body>
+</html>
