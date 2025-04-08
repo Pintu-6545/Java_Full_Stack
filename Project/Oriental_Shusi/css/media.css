@@ -2,7 +2,9 @@
     
 }
 @media only screen and (max-width:992px) {
-    
+     .navbar .list .navlist {
+      margin: 0 5px;
+  }
 }
 /* tab */
 @media only screen and (max-width:768px) {

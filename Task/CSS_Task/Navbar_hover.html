@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Hover</title>
+    <style>
+        .ul
+        {
+            list-style: none;
+        }
+        .ul .list
+        {
+            display: inline-block;
+            position: relative;
+            padding:10px 20px;  
+            /* font-size: 25px; */
+            background-color: aqua;
+        }
+        .nav
+        {
+            position: absolute;
+            background-color:blueviolet;
+            left: 0;
+            top:100%;
+            list-style: none;
+            padding: 0;
+            display: none;
+        }
+        .list:hover .nav
+        {
+            display: block;
+        }
+        .nav li{
+            border: 2px solid;
+            padding: 5px;
+            
+        }
+            ul
+            {
+                list-style: none;
+            }
+       ul .list-1
+       {
+          display: inline-block;
+        /* position: relative; */
+        padding:10px 20px;  
+        /* background-color: goldenrod; */
+       }
+       .nav-1
+    {
+             background-color:cadetblue;
+            left: 0;
+            top:100%;
+            list-style: none;
+            padding: 0;
+            display: none;
+    }
+    .list-1:hover .nav-1
+    {
+        display: block;
+    }
+    .nav-1 li
+    {
+        border: 2px solid;
+        padding: 10px 20px;
+    }
+
+    </style>
+</head>
+<body>
+            <ul class="ul">
+                <li class="list">Home
+                       <ul class="nav">
+                          <li class="list-1">India
+                                <ul class="nav-1">
+                                    <li>Ahmedabad</li>
+                                    <li>Jaipur</li>
+                                    <li>Delhi</li>
+                                    <li>Lucknow</li>
+                                    <li>Surat</li>
+                                    <li>Mumbai</li>
+                                    <li>Banglore</li>
+                                    <li>Chennai</li>
+                                    <li>Noida</li>
+                                    <li>Good Gav</li>
+                                </ul>
+                          </li>
+                          <li>Russia</li>
+                          <li>America</li>
+                          <li>Japan</li>
+                          <li>Canada</li>
+                          <li>Singapore</li>
+                          <li>Malesia</li>
+                          <li>South Africa</li>
+                          <li>Nepal</li>
+                       </ul>
+                </li>
+                <li class="list">About
+                    <ul class="nav">
+                        <li>Delhi</li>
+                        <li>Moscow</li>
+                        <li>Toranto</li>
+                        <li>Kathmandu</li>
+                        <li>Vocintone DC</li>
+                        <li>Captown</li>
+                        <li>Bali</li>
+                    </ul>
+                </li>
+                <li class="list">Contact</li>
+                <li class="list">Help</li>
+            </ul>
+            
+</body>
+</html>
