@@ -1,0 +1,555 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* resuse , ulti */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#Header-part {
+    background-image: url("/images/1.png");
+    background-size: 100% 100%;
+}
+
+.nav {
+    background-color: #e59090;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.navbar .list .navlist {
+    display: inline-block;
+    margin: 0 10px;
+    list-style: none;
+}
+
+.navbar .logo {
+    width: 200px;
+}
+
+.list .navlist .navlink {
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;;
+    font-weight: 700;
+    font-family: "Poppins";
+}
+
+.icon i {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.icon .bar {
+    display: none;
+}
+.header-content{
+    /* border:2px solid; */
+    display: flex;
+    padding: 70px 0;
+    font-family: "Montserrat";
+}
+.header-content .col2{
+    width: 50%;
+    /* border:2px solid pink; */
+}
+.header-content .header-h1{
+    /* font-size: 60px; */
+    font-size: clamp(20px, 12vw, 125px);
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 700;
+    /* padding: 10px 0; */
+    /* text-align: center; */
+    }
+.header-content .header-p{
+        width: 64%;
+        /* font-size: 29px; */
+        font-size: clamp(20px, 4.3vw, 29px);
+        color: #ffffff;
+        font-weight: 400;
+        margin:29px 0;
+        /* padding: 29px 0; */
+}
+.header-content .header-btn{
+    /* font-size: 20px; */
+    font-size: clamp(20px, 4.3vw, 25px);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    /* font-family: "c"; */
+    border-radius: 33px;
+    background-color: #6db3ab;
+    border:none;
+    padding: 11px 50px;
+}
+
+ /* start a Section Content Part */
+ #shusi-oriental{
+    background-color:#ffffff;;
+    padding: 35px 0;
+}
+.bg-color{
+    padding: 20px 0;
+}
+#shusi-oriental .row{
+    display: flex;
+    justify-content: space-between;
+}
+#shusi-oriental .row .col1{
+    /* border: 2px solid; */
+    width: 50%;
+    text-align: center;
+    /* border: 2px solid; */
+}
+#shusi-oriental .row .col1 .sweet-img img {
+    width: 50%;
+    margin: 20px auto;
+}
+#shusi-oriental .row .col2{
+    width:50%;
+    /* border: 2px solid; */
+}
+#shusi-oriental .row .col2 .section-content .section-h1{
+    /* font-size: 50px; */
+    font-size: clamp(20px, 14vw, 50px);
+    color: #6db3ab;
+    font-weight: 700;
+    font-family: "Montserrat";
+    /* padding: 40px 0; */
+    padding:35px 0;
+}
+#shusi-oriental .row .col2 .section-content .section-p{
+    /* font-size: 40px; */
+    font-size: clamp(20px, 14vw, 40px);
+    color:#6db3ab;
+    font-weight: 400;
+}
+#shusi-oriental .row .col2 .section-content .section-btn{
+    /* font-size: 20px; */
+    font-size: clamp(20px, 14vw, 20px);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+   background-color:#e59090;;
+   border:none;
+   border-radius: 33px;
+   padding: 11px 50px;
+   margin:30px 0;
+}
+/* Oriental shusi section part */
+#oriental-shusi {
+    background-color:#ffffff;
+    padding: 50px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#oriental-shusi .row {
+    display: flex;
+    align-items: center;
+}
+
+#oriental-shusi .row .col {
+    width: 50%;
+}
+
+.sweet-img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#oriental-shusi .row .col .section-content .section-h1 {
+    /* font-size: 60px; */
+    font-size: clamp(20px, 10vw, 75px);
+    color: #2fb4ac;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+#oriental-shusi .row .col .section-content .section-p {
+    /* font-size: 25px; */
+   font-size: clamp(20px, 6vw, 30px);
+   color: #2fb4ac;
+    font-family: "Montserrat";
+    /* width:89%; */
+    font-weight: 400;
+    margin:15px auto; 
+}
+
+#oriental-shusi .row .col .section-content .section-btn {
+    /* font-size: 25px; */
+    font-size: clamp(20px, 5.4vw, 25px);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 32px;
+    background-color: #fd9191;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 10px 42px;
+    margin: 18px 0;
+    border: none;
+}
+
+/* Special Menu Sweet a section part */
+#special-menu{
+    background-color: #e59090;
+    padding: 35px 0;
+}
+#special-menu .special{
+       margin:30px 0;
+}
+.special .special-sweet{
+        /* font-size: 64px; */
+        font-size: clamp(20px, 12vw, 64px);
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Montserrat";
+        word-spacing: 10px;
+        text-align: center;
+        /* padding: 10px 0; */
+}
+#special-menu .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#special-menu .row .col{
+  width:33.33%;
+  margin:25px 0;
+}
+#special-menu .row .col .special-h2{
+        font-size: 25px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Montserrat";
+        text-align: center;
+        margin:10px 0;
+}
+#special-menu .row .col .special-p{
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Montserrat";
+        text-align: center;
+        /* padding: 20px 0; */
+        margin:15px 0;
+}
+.sweet-penda{
+    width:250px;
+    margin:0 auto;
+}
+.sweet-mava{
+    width: 250px;
+    margin: 0 auto;
+}
+.sweet-pesti{
+    width: 250px;
+    margin: 0 auto;
+}
+
+/*  Sweet Statistics Section Part  */
+
+#sweet-statistics {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+#sweet-statistics .number {
+    margin: 40px 0;
+}
+
+.number .sweet-h2 {
+    /* font-size: 62px; */
+    font-size: clamp(20px, 12vw, 62px);
+    color: #2fb4ac;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.number .sweet-p {
+    /* border: 2px solid;    */
+    /* font-size: 32px; */
+    font-size: clamp(20px, 5vw, 32px);
+    color: #2fb4ac;
+    font-weight: 400;
+    width: 55%;
+    margin: 20px auto;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+#sweet-statistics .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#sweet-statistics .row .col {
+    height: 300px;
+    width: 300px;
+    border: 5px solid salmon;
+    border-radius: 50%;
+}
+
+#sweet-statistics .row .col .data {
+    font-family: "Montserrat";
+    padding: 60px 0;
+}
+
+#sweet-statistics .row .col .data .data-h1 {
+    font-size: 80px;
+    text-align: center;
+    font-weight: 700;
+    color: #2fb4ac;
+}
+
+#sweet-statistics .row .col .data .data-p {
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2fb4ac;
+    text-align: center;
+}
+/* Kawali Shusi section Part */
+#kawaii-shusi {
+    background-color: #6edad4;
+    padding: 50px 0;
+}
+
+#kawaii-shusi .kawaii-content {
+    margin: 25px 0;
+}
+
+#kawaii-shusi .row {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+#kawaii-shusi .row .col {
+    width: 50%;
+    font-family: "Montserrat";
+}
+
+.kawaii .kawaii-h1 {
+    /* font-size: 75px; */
+    font-size: clamp(20px, 10vw, 75px);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.kawaii .kawaii-p {
+    /* font-size: 25px; */
+    font-size: clamp(20px, 6vw, 30px);
+    color: #ffffff;
+     font-family: "Montserrat";
+     /* width:89%; */
+     font-weight: 400;
+     margin:15px auto; 
+}
+.kawaii .kawaii-btn {
+    /* font-size: 25px; */
+    font-size: clamp(20px, 5.4vw, 25px);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 32px;
+    background-color: #fd9191;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 10px 42px;
+    margin: 10px 0;
+    border: none;
+}
+
+.kawaii-img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Cook Quotes Section Part */
+
+#cook-quote {
+    background-image: url("/images/review.png");
+    background-size: 100% 100%;
+    padding: 50px 0;
+}
+
+#cook-quote .cook-content {
+    margin: 25px 0;
+}
+
+.cook-content .cook-image {
+    width: 220px;
+    margin: 0 auto;
+}
+
+.cook-content .cook-feedback .quote-p {
+    /* font-size: 42px; */
+    font-size: clamp(20px, 6vw, 42px);
+    color: #ffffff;
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 26px 0;
+}
+
+.cook-content .cook-feedback .name-h3 {
+    /* font-size: 45px; */
+    font-size: clamp(20px, 7vw, 45px);
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+/*  Shusi Subscribe Section Part  */
+
+#shusi-subsribe {
+    background-color: #ffe98a;
+    padding: 60px 0;
+}
+
+#shusi-subsribe .shusi-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.shusi-content .shusi-name .shusi-here-h1 {
+    /* font-size: 75px; */
+    font-size: clamp(20px, 10vw, 75px);
+    color: #21243d;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.shusi-content .shusi-name .shusi-here-p {
+    /* font-size: 30px; */
+    font-size: clamp(20px, 6vw, 30px);
+    color: #21243d;
+    width: 60%;
+    margin: 5px auto;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 26px 0;
+}
+
+.subscribe {
+    position: relative;
+    margin-right: 60px;
+}
+
+.shusi-content .subscribe .email {
+    /* font-size: 25px; */
+    font-size: clamp(20px, 8vw, 25px);
+    color: #21243d;
+    font-weight: 400;
+    border-radius: 32px;
+    border: none;
+    width:450px;
+    margin:15px 0;
+    padding: 15px 50px 15px 30px;
+    /* margin-right: 25; */
+    font-family: "Montserrat";
+}
+
+.shusi-content .subscribe .subscribe-btn {
+    /* font-size: 25px; */
+    font-size: clamp(20px, 8vw, 25px);
+    background-color: #21243d;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    position: absolute;
+    width: 50%;
+    font-family: "Montserrat";
+    margin-top:15px;
+    text-align: center;
+    padding: 15px 12px;
+    border-radius: 32px;
+    margin-left: -2.6rem;
+    border: none;
+}
+
+/* Footer part Your Logo Layout */
+
+#footer-your-logo{
+    background-color: #777777;
+    padding: 25px 0;
+}
+#footer-your-logo .your-logo{
+    margin:40px 0;
+}
+.footer-logo-img{
+    width:200px;
+}
+#footer-your-logo .row{
+    display: flex;
+}
+.row .col-1{
+    width:40%;
+}
+.row .col-1 .logo-info {
+     width:80%;
+     margin:15px 0;
+    font-size: clamp(16px, 1.1vw, 21px);
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    padding: 11px 0;
+}
+.social-media-icon .fa-instagram, .fa-square-facebook, .fa-facebook-messenger, .fa-whatsapp{
+    /* font-size: 25px; */
+    font-size: clamp(16px, 1.1vw, 20px);
+    background-color: #ffffff;
+    padding: 8px 8px;
+    margin:5px 5px;
+    border-radius: 50%;
+}   
+#footer-your-logo .row .col-2{
+    width: 60%;
+}
+.col-2 .row .col-4{
+    width:33.33%;
+}
+.col-4 .h2-footer{
+    font-size: clamp(20px, 3vw, 30px);
+    font-family: "Montserrat";
+    font-weight: 700;
+    color:#ffffff;
+}
+.col-4 .footer-ul .footer-list{
+    list-style: none;
+    font-size: clamp(16px, 3vw, 25px);
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin:18px 0;
+}
+.col-4 .footer-a{
+    text-decoration: none;
+    color:white;
+}
+
+
