@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="col">
+
+    <p style="font-size: 25px;font-weight: 700;">Color</p>
+    <button onclick="Red()">Red</button>
+    <button onclick="Yellow()">Yellow</button>
+    <button onclick="Pink()">Pink</button>
+    <button onclick="Green()">Green</button>
+    <button onclick="Brown()">Brown</button>
+    <button onclick="Aqua()">Aqua</button>
+    <button onclick="Gray()">Gray</button>
+    <button onclick="Blue()">Blue</button>
+    <button onclick="Silver()">Silver</button><br><br>
+    <p style="font-size: 25px;font-weight: 700;">Linear Gradient</p>
+    <button onclick="RedL()">Green-LI</button>
+    <button onclick="Pink_li()">Pink_LI</button>
+    <button onclick="blue_li()">Blue-LI</button>
+    <button onclick="Lite_li()">Lite_LI</button>
+    <button onclick="Yellow_li()">Yellow_LI</button>
+    <button onclick="Aqua_li()">Aqua_LI</button>
+    <script>
+                let vel=document.getElementById("col")
+                function Red()
+                {
+                    vel.style.backgroundColor="Red";
+                }
+                function Yellow()
+                {
+                    vel.style.backgroundColor="Yellow";
+                }
+                function Pink()
+                {
+                    vel.style.backgroundColor="Pink";
+                }
+                function Green()
+                {
+                    vel.style.backgroundColor="Green";
+                }
+                function Brown()
+                {
+                    vel.style.backgroundColor="Brown";
+                }
+                function Aqua()
+                {
+                    vel.style.backgroundColor="aqua";
+                }
+                function Gray()
+                {
+                    vel.style.backgroundColor="gray";
+                }
+                function Blue()
+                {
+                    vel.style.backgroundColor="blue";
+                }
+                function Silver()
+                {
+                    vel.style.backgroundColor="silver";
+                }
+                function RedL()
+                {
+                    vel.style.backgroundImage="linear-gradient(to left, #ced16b, #b7ca5c, #9ec450, #82bd45, #62b63e, #6db02e, #78aa1c, #81a400, #ac9b00, #cf8f1a, #ea823c, #fb785f)";
+                }
+                function Pink_li()
+                {
+                    vel.style.backgroundImage="linear-gradient(to left, #6bd1c4, #00c0d4, #00ace7, #0092ef, #5c6fe1, #a25bcd, #cd43ac, #e62f82, #fd556b, #ff7d5a, #ffa554, #fbca5f)";
+                }
+                function blue_li()
+                {
+                    vel.style.backgroundImage=" linear-gradient(to left, #92048e, #b7005b, #b92d2e, #a65804, #877600, #648024, #3f8647, #008968, #007b88, #0068b3, #004dcb, #1600ae)";
+                }
+                function Lite_li()
+                {
+                    vel.style.backgroundImage="linear-gradient(to left, #13c3a7, #00b4c3, #00a1df, #0089ee, #0068e3, #984fcd, #d228a2, #ed006d, #ff482e, #ee8900, #b4c000, #18ec12)";
+                }
+                function Yellow_li()
+                {
+                    vel.style.backgroundImage="linear-gradient(to left, #b613c3, #f50082, #ff4044, #ea8103, #c0af00, #aeb200, #9bb500, #86b700, #9e9600, #ac7200, #b24900, #ae0703)";
+                }
+                function Aqua_li()
+                {
+                    vel.style.backgroundImage="linear-gradient(to right, #880e5a, #7c438f, #5a69b6, #2589c9, #00a5cc, #00b5ca, #00c2bb, #00cea2, #00d58e, #00db74, #00e050, #40e30d)";
+                }
+    
+    </script>
+</body>
+</html>
