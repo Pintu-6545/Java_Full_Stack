@@ -1,0 +1,2320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookMyShow</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="color">
+  <header>
+    <nav class="navbar navbar-expand-lg  navbar-sh">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/logo.png" alt="">
+        </a>
+        <div class="container-search">
+          <input type="text" class="input-search" placeholder="Search for Movies, Events, Plays, Sports and Activities"
+            data-bs-toggle="modal" data-bs-target="#Modalsearch">
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="Modalsearch" tabindex="-1" aria-labelledby="searchModelLable1" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header ">
+                <button type="button" class="btn btn-link text-dark" data-bs-dismiss="modal">
+                  <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <div class="w-100 mx-5">
+                  <input type="text" class="input-search"
+                    placeholder="Search for Movies, Events, Plays, Sports and Activities">
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body pt-0 mt-3">
+                <div class="container ">
+                  <!-- Tabs -->
+                  <ul class="nav nav-tabs border-0 mt-3" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="movies-tab" data-bs-toggle="tab" data-bs-target="#movies"
+                        type="button" role="tab">MOVIES</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="cinemas-tab" data-bs-toggle="tab" data-bs-target="#cinemas"
+                        type="button" role="tab">CINEMAS</button>
+                    </li>
+                    <li class="ms-auto d-flex  align-items-center  gap-3">
+                      <span class="me-2">Filter</span>
+
+                      <div class="language-filter border rounded filter-language pt-1 ps-2 pe-2 pb-1">HINDI</div>
+                      <div class="language-filter border rounded filter-language  pt-1 ps-2 pe-2 pb-1">GUJARATI</div>
+                      <div class="language-filter border rounded filter-language  pt-1 ps-2 pe-2 pb-1">ENGLISH</div>
+                      <div class="language-filter border rounded filter-language  pt-1 ps-2 pe-2 pb-1">TAMIL</div>
+                      <div class="language-filter border rounded filter-language  pt-1 ps-2 pe-2 pb-1">TELUGU</div>
+                      <div class="language-filter border rounded filter-language  pt-1 ps-2 pe-2 pb-1">MALAYALAM</div>
+                      <div class="language-filter border border-danger text-danger rounded  pt-1 ps-2 pe-2 pb-1">+ 4
+                        MORE</div>
+                    </li>
+                  </ul>
+
+                  <!-- Tab content -->
+                  <div class="tab-content my-3" id="myTabContent">
+                    <!-- Movies Tab -->
+                    <div class="tab-pane fade show active" id="movies" role="tabpanel" aria-labelledby="movies-tab">
+                      <div class="row">
+                        <!-- Hindi Movies -->
+                        <div class="col-md-3">
+                          <div class="movie-list">
+                            <h6 class="text-danger">HINDI</h6>
+
+                            <div class="movie-item">
+                              <div>A Minecraft Movie <span class="heart-icon">❤</span> <span
+                                  class="movie-rating">82%</span></div>
+                              <div>
+                                <span class="format-badge">3D</span>
+                                <!-- <span class="format-badge">4DX 3D</span> -->
+                                <span class="format-badge">2D</span>
+                              </div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Chhaava (UA16) <span class="heart-icon">❤</span> <span
+                                  class="movie-rating">92%</span></div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>IPL T20 2025 Live Screening-(GT VS DC) (Hindi) (U) <span class="badge-new">NEW</span>
+                              </div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>IPL T20 2025 Live Screening-(KKR VS GT) (Hindi) (U) <span
+                                  class="badge-new">NEW</span></div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Jaat (UA16) <span class="badge-new">NEW</span> <span class="heart-icon">❤</span>
+                                <span class="movie-rating">90%</span>
+                              </div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Kesari-chapter-2 <span class="badge-new">New</span> </div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>L2: Empuraan (Hindi) (UA16) <span class="heart-icon">❤</span> <span
+                                  class="movie-rating">80%</span></div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Love Aaj Kal (2009) (UA) <span class="heart-icon">❤</span> <span
+                                  class="movie-rating">89%</span></div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Odela (Hindi) (A) <span class="badge-new">New</span></div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Paddington in Peru <span class="badge-new">New</span></div>
+                              <div>
+                                <span class="format-badge">2D</span>
+                                <span class="format-badge">4DX</span>
+                              </div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Padmavaat (2D Hindi) (UA) <span class="heart-icon">❤</span> <span
+                                  class="movie-rating">86%</span></div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Sikandar (UA13) <span class="heart-icon">❤</span> <span
+                                  class="movie-rating">86%</span></div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Superboy of Malegoan (UA) <span class="heart-icon">❤</span> <span
+                                  class="movie-rating">86%</span></div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>The Diplomat (UA) <span class="heart-icon">❤</span> <span
+                                  class="movie-rating">86%</span></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Gujarati Movies -->
+                        <div class="col-md-3">
+                          <div class="movie-list">
+                            <div class="movie-item">
+                              <div>The Secret Of Devkaali (UA) <span class="badge-new">New</span></div>
+                            </div>
+                            <div class="movie-item">
+                              <div>Vicky Donar (UA) <span class="heart-icon">❤</span> <span
+                                  class="movie-rating">79%</span></div>
+                            </div>
+                            <div class="movie-item">
+                              <div>Window's Shadow (A) <span class="badge-new">New</span></div>
+                            </div>
+                            <h6 class="text-danger">GUJARATI</h6>
+
+                            <div class="movie-item">
+                              <div>All The Best Pandya (UA13) <span class="heart-icon">❤</span> <span
+                                  class="movie-rating">91%</span></div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Faati Ne? (UA16) <span class="heart-icon">❤</span> <span
+                                  class="movie-rating">92%</span></div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Jija Sala Jija (UA13) <span class="heart-icon">❤</span>
+                                <span class="movie-rating">86%</span>
+                              </div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Mithada Mehmaan (UA13) <span class="badge-new">New</span></div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Umbaro (UA13) <span class="heart-icon">❤</span>
+                                <span class="movie-rating">86%</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- English Movies -->
+                        <div class="col-md-3">
+                          <div class="movie-list">
+                            <h6 class="text-danger">ENGLISH</h6>
+
+                            <div class="movie-item">
+                              <div>Warfare <span class="badge-new">NEW</span> <span class="heart-icon">❤</span> <span
+                                  class="movie-rating">84%</span></div>
+                              <div>
+                                <span class="format-badge">IMAX 2D</span>
+                                <span class="format-badge">2D</span>
+                              </div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>A Minecraft Movie <span class="heart-icon">❤</span> <span
+                                  class="movie-rating">82%</span></div>
+                              <div>
+                                <span class="format-badge">3D</span>
+                                <span class="format-badge">IMAX 3D</span>
+                                <span class="format-badge">2D</span>
+                                <span class="format-badge">4DX 3D</span>
+                              </div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Black Bag (A) <span class="heart-icon">❤</span> <span class="movie-rating">74%</span>
+                              </div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Dog Man <span class="badge-new">NEW</span> <span class="heart-icon">❤</span> <span
+                                  class="movie-rating">88%</span></div>
+                              <div>
+                                <span class="format-badge">2D</span>
+                                <span class="format-badge">4DX</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Tamil and Telugu Movies -->
+                        <div class="col-md-3">
+                          <div class="movie-list">
+                            <h6 class="text-danger">TAMIL</h6>
+
+                            <div class="movie-item">
+                              <div>Good Bad Ugly (UA16) <span class="badge-new">NEW</span>
+                                <span class="heart-icon">❤</span> <span class="movie-rating">86%</span>
+                              </div>
+                            </div>
+
+                            <div class="movie-item">
+                              <div>Sachein (UA) <span class="heart-icon">❤</span> <span class="movie-rating">80%</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="movie-list">
+                            <h6 class="text-danger">TELUGU</h6>
+
+                            <div class="movie-item">
+                              <div>Odela 2 (A) <span class="badge-new">NEW</span></div>
+                            </div>
+                          </div>
+
+                          <div class="movie-list">
+                            <h6 class="text-danger">MALAYALAM</h6>
+
+                            <div class="movie-item">
+                              <div>Alappuzha Gymkhana (UA 7)<span class="badge-new">NEW</span><span
+                                  class="heart-icon">❤</span> <span class="movie-rating">84%</span></div>
+                            </div>
+                            <div class="movie-item">
+                              <div>Bazooka (UA 16)<span class="badge-new">NEW</span><span class="heart-icon">❤</span>
+                                <span class="movie-rating">73%</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="movie-list">
+                            <h6 class="text-danger">PUNJABI</h6>
+
+                            <div class="movie-item">
+                              <div>Akaal (UA 16) <span class="badge-new">NEW</span><span class="heart-icon">❤</span>
+                                <span class="movie-rating">73%</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="movie-list">
+                            <h6 class="text-danger">BENGALI</h6>
+
+                            <div class="movie-item">
+                              <div>Killbill Society (UA 16) <span class="badge-new">NEW</span><span
+                                  class="heart-icon">❤</span> <span class="movie-rating">74%</span></div>
+                            </div>
+                          </div>
+
+                          <div class="movie-list">
+                            <h6 class="text-danger">SINDHI</h6>
+
+                            <div class="movie-item">
+                              <div>Vardan 3 (UA)<span class="heart-icon">❤</span> <span class="movie-rating">100%</span>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                    <!-- Cinemas Tab -->
+                    <div class="tab-pane fade" id="cinemas" role="tabpanel" aria-labelledby="cinemas-tab">
+                      <div class="row mt-4">
+                        <div class="col-md-3">
+                          <ul class="cinema-list">
+                            <li>1.Newfangled Miniplex (Twin Seat): Mondeal Park</li>
+                            <li>2.Newfangled Miniplex (Twin Seat): Motera</li>
+                            <li>AB Miniplex: Shivranjini Cross Road, Satellite</li>
+                            <li>Apple Cinema: Bapunagar</li>
+                            <li>Apple Multiplex: Gota, Ahmedabad</li>
+                            <li>Apple Multiplex: Maninagar, Ahmedabad</li>
+                            <li>Banana Smartplex: SBR, Thaltej</li>
+                            <li>Cinepolis: Kankubag, Vastral, Ahmedabad</li>
+                            <li>Cinepolis: Nexus Ahmedabad One</li>
+                            <li>Cineprime Cinema: Nikol</li>
+                            <li>Cineworld Cinema: Naroda, Ahmedabad <span class="badge-new-cinema">NEW</span></li>
+                            <li>City Gold Satellite: Ahmedabad</li>
+                            <li>City Gold: Ashram Road</li>
+                            <li>City Gold: Bopal</li>
+                            <li>City Gold: Jivraj Park <span class="badge-new-cinema">NEW</span>
+                            </li>
+                            <li>City Gold: Motera</li>
+                            <li>City Gold: Vastral, Ahmedabad</li>
+                          </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                          <ul class="cinema-list">
+                            <li>City Pulse: Orient Miniplex, Ellisbridge</li>
+                            <li>Classic Cinema, Kudasan: Gandhinagar</li>
+                            <li>Connplex Cinemas (Luxuriance): SBR</li>
+                            <li>Connplex Cinemas (Luxuriance): Vaishnodevі</li>
+                            <li>Connplex Cinemas (Signature): Gandhinagar</li>
+                            <li>Connplex Cinemas (Signature): Gota</li>
+                            <li>Connplex Cinemas: Parimal</li>
+                            <li>Connplex Cinemas: Prahladnagar</li>
+                            <li>Connplex Cinemas: South Bopal</li>
+                            <li>Devi Multiplex: Naroda</li>
+                            <li>Drive In Cinema: Ahmedabad</li>
+                            <li>Havelock Cineflix Cinemas: Maninagar, Ahmedabad</li>
+                            <li>INOX: Himalaya Mall, Drive In Road, Ahmedabad</li>
+                            <li>K Sera Sera: Iskon Circle, SG Highway</li>
+                            <li>LHD Cinemas: Chandkheda</li>
+                            <li>Magic Cinema: YMCA Club</li>
+                            <li>Mango Plus Cinemas: Nikol</li>
+                          </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                          <ul class="cinema-list">
+                            <li>Miraj Cinemas Cine Pride: Krishna Nagar</li>
+                            <li>Miraj Cinemas: Shalin Square, Hathjian, Ahmedabad</li>
+                            <li>Miraj Cinemas: Vardhman Square, Sanand, Ahmedabad</li>
+                            <li>Miraj Cinemas: Vitthal Plaza, New Naroda</li>
+                            <li>Miraj City Pulse: Ahmedabad</li>
+                            <li>Mukta A2 Cinemas: Chandkheda</li>
+                            <li>Mukta A2 Cinemas: Rajyash, South Vasna, Ahmedabad</li>
+                            <li>Mukta A2 Cinemas: Ratnanjali Square Satellite</li>
+                            <li>Mukta A2 Cinemas: The Retail Park (TRP) Bopal</li>
+                            <li>Mukta A2 Shiv Cinema: Ahmedabad</li>
+                            <li>NY Cinemas: Chandkheda</li>
+                            <li>NY Cinemas: Swagat Mall</li>
+                            <li>Orange Cinemas: Bapunagar</li>
+                            <li>P Square Movieplex, Gota: Ahmedabad</li>
+                            <li>PVR: Acropolis, Ahmedabad</li>
+                            <li>PVR: Arved Transcube, Ahmedabad</li>
+                            <li>PVR: Motera, Ahmedabad</li>
+                          </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                          <ul class="cinema-list">
+                            <li>PVR: Palladium Mall, Ahmedabad</li>
+                            <li>PVR: Satyamev Emporio Odhav, Ahmedabad</li>
+                            <li>Rajhans Cinemas: Nikol</li>
+                            <li>Rajhans Cinemas: Satadhar</li>
+                            <li>Rajhans Cinemas: The CBD Mall, Zundal Circle</li>
+                            <li>Rajhans Cinemas: Vastral</li>
+                            <li>Revolution Multiplex, CTM: Ahmedabad</li>
+                            <li>Rupam Arth Cineplex: Sanand</li>
+                            <li>Rupam Multiplex: Ahmedabad</li>
+                            <li>SB Multiplex: Agora Mall</li>
+                            <li>SK Cinemas: Hathijan</li>
+                            <li>Sanelite Cinemas: Science City</li>
+                            <li>Savvy Swaraaj Miniplex: Gota, Ahmedabad</li>
+                            <li>The Cinestar Miniplex: Bhat Circle, SP Ring Road</li>
+                            <li>White Screen Cinema (Five 11): Gandhinagar</li>
+                            <li>Wide Angle: Ahmedabad</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Ahmedab.. &nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i>
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-center modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <form class="d-flex col-12 me-auto">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body text-danger">
+                <h6 class="pt-0"><i class="fa-solid fa-location-crosshairs fs-5"></i> &nbsp;&nbsp;Detect my location
+                </h6>
+              </div>
+              <hr>
+              <div class="Cities">
+                <p class="text-center fw-light">Popular Cities</p>
+
+                <div class="d-flex justify-content-evenly">
+                  <div class="col-1 ">
+                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt=""
+                      class="bwc__sc-ttnkwg-26 izPSOY">
+                    <p class="mx-2">Mumbai</p>
+                  </div>
+                  <div class="col-1">
+                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/ncr.png" alt=""
+                      class="bwc__sc-ttnkwg-26 izPSOY">
+                    <p class="mx-2">Delhi-NCR</p>
+                  </div>
+                  <div class="col-1">
+                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/bang.png" alt=""
+                      class="bwc__sc-ttnkwg-26 izPSOY">
+                    <p class="mx-2">Benglore</p>
+                  </div>
+                  <div class="col-1">
+                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/hyd.png" alt=""
+                      class="bwc__sc-ttnkwg-26 izPSOY">
+                    <p class="mx-2">Hydrabad</p>
+                  </div>
+                  <div class="col-1">
+                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/ahd-selected.png" alt=""
+                      class="bwc__sc-ttnkwg-26 izPSOY">
+                    <p class="mx-2">Ahmedabad</p>
+                  </div>
+                  <div class="col-1">
+                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/chd.png" alt=""
+                      class="bwc__sc-ttnkwg-26 izPSOY">
+                    <p class="mx-2">Chandigarh</p>
+                  </div>
+                  <div class="col-1">
+                    <img src="//in.bmscdn.com/m6/images/common-modules/regions/pune.png" alt=""
+                      class="bwc__sc-ttnkwg-26 izPSOY">
+                    <p class="mx-2">Pune</p>
+                  </div>
+                  <div class="col-1">
+                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/chen.png" alt=""
+                      class="bwc__sc-ttnkwg-26 izPSOY">
+                    <p class="mx-2">Chennai</p>
+                  </div>
+                  <div class="col-1">
+                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/kolk.png" alt=""
+                      class="bwc__sc-ttnkwg-26 izPSOY">
+                    <p class="mx-2">Kolkata</p>
+                  </div>
+                  <div class="col-1">
+                    <img src="https://in.bmscdn.com/m6/images/common-modules/regions/koch.png" alt=""
+                      class="bwc__sc-ttnkwg-26 izPSOY">
+                    <p class="mx-2">Kochi</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p class="text-danger m-auto">View All Cities</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sign in button trigger -->
+        <button class="sign-in-btn1" data-bs-toggle="modal" data-bs-target="#signInModal">Sign in</button>
+        <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title ms-auto pb-4 pt-4" id="signInModalLabel">Get Started</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body btn-size">
+                <div class="d-grid gap-4 ms-5 me-5">
+                  <!-- Google Sign In -->
+                  <button class="btn btn-outline-secondary position-relative text-start p-3">
+                    <img src="//in.bmscdn.com/webin/common/icons/googlelogo.svg" alt="Google logo"
+                      class="position-absolute start-3 top-50 translate-middle-y">
+                    <span class="text-center d-block">Continue with Google</span>
+                  </button>
+
+                  <!-- Email Sign In -->
+                  <button class="btn btn-outline-secondary position-relative text-start p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-envelope position-absolute start-3 top-50 translate-middle-y" viewBox="0 0 16 16">
+                      <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                    </svg>
+                    <span class="text-center d-block">Continue with Email</span>
+                  </button>
+
+                  <!-- Apple Sign In -->
+                  <button class="btn btn-outline-secondary position-relative text-start p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-apple position-absolute start-3 top-50 translate-middle-y" viewBox="0 0 16 16">
+                      <path
+                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                      <path
+                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                    </svg>
+                    <span class="text-center d-block">Continue with Apple</span>
+                  </button>
+
+                  <div class="text-center py-2">OR</div>
+
+                  <!-- Mobile Number Sign In -->
+                  <div class="input-group">
+                    <span class="input-group-text phone-number">
+                      <img src="https://in.bmscdn.com/webin/common/icons/indianflag.svg" alt="India flag" class="me-1">
+                      +91
+                    </span>
+                    <input type="text" class="form-control" placeholder="Continue with mobile number">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer justify-content-center pb-5">
+                <p class="mb-0">I agree to the <a href="#" class="text-secondary">Terms & Conditions</a> & <a href="#"
+                    class="text-secondary">Privacy Policy</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Menu Button Only MobilePhone -->
+        <button class="menu-btn ms-4 border-0 bg-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+          <i class="fas fa-bars b"></i>
+        </button>
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!-- Navbar Part-2 Start-->
+  <section>
+    <div class="bg-light py-0">
+      <div class="nav1 row d-flex mx-2 font-size h6">
+        <div class="div col-5 my-1 ">
+          <ul>
+            <li class="nav-item  data"><a class="nav-link" href="#">Movies<span class="sr-only"></a></li>
+            <li class="nav-item data"><a class="nav-link" href="#">Stream</a></li>
+            <li class="nav-item data"><a class="nav-link" href="#">Events</a></li>
+            <li class="nav-item data"><a class="nav-link" href="#">Plays</a></li>
+            <li class="nav-item data"><a class="nav-link" href="#">Sports</a></li>
+            <li class="nav-item data"><a class="nav-link" href="#">Activities</a></li>
+          </ul>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-4  my-2">
+          <ul>
+            <li class="nav-item data"><a class="nav-link" href="#">ListYourShow</a></li>
+            <li class="nav-item data"><a class="nav-link" href="#">Corporates</a></li>
+            <li class="nav-item data"><a class="nav-link" href="#">Offers</a></li>
+            <li class="nav-item data"><a class="nav-link" href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slider Part-1  -->
+  <div class="slider-part-1">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744877848242_revplaycard1240x300.jpg"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1746425644922_blockbustertuesdaydesktopcarousel.jpg"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1746179589892_summercampaignwebbanner.jpg"
+            class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Slider Part-2 -->
+
+  <!-- Top Recommended Movies -->
+
+  <div class="container my-5">
+    <p class="h3 mx-2">Recommended Movies</p>
+    <div id="top-muvie" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card-group ">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MjEzLjhLIExpa2Vz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00382745-kukdfygpww-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Raid 2</h5>
+                <p class="card-text">Drama/Thriller</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC4zLzEwICAxMi41SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00413426-mlbzvlurxy-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Thunderbolts*</h5>
+                <p class="card-text">Action/Adventure</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4zLzEwICA1NS45SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00439158-flhksfkatd-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kesari Chapter 2</h5>
+                <p class="card-text">Drama/Historical</p>
+              </div>
+            </div>
+
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny45LzEwICAxLjhLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00435722-zjxhjtytjh-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Bhootni</h5>
+                <p class="card-text">Comedy/Horror</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-NTMuNUsgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00434401-yymncubxjn-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bhool Chuk Maaf</h5>
+                <p class="card-text">Comedy/Drama</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card-group">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC45LzEwICA0OS42SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00410905-xlhtlqjgas-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">HIT: The Third Case</h5>
+                <p class="card-text">Crime/Mystery/Thriller</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC42LzEwICAySyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00439759-vzqdhuaggz-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ground Zero</h5>
+                <p class="card-text">Action/Historical/Thriller</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny42LzEwICAzOC44SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00426563-gunlswcbjb-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Retro</h5>
+                <p class="card-text">Action/Thriller</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC45LzEwICA0NSBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00437407-sjxvvjvvbp-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Shastra</h5>
+                <p class="card-text">Crime/Drama/Thriller</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ni43LzEwICAxLjNLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00438460-dfckrkjwlj-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mithada Maheman</h5>
+                <p class="card-text">Comedy/Drama</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#top-muvie" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#top-muvie" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+
+  <!--Book MyShow Stream   -->
+  <div class="container my-4">
+    <img
+      src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/stream-leadin-web-collection-202210241242.png"
+      class="card-img-top" alt="...">
+  </div>
+
+
+  <!-- The Best Of Live Events -->
+
+  <div class="container my-5">
+    <p class="h3 mx-2">The Best Of Live Events</p>
+    <div id="top-events" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card-group ">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NjUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/comedy-shows-collection-202211140440.png"
+                class="card-img-top rounded" alt="...">
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/amusement-parks-banner-desktop-collection-202503251132.png"
+                class="card-img-top rounded" alt="...">
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-OCBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/theatre-shows-collection-202211140440.png"
+                class="card-img-top rounded" alt="...">
+            </div>
+
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/kids-banner-desktop-collection-202503251132.png"
+                class="card-img-top rounded" alt="...">
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/music-shows-collection-202211140440.png"
+                class="card-img-top rounded" alt="...">
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card-group">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/music-shows-collection-202211140440.png"
+                class="card-img-top rounded" alt="...">
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/arts-crafts-collection-202211140440.png"
+                class="card-img-top rounded" alt="...">
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MjUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/workshop-and-more-web-collection-202211140440.png"
+                class="card-img-top rounded" alt="...">
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/interactive-games-collection-202211140440.png"
+                class="card-img-top rounded" alt="...">
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/dance-classes-collection-202211140440.png"
+                class="card-img-top rounded" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#top-events" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#top-events" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- PREMIERE -->
+  <section class="Premiere">
+    <div class="container">
+      <div class="watch-muvie">
+        <img alt="Offer-tv" width="100%" height="100px" class=" mt-3"
+          style=" opacity: 1; transition: 0.5s; width: 100%; "
+          src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-banner-web-collection-202208191200.png">
+      </div>
+      <h3 class="h3 mx-2 text-light">Premieres</h3>
+      <p class="text-light  mx-2 ">Brand new releases every Friday</p>
+      <div id="Premiere1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card-group">
+              <div class="card mx-2 border-0" style="background-color: rgb(43, 49, 72);">
+                <img
+                  src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00441277-rpezxmppcs-portrait.jpg"
+                  class="card-img-top rounded" alt="...">
+                <div class=" my-2 text-light">
+                  <h5 class="my-2 card-title">Red Carpet Premiere of Four On Eleven at Red Lorry Film Festival</h5>
+                  <p class=" my-2 card-text h6 text-light">Hinglish</p>
+                </div>
+
+              </div>
+
+              <div class="card mx-2 border-0" style="background-color: rgb(43, 49, 72);">
+                <img
+                  src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00410886-wmdpewrhnb-portrait.jpg"
+                  class="card-img-top rounded" alt="...">
+                <div class=" my-2 text-light">
+                  <h5 class="my-2 card-title">Conclave</h5>
+                  <p class=" my-2 card-text h6 text-light">English</p>
+                </div>
+
+              </div>
+
+              <div class="card mx-2 border-0" style="background-color: rgb(43, 49, 72);">
+                <img
+                  src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00430296-jxaaxuslzn-portrait.jpg"
+                  class="card-img-top rounded" alt="...">
+                <div class=" my-2 text-light">
+                  <h5 class="my-2 card-title">Cold Wallet</h5>
+                  <p class=" my-2 card-text h6 text-light">English</p>
+                </div>
+
+              </div>
+
+
+              <div class="card mx-2 border-0" style="background-color: rgb(43, 49, 72);">
+                <img
+                  src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00393649-ngnlpsfjwu-portrait.jpg"
+                  class="card-img-top rounded" alt="...">
+                <div class=" my-2 text-light">
+                  <h5 class="my-2 card-title">Sons</h5>
+                  <p class=" my-2 card-text h6 text-light">Danish</p>
+                </div>
+              </div>
+
+              <div class="card mx-2 border-0" style="background-color: rgb(43, 49, 72);">
+                <img
+                  src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_exclusive_v1.png,t-false,lfo-bottom_left,l-end/et00430332-lwetkeyfxa-portrait.jpg"
+                  class="card-img-top rounded" alt="...">
+                <div class=" my-2 text-light">
+                  <h5 class="my-2 card-title">The Monkey</h5>
+                  <p class=" my-2 card-text h6 text-light">English</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card-group">
+              <div class="card mx-2 border-0" style="background-color: rgb(43, 49, 72);">
+                <img
+                  src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00425724-prgbjguvza-portrait.jpg"
+                  class="card-img-top rounded" alt="...">
+                <div class=" my-2 text-light">
+                  <h5 class="my-2 card-title">Mukkam Post Devach Ghar</h5>
+                  <p class=" my-2 card-text h6 text-light">Marathi</p>
+                </div>
+
+              </div>
+
+              <div class="card mx-2 border-0" style="background-color: rgb(43, 49, 72);">
+                <img
+                  src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00441468-gbldafjaka-portrait.jpg"
+                  class="card-img-top rounded" alt="...">
+                <div class=" my-2 text-light">
+                  <h5 class="my-2 card-title">Red Lorry Film Festival: Take Two - Online</h5>
+                  <p class=" my-2 card-text h6 text-light">English</p>
+                </div>
+
+              </div>
+
+              <div class="card mx-2 border-0" style="background-color: rgb(43, 49, 72);">
+                <img
+                  src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00441979-upwefqlkdl-portrait.jpg"
+                  class="card-img-top rounded" alt="...">
+                <div class=" my-2 text-light">
+                  <h5 class="my-2 card-title">French Language Day Special - In collaboration...</h5>
+                  <p class=" my-2 card-text h6 text-light">Hinglish</p>
+                </div>
+
+              </div>
+
+              <div class="card mx-2 border-0" style="background-color: rgb(43, 49, 72);">
+                <img
+                  src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00441493-vlxalarznk-portrait.jpg"
+                  class="card-img-top rounded" alt="...">
+                <div class=" my-2 text-light">
+                  <h5 class="my-2 card-title">Love Season</h5>
+                  <p class=" my-2 card-text h6 text-light">Turkish</p>
+                </div>
+
+              </div>
+
+              <div class="card mx-2 border-0" style="background-color: rgb(43, 49, 72);">
+                <img
+                  src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00443951-mfsdrbyetr-portrait.jpg"
+                  class="card-img-top rounded" alt="...">
+                <div class=" my-2 text-light">
+                  <h5 class="my-2 card-title">Red Carpet Premiere of Four On Eleven at Red Lorry Film Festival</h5>
+                  <p class=" my-2 card-text h6 text-light">Hinglish</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#Premiere1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#Premiere1" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Your Music Studio -->
+
+  <div class="container my-5">
+    <p class="h3 mx-2">Your Music Studio</p>
+    <div id="top-music" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card-group ">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00437140-wcfjlylbqm-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Guns N' Roses:India 2025</h5>
+                <p class="card-text h6 text-secondary">Mahalaxmi Race Course:</p>
+                <p class="card-text h6 text-secondary">Mumbai</p>
+                <p class="card-text h6 text-secondary">Concerts</p>
+              </div>
+
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyOSBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00443215-xpnejksrwy-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Sachet Parampara - Raanjhan India Tour...</h5>
+                <p class="card-text h6 text-secondary">Venue To Be Announced:</p>
+                <p class="card-text h6 text-secondary">Ahmedabad</p>
+                <p class="card-text h6 text-secondary">Concert</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMiBKdWw%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00439804-mgvdadgvgh-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body ">
+                <h6 class="card-title">KUMAR SANU LIVE IN CONCERT - AHMEDABAD</h6>
+                <p class="card-text h6 text-secondary">The Forum - Celebration and</p>
+                <p class="card-text h6 text-secondary">Convention:Ahmedabad</p>
+                <p class="card-text h6 text-secondary">Concert</p>
+              </div>
+            </div>
+
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00440554-etfaejnrmk-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kirtidan Gadhvi & Sairam Dave LIVE</h5>
+                <p class="card-text h6 text-secondary">Sabarmati Riverfront Event</p>
+                <p class="card-text h6 text-secondary"> Centre: Ahmedabad</p>
+                <p class="card-text h6 text-secondary">Concerts</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCA3IEp1bg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442627-plrxcexxuf-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Taylor Swift : Cruel Summer Party Edition</h5>
+                <p class="card-text h6 text-secondary">Venue To Be Announced:</p>
+                <p class="card-text h6 text-secondary">Ahmedabad</p>
+                <p class="card-text h6 text-secondary">Club Gigs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card-group">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxNSBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00352052-fjcjjplhzk-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Rahgir: Kya Jaipur Kya Dilli Tour</h5>
+                <p class="card-text h6 text-secondary">Mehendi Navaz Jung Hall:</p>
+                <p class="card-text h6 text-secondary">Ahmedabad</p>
+                <p class="card-text h6 text-secondary">Concerts</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00443413-qhjbmjsaln-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Many Moods of Kishore Kumar - BHUSHAN AVSATTHI</h5>
+                <p class="card-text h6 text-secondary">Tagore Memorial Hall:</p>
+                <p class="card-text h6 text-secondary">Ahmedabad</p>
+                <p class="card-text h6 text-secondary">Concerts</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-V2VkLCAyOCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00444124-wbjclwasqc-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ishq Ke Saat Mauqaam - Sufi Night Ft. Munaf Luhar</h5>
+                <p class="card-text h6 text-secondary">HK Hall: Ahmedabad</p>
+                <p class="card-text h6 text-secondary">Concerts</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMSBNYXkgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00441367-yxgfgpxang-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">pool party - Aqva </h5>
+                <p class="card-text h6 text-secondary">Pleasure Club: Ahmedabad</p>
+                <p class="card-text h6 text-secondary">Club Gigs</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMSBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00444582-dmgaxhnrty-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">TakeOff: Bolly-Jazz Edition</h5>
+                <p class="card-text h6 text-secondary">Cafe Natarani: Ahmedabad</p>
+                <p class="card-text h6 text-secondary">Music Festivals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#top-music" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#top-music" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Outdoor Events -->
+
+
+  <div class="container my-5">
+    <p class="h3 mx-2">Outdoor Events</p>
+    <div id="outdoor-events" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card-group ">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-V2VkLCA3IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00441590-bztpqjdptv-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Paw Patrol Fest Comes To India!</h5>
+                <p class="card-text h6 text-secondary">Palladium Mall: Ahmedabad</p>
+              </div>
+
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00437140-wcfjlylbqm-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Guns N' Roses: India 2025</h5>
+                <p class="card-text h6 text-secondary">Mahalaxmi Race Course:</p>
+                <p class="card-text h6 text-secondary">Mumbai</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyMiBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00376688-mkejbrwbgr-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body ">
+                <h6 class="card-title">HUMARE RAM Ft Ashutosh Rana and Rahull R Bhuchar</h6>
+                <p class="card-text h6 text-secondary">Auda Auditorium: Shela</p>
+                <p class="card-text h6 text-secondary">Ahmedabad</p>
+              </div>
+            </div>
+
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCA4IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00308166-dwdwmxezgm-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Shankus Waterpark & Resort</h5>
+                <p class="card-text h6 text-secondary">Shanku`s Water Park:</p>
+                <p class="card-text h6 text-secondary">Mehsana</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCAxMyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00443198-jamrxzeers-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Gujarat Super League - Season 2 </h5>
+                <p class="card-text h6 text-secondary">EKA Arena by TransStadia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card-group">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCA5IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434753-fueqezyrut-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lucknow Super Giants v Royal Challengers Bengaluru</h5>
+                <p class="card-text h6 text-secondary">BRSABV EKANA CRICKET</p>
+                <p class="card-text h6 text-secondary">STADIUM: LUCKNOW</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-V2VkLCA3IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00440590-lvnduflkwm-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Olympian Circus - Ahmedabad</h5>
+                <p class="card-text h6 text-secondary">Thakorbhai Desai Hall:</p>
+                <p class="card-text h6 text-secondary">Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNiBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442326-fprsmcyngk-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Amit Khuva Show : Gujarati Standup Comedy</h5>
+                <p class="card-text h6 text-secondary">Mehendi Navaz Jung Hall:</p>
+                <p class="card-text h6 text-secondary">Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyMiBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00355125-zljecjjnjf-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kisi Ko Batana Mat Ft. Anubhav Singh Bassi </h5>
+                <p class="card-text h6 text-secondary">HK Hall: Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMyBKdWw%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00329412-dbdvwxsanp-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kal ki Chinta Nahi Karta ft. Ravi Gupta</h5>
+                <p class="card-text h6 text-secondary">HK Hall: Ahmedabad</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#outdoor-events" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#outdoor-events" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Laughter Therapy -->
+
+  <div class="container my-5">
+    <p class="h3 mx-2">Laughter Therapy</p>
+    <div id="therapy" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card-group ">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNiBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442326-fprsmcyngk-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Amit Khuva Show : Gujarati Standup Comedy</h5>
+                <p class="card-text h6 text-secondary">Mehendi Navaz Jung Hall:</p>
+                <p class="card-text h6 text-secondary"> Ahmedabad</p>
+              </div>
+
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxNSBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00408533-rkcwqhsqqm-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">PS - I Love You By Pranav Sharma</h5>
+                <p class="card-text h6 text-secondary">Mehendi Navaz Jung Hall:</p>
+                <p class="card-text h6 text-secondary">Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00440317-cqgdvwjjcj-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body ">
+                <h6 class="card-title">Weak Independent Woman by Sharon Verma</h6>
+                <p class="card-text h6 text-secondary">Mishty Studio: Ahmedabad</p>
+              </div>
+            </div>
+
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA4IEp1bg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00440583-nzpvymgsyl-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Freshers Party Ft. KulluE</h5>
+                <p class="card-text h6 text-secondary">Mehendi Navaz Jung Hall:</p>
+                <p class="card-text h6 text-secondary">Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyOSBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00439060-cwdqasfsqc-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Vipul Goyal Unleashed</h5>
+                <p class="card-text h6 text-secondary">HK Hall: Ahmedabad</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card-group">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCA5IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00411941-uvjqplnljh-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Midnight Comedy Show</h5>
+                <p class="card-text h6 text-secondary">Youcomedy Club:Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNCBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442758-mxjjytpkul-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Surendra Sharma Ki Char Linaa</h5>
+                <p class="card-text h6 text-secondary">TThakorbhai Desai Hall:</p>
+                <p class="card-text h6 text-secondary">Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00330133-tkxjjbxcrl-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ishq Ke Saat Mauqaam - Sufi Night Ft. Munaf Luhar</h5>
+                <p class="card-text h6 text-secondary">Youcomedy Club: Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNSBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00443913-abpddjhnkj-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Banger Issues ft. Kaustubh Agrawal</h5>
+                <p class="card-text h6 text-secondary">Mishty Studio: Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCA3IEp1bg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00389543-xynetqhyms-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Rajat Chauhan Live</h5>
+                <p class="card-text h6 text-secondary">Mehendi Navaz Jung Hall: Ahmedabad</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#therapy" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#therapy" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- The Latest Plays -->
+
+  <div class="container my-5">
+    <p class="h3 mx-2">The Latest Plays</p>
+    <div id="latest-plays" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card-group ">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA4IEp1bg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00097688-sdavlbmvef-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chanakya - Hindi Play</h5>
+                <p class="card-text h6 text-secondary">Hindi</p>
+              </div>
+
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNSBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00376718-mlvtgttgwt-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Welcome Zindagi - Ahmedabad </h5>
+                <p class="card-text h6 text-secondary">Gujarati</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxIEp1bg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00387309-tbkfyshqhm-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Chikka on Roll</h5>
+                <p class="card-text h6 text-secondary">Hindi</p>
+              </div>
+            </div>
+
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA4IEp1bg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00433177-xesganhkwr-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">OH WOMANIYA</h5>
+                <p class="card-text h6 text-secondary">Gujarati</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442981-prmuhrapng-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Arush - stories of peace </h5>
+                <p class="card-text h6 text-secondary">Gujarati</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card-group">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCA5IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00443124-szmtxxcayl-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jar Tar Chi Goshta</h5>
+                <p class="card-text h6 text-secondary">Marathi</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxOCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00443773-jezwtrgntj-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ankahee - A silent play </h5>
+                <p class="card-text h6 text-secondary">Hindi</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00432289-rllarabuhd-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Perfect Closure by Hitesh Anandani </h5>
+                <p class="card-text h6 text-secondary">Hindi/Hinglish</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00444096-zzjabutrpw-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jayshree Krishna Darling</h5>
+                <p class="card-text h6 text-secondary">Gujarati</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyMiBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00376688-mkejbrwbgr-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">HUMARE RAM Ft Ashutosh Rana and Rahull R Bhuchar</h5>
+                <p class="card-text h6 text-secondary">Hindi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#latest-plays" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#latest-plays" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Top Games & Sports Events -->
+
+  <div class="container my-5">
+    <p class="h3 mx-2">Top Games & Sports Events</p>
+    <div id="sports-events" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card-group ">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNiBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-image,i-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,lx-15,ly-15,w-50,l-end/et00434722-xruapnrqzy-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">RAJASTHAN ROYALS - JAIPUR</h5>
+                <p class="card-text h6 text-secondary">Multiple Venues</p>
+              </div>
+
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNiBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00437302-njaqpdsxcu-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">RAJASTHAN ROYALS VS PUNJAB KINGS</h5>
+                <p class="card-text h6 text-secondary">SAWAI MANSINGH STADIUM, JAIPUR</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMSBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00443966-smqxdtsxgt-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">ACC Online Chess Arena Tournament </h5>
+                <p class="card-text h6 text-secondary">Your Place and Your Time:</p>
+                <p class="card-text h6 text-secondary">Ahmedabad</p>
+              </div>
+            </div>
+
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMSBNYXkgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434746-vhlprzwgsr-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">MILES OF GLORY 2025 MARATHON RUN</h5>
+                <p class="card-text h6 text-secondary">Your Place and Your Time:</p>
+                <p class="card-text h6 text-secondary">India</p>
+
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxIEp1bg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442137-cqyhmwucew-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chess Championship (Online) For All Age</h5>
+                <p class="card-text h6 text-secondary">Your Place and Your Time:</p>
+                <p class="card-text h6 text-secondary">India</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card-group">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCA4IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00438641-btnjgzfxxk-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mahakumbh Year 2025 Marathon </h5>
+                <p class="card-text h6 text-secondary">Your Place and Your Time:</p>
+                <p class="card-text h6 text-secondary">India</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxOCBNYXkgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00441717-qcupjatqxe-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chess Tournament (online)</h5>
+                <p class="card-text h6 text-secondary">Your Place and Your Time:</p>
+                <p class="card-text h6 text-secondary">Pune</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxOCBNYXkgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00426930-ugzbxtpfqm-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Infinity Chess Championship </h5>
+                <p class="card-text h6 text-secondary">Your Place and Your Time:</p>
+                <p class="card-text h6 text-secondary"> India</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxIEp1bg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00437573-camtqljxgk-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Free Under 17 Chess Summer Camp</h5>
+                <p class="card-text h6 text-secondary">Your Place and Your Time:</p>
+                <p class="card-text h6 text-secondary"> India</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxOCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00443597-svmsfkjngx-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Online chess tournament - Kids Special</h5>
+                <p class="card-text h6 text-secondary">Your Place and Your Time:</p>
+                <p class="card-text h6 text-secondary"> India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#sports-events" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#sports-events" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Popular Events -->
+
+  <div class="container my-5">
+    <p class="h3 mx-2">Popular Events</p>
+    <div id="popular-events" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card-group ">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMSBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00349259-fvdhgfcchu-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mohabbat Zindabaad by Jai Singh</h5>
+                <p class="card-text h6 text-secondary">HK Hall: Ahmedabad</p>
+              </div>
+
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00441194-cuuusxfqqa-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Tum, Main aur Ishq - Ashish Bagrecha</h5>
+                <p class="card-text h6 text-secondary">Dinesh Hall: Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxOCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00403009-jcudjzccpm-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Psycho Shayar live</h5>
+                <p class="card-text h6 text-secondary">Mishty Studio: Ahmedabad</p>
+              </div>
+            </div>
+
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNSBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00441272-zxdwurhwvs-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Moral Of The Story - Yahya Bootwala</h5>
+                <p class="card-text h6 text-secondary">Natrang Studio: Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAyMyBNYXkgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00440423-sgdcfblygt-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Flavors Of Ahmedabad</h5>
+                <p class="card-text h6 text-secondary">Vrundavan Premium Lawn:</p>
+                <p class="card-text h6 text-secondary">Ahmedabad</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card-group">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNyBKdWw%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00358468-bzxrvrncje-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Gaurav Gupta Live - India Tour</h5>
+                <p class="card-text h6 text-secondary">Your Place and Your Time:</p>
+                <p class="card-text h6 text-secondary">India</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMSBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00394363-bbptuztjxd-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Rough Pages - A Stand Up Comedy Show </h5>
+                <p class="card-text h6 text-secondary">Art house India: Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCA5IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00429894-kldpkypgyp-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">DARK JOKES</h5>
+                <p class="card-text h6 text-secondary">The Chocolate Room Judges</p>
+                <p class="card-text h6 text-secondary">Bunglow: Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMSBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00406889-cttcdnqcup-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Burgo Comedy - Stand Up Comedy Show</h5>
+                <p class="card-text h6 text-secondary">Burgonomics: Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCA5IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00439796-pbmvnuawbm-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">MANGO MADNESS - Friday Standup</h5>
+                <p class="card-text h6 text-secondary">The Fruitlab: Ahmedabad</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#popular-events" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#popular-events" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Explore Fun Activities -->
+
+  <div class="container my-5">
+    <p class="h3 mx-2">Explore Fun Activities</p>
+    <div id="fun-activities" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card-group ">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMSBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00443543-gldbxjghta-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">VibeHub Social Mini Fest - Singles' Edition</h5>
+                <p class="card-text h6 text-secondary">Big Scoop Cafe: Ahmedabad</p>
+              </div>
+
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCA4IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00367834-rwwdfqmhsm-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">AKSHAR RIVER CRUISE</h5>
+                <p class="card-text h6 text-secondary">Sabarmati Riverfront: </p>
+                <p class="card-text h6 text-secondary">Ahmedabad</p>
+
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCA4IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00388297-zwmvlyfmfg-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Statue of Belief</h5>
+                <p class="card-text h6 text-secondary">Statue Of Belief : Nathdwara</p>
+              </div>
+            </div>
+
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCA5IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00312631-vancsbfzsm-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mystery Rooms - Ahmedabad</h5>
+                <p class="card-text h6 text-secondary">Mystery Rooms: Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNSBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00427573-xrvgjhufet-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Swiftie Showdown: The Ultimate Taylor Swift Quiz</h5>
+                <p class="card-text h6 text-secondary">Crazy Plant Lady Cafe-</p>
+                <p class="card-text h6 text-secondary">Plant Store: Ahmedabad</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card-group">
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxIEp1bg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00417802-zebagydagn-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Schitt's Creek Trivia Night</h5>
+                <p class="card-text h6 text-secondary">Crazy Plant Lady Cafe-</p>
+                <p class="card-text h6 text-secondary">Plant Store: Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxOSBTZXAgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00444121-cjekuyjsyh-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">VRINDAVAN NAGARI </h5>
+                <p class="card-text h6 text-secondary">Shree Hari Party Plot:</p>
+                <p class="card-text h6 text-secondary">Ahmedabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCA4IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442057-pglhcbtfnp-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Escape Zone - Ahmedabad</h5>
+                <p class="card-text h6 text-secondary">Escape Zone: Ahemdabad</p>
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCA4IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00308166-dwdwmxezgm-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Shankus Waterpark & Resort</h5>
+                <p class="card-text h6 text-secondary">Shanku`s Water Park:</p>
+                <p class="card-text h6 text-secondary">Mehsana</p>
+
+              </div>
+            </div>
+
+            <div class="card mx-2 border-0">
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00414566-ayyysfckdy-portrait.jpg"
+                class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Office Trivia Night</h5>
+                <p class="card-text h6 text-secondary">Crazy Plant Lady Cafe-</p>
+                <p class="card-text h6 text-secondary">Plant Store: Ahmedabad</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#fun-activities" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#fun-activities" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <p class=" h3 mx-2">Trending Searches Right Now</p>
+    <div class="row  gap-3 mx-2">
+      <div class="col p-2 border color-box">
+        <p class="text-danger h6 m-2">Raid 2 <br><span class="text-secondary">Muvies</span></p>
+      </div>
+      <div class="col-2 p-2 border">
+        <p class="text-danger h6 m-2">Shinchan:Our Dinosaur Diary<br> <span class="text-secondary  h6">Muvies</span></p>
+      </div>
+      <div class="col-3 p-2 border">
+        <p class="text-danger h6 m-2">Final Destination Bloodlines<br> <span class="text-secondary">Muvies</span></p>
+      </div>
+      <div class="col-2  p-2 border">
+        <p class="text-danger h6  m-2">Thunderbolts*<br> <span class="text-secondary">Muvies</span></p>
+      </div>
+      <div class="col-3 p-2 border">
+        <p class="text-danger h6 m-2">LUCKNOW SUPER GIANTS - IPL 2025 <span class="text-secondary">Sports</span></p>
+      </div>
+      <div class="col-4 p-2 border">
+        <p class="text-danger h6 m-2">Kesari Chapter 2: The Untold Story of Jallianwala Bagh <span
+            class="text-secondary">Muvies</span></p>
+      </div>
+      <div class="col-2 p-2 border">
+        <p class="text-danger h6 m-2">HIT: The Third Case <span class="text-secondary">Movies</span></p>
+      </div>
+      <div class="col-1 p-2 border">
+        <p class="text-danger h6 m-2">Sinners <span class="text-secondary">Muvies</span></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Website Footer Part  -->
+  <footer>
+    <div class="data1">
+      <div class="container d-flex align-items-center p-3">
+        <img src="https://in.bmscdn.com/webin/common/icons/hut.svg" alt="">
+        <div class="text-light fw-bold fs-6 mx-3">List Your Show</div>
+        <div class="text-light">Got a show, event, activity or a great experience? Partner with us &amp; get listed on
+          BookMyShow</div>
+        <div class="btn text-light bg-danger fs-6 btn-space btn-outline-danger">Contact Today!</div>
+      </div>
+    </div>
+    <div class="div" style="background: #404042;">
+      <div class="container d-flex justify-content-evenly py-4 ">
+        <div id="iconbox" class="container w-50">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 102 102" id="icon-callcenter"class="" width="50px"
+            height="50px">
+            <path
+              d="M68.8 29.4c0-10.4-8.4-18.8-18.8-18.8S31.2 19 31.2 29.4 39.6 48.2 50 48.2s18.8-8.4 18.8-18.8zm-35.8 0c0-9.3 7.6-17 17-17 9.3 0 17 7.6 17 17 0 9.3-7.6 17-17 17-9.3 0-17-7.6-17-17z">
+            </path>
+            <path
+              d="M24 30.3c.5 0 .9-.4.9-.9C24.9 15.6 36.2 4.3 50 4.3s25.1 11.3 25.1 25.1c0 13.1-10.5 28.3-24.2 29v-3.9c0-.5-.4-.9-.9-.9s-.9.4-.9.9v8.6c0 .5.4.9.9.9s.9-.4.9-.9v-2.9c14.7-.7 26-16.8 26-30.8C76.9 14.6 64.8 2.5 50 2.5S23.1 14.6 23.1 29.4c0 .5.4.9.9.9z">
+            </path>
+            <path
+              d="M68.1 63c-.6-.2-1.2-.3-1.9-.3-.9 0-2.3.7-4.9 2.1-3.2 1.7-7.7 4-10.6 4-3.2 0-8-2.3-11.5-4-2.8-1.3-4.3-2-5.3-2-.7 0-1.3.1-1.9.3C16.7 68.2 11.2 86 11.2 96.7c0 .5.4.9.9.9H88c.5 0 .9-.4.9-.9 0-10.8-5.6-28.6-20.8-33.7zM13 95.7c.3-12.1 7.2-26.8 19.6-30.9.4-.1.8-.2 1.3-.2.6 0 2.7 1 4.5 1.9 3.9 1.9 8.7 4.2 12.3 4.2 3.3 0 7.8-2.3 11.4-4.2 1.6-.8 3.6-1.9 4.1-1.9s.9.1 1.3.2C79.9 68.9 86.7 83.6 87 95.7H13zm3.6-55.3c.5 0 .9-.4.9-.9V26.3c0-.5-.4-.9-.9-.9s-.9.4-.9.9v13.2c0 .5.4.9.9.9zm66.8 0c.5 0 .9-.4.9-.9V26.3c0-.5-.4-.9-.9-.9s-.9.4-.9.9v13.2c-.1.5.4.9.9.9z">
+            </path>
+          </svg>
+          <div class="text-data">24/7 CUSTOMER CARE</div>
+        </div>
+
+        <div id="iconbox" class="container w-50">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 102 102" id="icon-callcenter" width="50px"
+            height="50px">
+
+            <path
+              d="M92.1 69l-5.6-13.9a1 1 0 0 0-1.1-.5c-1.9.8-4.1-.2-4.8-2.1-.4-.9-.4-1.9 0-2.8.4-.9 1.1-1.6 2-2 .2-.1.4-.2.5-.4s.1-.4 0-.6l-5.6-13.9a1 1 0 0 0-1.1-.5L61 38.5l9-20.9c.2-.4 0-.9-.4-1.1L57 11.1c-.4-.2-.9 0-1.1.4a3.3 3.3 0 0 1-4.3 1.8c-.8-.3-1.4-1-1.8-1.8-.3-.8-.3-1.7 0-2.5.1-.2.1-.4 0-.6-.1-.2-.2-.4-.4-.5L36.8 2.6c-.4-.2-.9 0-1.1.4L12.3 58.2l-3.9 1.5c-.2.2-.4.3-.4.5-.1.2-.1.4 0 .6l5.6 13.9c.2.4.7.6 1.1.5 1.9-.7 4.1.2 4.8 2 .4.9.4 1.9 0 2.8s-1.1 1.6-2 2c-.2.1-.4.2-.5.4-.1.2-.1.4 0 .6l5.4 14c.1.2.2.4.4.5.1 0 .2.1.3.1.1 0 .2 0 .3-.1l68.1-27.3c.5-.2.7-.7.6-1.2zM36.9 4.4L48 9.1c-.2 1-.2 2 .2 3 .5 1.2 1.4 2.2 2.7 2.7 2.3 1 4.8.1 6.1-1.9l11.1 4.7-9.3 21.8-4.7 1.9L59 30.2l2.5-5.8c.1-.2.1-.4 0-.6s-.2-.4-.4-.5L38 13.5c-.2-.1-.4-.1-.6 0-.2.1-.4.2-.5.4L19.1 55.5l-4.7 1.9 22.5-53zm-1.4 16.7l.8.3c.1 0 .2.1.3.1.3 0 .6-.2.8-.5.2-.4 0-.9-.4-1.1l-.8-.3 1.8-4.3 21.6 9.2-1.8 4.3-.8-.4c-.4-.2-.9 0-1.1.4-.2.4 0 .9.4 1.1l.8.3-5.1 12-30.7 12.4 14.2-33.5zM23.7 95.6l-5-12.4c1-.6 1.7-1.4 2.2-2.5.6-1.3.6-2.8 0-4.1-.8-2-2.8-3.4-5-3.4-.4 0-.8 0-1.2.1L9.8 61l66.5-26.7 5 12.4c-1 .6-1.7 1.4-2.2 2.5a4.9 4.9 0 0 0 0 4.1c.8 2 2.8 3.4 5 3.4.4 0 .8 0 1.2-.1l5 12.4-66.6 26.6z">
+            </path>
+            <path
+              d="M70 42.1c-.1-.2-.2-.4-.4-.5-.2-.1-.4-.1-.6 0L20.2 61.2a1 1 0 0 0-.5 1.1L30 87.8c.1.2.2.4.4.5.1 0 .2.1.3.1.1 0 .2 0 .3-.1l42.3-17 6.4-2.6c.4-.2.6-.7.5-1.1L70 42.1zm3.5 27.3l-.3-.8a1 1 0 0 0-1.1-.5 1 1 0 0 0-.5 1.1l.4.8-34.2 13.7-.3-.7a1 1 0 0 0-1.1-.5 1 1 0 0 0-.5 1.1l.3.8-5.1 2-9.6-23.9 5.1-2 .3.8c.1.3.4.5.8.5.1 0 .2 0 .3-.1.4-.2.6-.7.5-1.1l-.3-.8 34.1-13.7.3.8c.1.3.4.5.8.5.1 0 .2 0 .3-.1.4-.2.6-.7.5-1.1l-.3-.8 4.9-2 9.6 23.9-4.9 2.1z">
+            </path>
+            <path
+              d="M30.6 65.7c-.2-.4-.7-.6-1.1-.5s-.6.7-.5 1.1l1.4 3.4c.1.3.4.5.8.5.1 0 .2 0 .3-.1.4-.2.6-.7.5-1.1l-1.4-3.3zm3.5 8.6a1 1 0 0 0-1.1-.5 1 1 0 0 0-.5 1.1l1.4 3.4c.1.3.4.5.8.5.1 0 .2 0 .3-.1.4-.2.6-.7.5-1.1l-1.4-3.3zm32.2-22.9a1 1 0 0 0-1.1-.5 1 1 0 0 0-.5 1.1l1.4 3.4c.1.3.4.5.8.5.1 0 .2 0 .3-.1.4-.2.6-.7.5-1.1l-1.4-3.3zm1.9 9.3l1.4 3.4c.1.3.4.5.8.5.1 0 .2 0 .3-.1.4-.2.6-.7.5-1.1L69.7 60a1 1 0 0 0-1.1-.5c-.4.2-.6.7-.4 1.2zm-19.5-34l3.1 1.3c.1 0 .2.1.3.1.3 0 .6-.2.8-.5.2-.4 0-.9-.4-1.1l-3.1-1.3c-.4-.2-.9 0-1.1.4-.3.4-.1.9.4 1.1zm-7.8-3.3l3.1 1.3c.1 0 .2.1.3.1.3 0 .6-.2.8-.5.2-.4 0-.9-.4-1.1l-3.1-1.3c-.4-.2-.9 0-1.1.4-.2.4 0 .9.4 1.1zm13.4 41.4c-.5 0-.8.4-.8.8 0 2.4-2 4.4-4.4 4.4s-4.4-2-4.4-4.4c0-2.3 1.9-4.2 4.2-4.3l-1.6 2.3c-.3.4-.2.9.2 1.2.1.1.3.1.5.1.3 0 .5-.1.7-.4l2.6-3.7c.3-.4.2-.9-.2-1.1L47.5 57c-.4-.3-.9-.2-1.2.2s-.2.9.2 1.2l1.9 1.4c-3 .3-5.4 2.9-5.4 5.9 0 3.3 2.7 6 6 6s6-2.7 6-6c.1-.5-.3-.9-.7-.9z">
+            </path>
+          </svg>
+          <div class="text-data">RESEND BOOKING CONFIRMATION</div>
+        </div>
+        <div id="iconbox" class="container w-50">
+          <svg xmlns="http://www.w3.org/2000/svg" id="icon-newsletter" viewBox="-1 -1 102 102" width="50px" height="50px">
+            <g id="elnewsletter">
+              <path class="elst0"
+                d="M97.5 90.3V33.6c0-.5-.4-1-1-1H82.9V9.8c0-.5-.4-1-1-1H18.1a1 1 0 0 0-1 1v22.8H3.5a1 1 0 0 0-1 1v56.9c0 .1.1.1.1.2v.1c0 .1.1.1.2.1.1.1.2.1.2.1.1 0 .1 0 .2.1h93.4c.1 0 .3 0 .4-.1 0 0 .1 0 .1-.1.1-.1.2-.1.2-.2v-.1c0-.1.1-.1.1-.2.1 0 .1 0 .1-.1zm-1.9-55.7v53.6L63.9 64.1l18.6-17.7 7.7-7.4c.3-.3.4-.7.2-1.1-.1-.4-.5-.6-.9-.6h-6.8v-2.7h12.9zM50.2 56.1l43.4 33.1H6.4l43.8-33.1zm32.7-16.8h4.4l-4.4 4.1v-4.1zM19.1 10.8h61.8v34.5L62.4 62.9l-11.6-8.8c-.3-.3-.8-.3-1.2 0L37.8 63 19.1 45.3V10.8zm-2 32.6l-4.4-4.1h4.4v4.1zm0-8.8v2.7h-6.8c-.4 0-.8.2-.9.6-.1.4-.1.8.2 1.1l26.5 25.2-31.8 24V34.6h12.8z">
+              </path>
+              <path class="elst0"
+                d="M28.9 22.5h42.7a1 1 0 0 0 0-2H28.9c-.5 0-1 .4-1 1s.4 1 1 1zm0 10h42.7a1 1 0 0 0 0-2H28.9a1 1 0 0 0 0 2zm0 9.9h42.7a1 1 0 0 0 0-2H28.9c-.5 0-1 .4-1 1s.4 1 1 1z">
+              </path>
+            </g>
+          </svg>
+          <div class="text-data">SUBSCRIBE TO THE NEWSLATTER</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="div" style="background-color: #373739;">
+      <div class="container ">
+        <h6 class="pt-5 fw-bold footer-style ">MOVIES NOW SHOWING IN AHMEDABAD</h6>
+        <p class="text-light" style="font-size: 12px;">
+          <a href="#" class="data">Raid 2</a> |
+          <a href="#" class="data">Jai Mata Ji - Let's Rock</a> |
+          <a href="#" class="data">Thunderbolts*</a> |
+          <a href="#" class="data">Kesari Chapter 2: The Untold Story of Jallianwala Bagh</a> |
+          <a href="#" class="data">The Bhootnii</a> |
+          <a href="#" class="data">HIT: The Third Case</a> |
+          <a href="#" class="data">Jaat</a> |
+          <a href="#" class="data">Phule</a> |
+          <a href="#" class="data">Auntypreneur</a> |
+          <a href="#" class="data">Shinchan: Our Dinosaur Diary</a>
+        </p>
+      </div>
+      <div class="container">
+        <h6 class="pt-3 fw-bold footer-style">UPCOMING MUVIES IN AHMEDABAD</h6>
+        <p class="text-light" style="font-size: 12px;">
+          <a href="#" class="data">IPL T20 2025 Live Screening-(SRH VS KKR)</a> |
+          <a href="#" class="data">Live Comedy Podcast - Audiomatics Our Last Week</a> |
+          <a href="#" class="data">Mahabali 1980s</a> |
+          <a href="#" class="data">IPL T20 2025 Live Screening-(PBKS VS MI)</a> |
+          <a href="#" class="data">IPL T20 2025 Live Screening-(CSK VS RR)</a> |
+          <a href="#" class="data">IPL T20 2025 Live Screening-(RCB VS SRH)</a> |
+          <a href="#" class="data">IPL T20 2025 Live Screening-(GT VS LSG)</a> |
+          <a href="#" class="data">Rhythm</a> |
+          <a href="#" class="data">Final Destination Bloodlines</a> |
+          <a href="#" class="data">IPL T20 2025 Live Screening-(MI VS DC)</a>
+        </p>
+      </div>
+      <div class="container">
+        <h6 class="pt-3 fw-bold  footer-style">MOVIES BY GENRE</h6>
+        <p class="text-light" style="font-size: 12px;">
+          <a href="#" class="data">Drama Movies</a> |
+          <a href="#" class="data">Comedy Movies</a> |
+          <a href="#" class="data">Thriller Movies</a> |
+          <a href="#" class="data">Family Movies</a> |
+          <a href="#" class="data">Action Movies</a> |
+          <a href="#" class="data">Horror Movies</a> |
+          <a href="#" class="data">Adventure Movies</a> |
+          <a href="#" class="data">Romantic Movies</a> |
+          <a href="#" class="data">Historical Movies</a> |
+          <a href="#" class="data">Fantasy Movies</a>
+        </p>
+      </div>
+      <div class="container">
+        <h6 class="pt-3 fw-bold  footer-style">SPORTS EVENTS IN AHMEDABAD</h6>
+        <p class="text-light" style="font-size: 12px;">
+          <a href="#" class="data">Running</a> |
+          <a href="#" class="data">Chess</a> |
+          <a href="#" class="data">Cricket</a> |
+          <a href="#" class="data">Cycling</a> |
+          <a href="#" class="data">Walking</a> |
+          <a href="#" class="data">Mixed Martial Arts</a> |
+          <a href="#" class="data">Horse Race</a> |
+          <a href="#" class="data">Shooting</a> |
+          <a href="#" class="data">Wrestling</a> |
+          <a href="#" class="data">Judo</a>
+        </p>
+      </div>
+      <div class="container">
+        <h6 class="pt-3 fw-bold  footer-style">EVENTS IN TOP CITIES</h6>
+        <p class="text-light" style="font-size: 12px;">
+          <a href="#" class="data">Events in Mumbai</a> |
+          <a href="#" class="data">Events in Delhi-NCR</a> |
+          <a href="#" class="data">Events in Chennai</a> |
+          <a href="#" class="data">Events in Bengaluru</a> |
+          <a href="#" class="data">Events in Hyderabad</a> |
+          <a href="#" class="data">Events in Pune</a> |
+          <a href="#" class="data">Events in Ahmedabad</a> |
+          <a href="#" class="data">Events in Kolkata</a> |
+          <a href="#" class="data">Events in Kochi</a>
+        </p>
+      </div>
+      <div class="container">
+        <h6 class="pt-3 fw-bold  footer-style">CINEMAS IN TOP CITIES</h6>
+        <p class="text-light" style="font-size: 12px;">
+          <a href="#" class="data">Cinemas in Mumbai</a> |
+          <a href="#" class="data">Cinemas in Delhi-NCR</a> |
+          <a href="#" class="data">Cinemas in Chennai</a> |
+          <a href="#" class="data">Cinemas in Bengaluru</a> |
+          <a href="#" class="data">Cinemas in Hyderabad</a> |
+          <a href="#" class="data">Cinemas in Pune</a> |
+          <a href="#" class="data">Cinemas in Ahmedabad</a> |
+          <a href="#" class="data">Cinemas in Kolkata</a> |
+          <a href="#" class="data">Cinemas in Kochi</a>
+        </p>
+      </div>
+      <div class="container">
+        <h6 class="pt-3 fw-bold  footer-style">PLAYS IN TOP CITIES</h6>
+        <p class="text-light" style="font-size: 12px;">
+          <a href="#" class="data">Plays in Mumbai</a> |
+          <a href="#" class="data">Plays in Delhi-NCR</a> |
+          <a href="#" class="data">Plays in Chennai</a> |
+          <a href="#" class="data">Plays in Bengaluru</a> |
+          <a href="#" class="data">Plays in Hyderabad</a> |
+          <a href="#" class="data">Plays in Pune</a> |
+          <a href="#" class="data">Plays in Ahmedabad</a> |
+          <a href="#" class="data">Plays in Kolkata</a> |
+          <a href="#" class="data">Plays in Kochi</a>
+        </p>
+      </div>
+      <div class="container">
+        <h6 class="pt-3 fw-bold  footer-style">ACTIVITIES IN TOP CITIES</h6>
+        <p class="text-light" style="font-size: 12px;">
+          <a href="#" class="data">Activities in Mumbai</a> |
+          <a href="#" class="data">Activities in Delhi-NCR</a> |
+          <a href="#" class="data">Activities in Chennai</a> |
+          <a href="#" class="data">Activities in Bengaluru</a> |
+          <a href="#" class="data">Activities in Hyderabad</a> |
+          <a href="#" class="data">Activities in Pune</a> |
+          <a href="#" class="data">Activities in Ahmedabad</a> |
+          <a href="#" class="data">Activities in Kolkata</a> |
+          <a href="#" class="data">Activities in Kochi</a>
+        </p>
+      </div>
+      <div class="container">
+        <h6 class="pt-3 fw-bold  footer-style">MOVIES NOW SHOWING (GENERAL)</h6>
+        <p class="text-light" style="font-size: 12px;">
+          <a href="#" class="data">Raid 2</a> |
+          <a href="#" class="data">Thunderbolts*</a> |
+          <a href="#" class="data">The Bhootnii</a> |
+          <a href="#" class="data">Kesari Chapter 2: The Untold Story Of Jallianwala Bagh</a> |
+          <a href="#" class="data">Retro</a> |
+          <a href="#" class="data">Tourist Family</a> |
+          <a href="#" class="data">Thudarum</a> |
+          <a href="#" class="data">Gulkand</a> |
+          <a href="#" class="data">Ata Thambaycha Naay</a>
+        </p>
+      </div>
+      <div class="container">
+        <h6 class="pt-3 fw-bold  footer-style">COUNTRIES</h6>
+        <p class="text-light" style="font-size: 12px;">
+          <a href="#" class="data">Indonesia</a> |
+          <a href="#" class="data">Singapore</a> |
+          <a href="#" class="data">UAE</a> |
+          <a href="#" class="data">Sri Lanka</a> |
+          <a href="#" class="data">West Indies</a>
+        </p>
+      </div>
+      <div class="container">
+        <h6 class="pt-3 fw-bold  footer-style">HELP</h6>
+        <p class="text-light" style="font-size: 12px;">
+          <a href="#" class="data">About us</a> |
+          <a href="#" class="data">Contact us</a> |
+          <a href="#" class="data">Current openings</a> |
+          <a href="#" class="data">Press release</a> |
+          <a href="#" class="data">Press coverage</a> |
+          <a href="#" class="data">Sitemap</a> |
+          <a href="#" class="data">FAQs</a> |
+          <a href="#" class="data">Term & Condition</a> |
+          <a href="#" class="data">Privacy Policy</a>
+        </p>
+      </div>
+      <div class="container" style="padding-bottom:50px;">
+        <h6 class="pt-3 fw-bold  footer-style">BOOKMYSHOW EXECLUSIVE</h6>
+        <p class="text-light" style="font-size: 12px;">
+          <a href="#" class="data">Lollapalooza India</a> |
+          <a href="#" class="data">BookAChange</a> |
+          <a href="#" class="data">Corporate Vouchers</a> |
+          <a href="#" class="data">Gift Cards</a> |
+          <a href="#" class="data">List My Show</a> |
+          <a href="#" class="data">Offers</a> |
+          <a href="#" class="data">Stream</a> |
+          <a href="#" class="data">Trailers</a> |
+        </p>
+      </div>
+      <div style="margin-top:80px;">
+        <div class="container-data">
+          <div class="line"></div>
+          <div class="logo">
+            <img src="//in.bmscdn.com/webin/common/icons/logo.svg" alt="BookMyShow Logo">
+          </div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="container pb-4">
+        <div class="social text-center pt-3">
+          <div class="social-media-icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+
+        <p class="text-light text-center pt-4">Copyright 2025 © Bigtree Entertainment Pvt. Ltd. All Rights
+          Reserved.<br>The
+          content and images used on
+          this site are copyright protected and copyrights vests with the respective owners. The usage of the
+          content and images on this website is intended to promote the works and no <br>endorsement of the artist
+          shall be implied. Unauthorized use is prohibited and punishable by law.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- OffCanvas Starting -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Hello</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-0">
+      <div class="d-flex menu-item align-items-center">
+        <div class="profile-icon">
+          <img src="https://in.bmscdn.com/webin/movies/superstar/rewards_login.png" alt="">
+        </div>
+        <div class="ms-3 text-secondary">Unlock special offers & <br>great benefits</div>
+        <a href="#" class="ms-auto p-2 text-danger border border-danger rounded text-decoration-none">Login /
+          Register</a>
+      </div>
+
+      <div class="menu-item d-flex align-items-center">
+        <i class="fa-solid fa-bell"></i>
+        <div>Notifications</div>
+        <i class="fa-solid fa-chevron-right arrow ms-auto"></i>
+      </div>
+
+      <div class="menu-item d-flex align-items-center">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <div>
+          <div>Your Orders</div>
+          <div class="small text-muted">View all your bookings & purchases</div>
+        </div>
+        <i class="fa-solid fa-lock ms-auto text-muted"></i>
+      </div>
+
+      <div class="menu-item d-flex align-items-center">
+        <i class="fa-solid fa-film"></i>
+        <div>
+          <div>Stream Library</div>
+          <div class="small text-muted">Rented & Purchased Movies</div>
+        </div>
+        <i class="fa-solid fa-lock ms-auto text-muted"></i>
+      </div>
+
+      <div class="menu-item d-flex align-items-center">
+        <i class="fa-solid fa-credit-card"></i>
+        <div>
+          <div>Play Credit Card</div>
+          <div class="small text-muted">View your Play Credit Card details and offers</div>
+        </div>
+        <i class="fa-solid fa-chevron-right arrow ms-auto"></i>
+      </div>
+
+      <div class="menu-item d-flex align-items-center">
+        <i class="fa-solid fa-question-circle"></i>
+        <div>
+          <div>Help & Support</div>
+          <div class="small text-muted">View commonly asked queries and Chat</div>
+        </div>
+        <i class="fa-solid fa-chevron-right arrow ms-auto"></i>
+      </div>
+
+      <div class="menu-item d-flex align-items-center">
+        <i class="fa-solid fa-gear"></i>
+        <div>
+          <div>Accounts & Settings</div>
+          <div class="small text-muted">Location, Payments, Permissions & More</div>
+        </div>
+        <i class="fa-solid fa-lock ms-auto text-muted"></i>
+      </div>
+
+      <div class="menu-item d-flex align-items-center">
+        <i class="fa-solid fa-award"></i>
+        <div>
+          <div>Rewards</div>
+          <div class="small text-muted">View your rewards & unlock new ones</div>
+        </div>
+        <i class="fa-solid fa-chevron-right arrow ms-auto"></i>
+      </div>
+
+      <div class="menu-item d-flex align-items-center">
+        <i class="fa-solid fa-globe"></i>
+        <div>BookAChange</div>
+        <i class="fa-solid fa-chevron-right arrow ms-auto"></i>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
