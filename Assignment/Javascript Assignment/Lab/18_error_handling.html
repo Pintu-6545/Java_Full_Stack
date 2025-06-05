@@ -1,0 +1,43 @@
+<!-- Lab Assignment 
+ 
+ Task: 
+o Write a JavaScript program that attempts to divide a number by zero. Use try
+catch to handle the error and display an appropriate error message. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divide a number by zero</title>
+</head>
+
+<body>
+   
+    </h1>
+    <script>
+
+        function Division(x, y) {
+            try {
+                if (y == 0) {
+                    throw new Error("Divide by zero not allow")
+                }
+                let data = x / y
+                console.log("Result=>", data)
+                document.writeln("Result =>", data, "<br>")
+            }
+            catch (error) {
+                console.error("Error =>", error.message)
+                // console.log("Error=>",error.message)
+                document.writeln("Error=>",error.message,"<br>")
+            }
+        }
+        Division(4, 0) 
+        Division(4, 2)
+        Division(5, 2)
+
+    </script>
+</body>
+
+</html>

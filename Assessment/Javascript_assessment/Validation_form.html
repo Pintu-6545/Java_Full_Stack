@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating a Simple Form Validation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .main-container {
+      width: 1200px;
+      padding-bottom:20px ;
+      overflow: hidden;
+      border: 2px solid;
+      margin: 30px auto;
+      border: none;
+      background-color: rgb(225, 230, 230);
+      border-radius: 5px;
+    }
+
+    .container {
+      padding-bottom: 40px;
+      width: 850px;
+      border: 2px solid;
+      margin: 40px auto;
+      background-color: white;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .container .h1-responsive h2 {
+      font-size: 47px;
+      margin: 70px 0;
+      text-align: center;
+    }
+
+    /* Reused class */
+    .input-data {
+      border: 2px solid;
+      display: flex;
+      align-items: center;
+      margin: 20px 50px;
+      background-color: white;
+      border-radius: 4px;
+      width: 649px;
+    }
+
+    .icon-email {
+      border-right: 1px solid black;
+      width: 60px;
+      padding: 15px 0;
+
+    }
+
+    .icon-email .fa-envelope {
+      font-size: 36px;
+      margin: 0 9px;
+    }
+
+    .input-text {
+      padding: 17px 10px;
+      border: none;
+      width: 600px;
+      font-size: 28px;
+      outline: none;
+    }
+
+    .input-data .icon-password {
+      border-right: 1px solid black;
+      width: 62px;
+      padding: 15px 0;
+    }
+
+    .icon-password .fa-lock {
+      font-size: 36px;
+      padding: 0 9px;
+    }
+
+    .input-data .input-password {
+      padding: 17px 10px;
+      border: none;
+      width: 600px;
+      font-size: 28px;
+      outline: none;
+    }
+
+    .input-data .icon-re-password {
+      border-right: 1px solid black;
+      width: 62px;
+      padding: 15px 0;
+    }
+
+    .icon-re-password .fa-lock {
+      font-size: 36px;
+      padding: 0 9px;
+    }
+
+    .input-data .input-re-password {
+      padding: 17px 10px;
+      border: none;
+      width: 600px;
+      font-size: 28px;
+      outline: none;
+    }
+
+    .icon-phone {
+      border-right: 1px solid black;
+      width: 60px;
+      padding: 15px 0;
+
+    }
+
+    .icon-phone .fa-mobile {
+      font-size: 36px;
+      margin: 0 9px;
+    }
+
+    .name .input-wel {
+      border: 2px solid;
+      display: flex;
+      align-items: center;
+      margin: 10px 50px;
+      background-color: white;
+      border-radius: 4px;
+      width: 650px;
+    }
+
+    .name .first-name {
+      border-right: 1px solid black;
+      width: 55px;
+      padding: 15px 0;
+    }
+
+    .name .first-name .fa-user {
+      font-size: 36px;
+      padding: 0 9px;
+    }
+
+    .name .input-wel .f_name {
+      padding: 17px 10px;
+      border: none;
+      width: 600px;
+      font-size: 28px;
+      outline: none;
+    }
+
+    .name .input-last {
+      border: 2px solid;
+      display: flex;
+      align-items: center;
+      margin: 10px 50px;
+      background-color: white;
+      border-radius: 4px;
+      width: 650px;
+    }
+
+    .name .last-name {
+      border-right: 1px solid black;
+      width: 55px;
+      padding: 15px 0;
+    }
+
+    .name .last-name .fa-user {
+      font-size: 36px;
+      padding: 0 9px;
+    }
+
+    .name .input-last .la_name {
+      padding: 17px 10px;
+      border: none;
+      width: 240px;
+      font-size: 28px;
+      outline: none;
+    }
+
+    .gender {
+      display: flex;
+      align-items: center;
+      margin: 25px 50px;
+      color: rgb(118, 119, 120);
+      font-size: 28px;
+      /* border: 2px solid; */
+    }
+
+    .gender .gen {
+      /* transform: scale(3.5); */
+      height: 20px;
+      width: 20px;
+    }
+
+    .gender .gen1 {
+      height: 20px;
+      width: 20px;
+      margin-right: 25px;
+    }
+
+    .cont-data {
+      margin: 30px 50px;
+    }
+
+    .country {
+      height: 60px;
+      width: 650px;
+      font-size: 25px;
+      padding-left: 25px;
+      color: rgb(118, 119, 120);
+
+    }
+
+    .condition-1 {
+      margin: 25px 50px;
+      font-size: 25px;
+    }
+
+    .con {
+      height: 20px;
+      width: 20px;
+    }
+
+    .r-btn {
+      margin: 25px 50px;
+    }
+
+    .r-btn .btn {
+      padding: 15px 274px;
+      font-size: 28px;
+      color: white;
+      background-color: rgb(236, 179, 34);
+      border: none;
+    }
+
+    .border {
+      background-color: rgb(251, 192, 43);
+      height: 10px;
+      margin: 60px 0;
+    }
+
+    .p-responsive {
+      margin: 45px 0;
+    }
+
+    .p-responsive p {
+      font-size: 59px;
+      font-weight: 600;
+      font-family: sans-serif;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="container">
+      <div class="border">
+
+      </div>
+      <form onsubmit=" return Validation()">
+        <div class="p-responsive">
+          <p>Responsive Registration Form</p>
+        </div>
+        <div class="input-data">
+          <div class="icon-email">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <input type="text" placeholder="Email" class="input-text" id="e1">
+        </div>
+        <div class="input-data">
+          <div class="icon-password">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <input type="password" placeholder="Password" class="input-password" id="pass">
+        </div>
+        <div class="input-data">
+          <div class="icon-re-password">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <input type="password" placeholder="Re-type Password" class="input-re-password" id="r-pass">
+        </div>
+        <div class="input-data">
+          <div class="icon-phone">
+            <i class="fa-solid fa-mobile"></i>
+          </div>
+          <input type="text" placeholder="Mobile Number" class="input-text" id="m1">
+        </div>
+        <div class="name">
+          <div class="input-wel">
+            <div class="first-name">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <input type="text" placeholder="First Name" class="f_name" id="fname">
+          </div>
+          <div class="input-last">
+            <div class="last-name">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <input type="text" placeholder="Last Name" class="la_name" id="lname">
+          </div>
+        </div>
+        <div class="gender">
+          <input type="radio" name="gender" value="male" class="gen" id="gender"> &nbsp;Male &nbsp;
+          <input type="radio" name="gender" value="female" class="gen" id="gender"> &nbsp;Female &nbsp;
+        </div>
+        <div class="cont-data">
+          <select id="c1" class="country">
+            <option value="Select a Country" selected disabled>Select a Country</option>
+            <option value="India">India</option>
+            <option value="America">America</option>
+            <option value="Japan">Japan</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Canada">Canada</option>
+            <option value="United Kingdom">United Kingdom</option>
+          </select>
+        </div>
+        <div class="condition-1">
+          <input type="checkbox" class="con" id="check"> I agree with terms and conditions
+        </div>
+        <div class="condition-1">
+          <input type="checkbox" class="con" id="check1"> I want to receive the newsletter
+        </div>
+        <div class="r-btn">
+          <input type="submit" class="btn" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+
+    var email = document.getElementById("e1");
+    var password = document.getElementById("pass");
+    var re_pass = document.getElementById("r-pass");
+    var mobile = document.getElementById("m1");
+    var first_name = document.getElementById("fname");
+    var last_name = document.getElementById("lname");
+    var country = document.getElementById("c1");
+    var agree = document.getElementById("check");
+    var agree1 = document.getElementById("check1")
+
+
+    function Validation() {
+
+      // remove to  previous messages
+
+      const errorElements = document.querySelectorAll('.error-msg')
+      errorElements.forEach(messageremove => messageremove.remove());
+
+      let formSumbmit = true;
+      
+      const errorGenerate = (inputdata, message) => {
+        const errorMessage = document.createElement("p");
+        errorMessage.className = "error-msg";
+        errorMessage.style.fontWeight = "600";
+        errorMessage.style.color = "red";
+        errorMessage.style.fontSize = "28px"
+        errorMessage.style.marginLeft = "50px";
+        errorMessage.innerText = message;
+        inputdata.parentElement.insertAdjacentElement('afterend', errorMessage);
+        formSumbmit = false
+      }
+
+      let email_format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      let password_format = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
+      let mobile_no_format = /^[6789][0-9]{9}$/;
+      let first_name_format = /^[a-zA-Z]*$/
+      let last_name_format = /^[a-zA-Z]*$/
+
+
+      if (email.value == "" || email.value == null) {
+        errorGenerate(email, "Please enter valid email");
+      }
+      else if (!email_format.test(email.value)) {
+        errorGenerate(email, "Please enter valid  email address")
+      }
+
+
+      if (password.value == "" || password.value == null) {
+        errorGenerate(password, "Please enter valid Password")
+      }
+      else if (password.value.length < 7 || password.value.length > 15) {
+        errorGenerate(password, "Please enter password minimum 7 characters")
+      }
+      else if (!password_format.test(password.value)) {
+        errorGenerate(password, "Password start character,uppercase,lowercase, digit and symbols")
+      }
+
+
+      if (re_pass.value == "" || re_pass == null) {
+        errorGenerate(re_pass, "Please re-type password")
+      }
+      else if (password.value !== re_pass.value) {
+        errorGenerate(re_pass, "Password do not match")
+      }
+
+
+      if (mobile.value == "" || mobile.value == null) {
+        errorGenerate(mobile, "Please enter mobile number")
+      }
+      else if (mobile.value.length < 10) {
+        errorGenerate(mobile, "Please enter minimum 10 digits")
+      }
+      else if (!mobile_no_format.test(mobile.value)) {
+        errorGenerate(mobile, " Only enter valid phone digits")
+      }
+
+
+      if (first_name.value == "" || first_name == null) {
+        errorGenerate(first_name, "Please enter first name")
+      }
+      else if (first_name.value.length < 3) {
+        errorGenerate(first_name, "Enter  minimum 3 characters")
+      }
+      else if (!first_name_format.test(first_name.value)) {
+        errorGenerate(first_name, "Enter only alfabates uppercase and lowercase")
+      }
+
+
+      if (last_name.value == "" || last_name == null) {
+        errorGenerate(last_name, "Please enter last name")
+
+      }
+      else if (last_name.value.length < 4) {
+        errorGenerate(last_name, "Enter  minimum 4 characters")
+
+      }
+      else if (!last_name_format.test(last_name.value)) {
+        errorGenerate(last_name, "Enter only alfabates uppercase and lowercase")
+
+      }
+
+      const genderRadios = document.querySelectorAll('input[name="gender"]');
+      let genderSelected = false;
+      genderRadios.forEach(radio => {
+        if (radio.checked) genderSelected = true;
+      });
+      if (!genderSelected) {
+        const gender = document.querySelector('.gender');
+        const errorMessage = document.createElement("p");
+        errorMessage.className = "error-msg";
+        errorMessage.style.color = "red";
+        errorMessage.style.fontWeight = "600";
+        errorMessage.style.fontSize = "28px"
+        errorMessage.style.marginLeft = "50px";
+        errorMessage.innerText = "Please select your gender";
+        gender.insertAdjacentElement('afterend', errorMessage);
+        formSumbmit = false;
+      }
+
+      if (country.value == "Select a Country") {
+        errorGenerate(country, "Please select a country");
+      }
+
+      if (!agree.checked) {
+        errorGenerate(agree, "You must agree to the terms and conditions");
+      }
+
+      if (!agree1.checked) {
+        errorGenerate(agree1, "You must agree to the terms and conditions");
+      }
+
+      if(formSumbmit)
+      {
+        alert("Registration form successfully submit")
+      }
+      return formSumbmit
+    }
+  </script>
+</body>
+</html>

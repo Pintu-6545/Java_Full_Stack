@@ -1,0 +1,37 @@
+<!-- Lab Assignment 
+ 
+ Task 1: 
+
+o Write a JavaScript program to check if a number is positive, negative, or zero using 
+an if-else statement.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Positive Number</title>
+</head>
+<body>
+        <h1 id="po"></h1>
+        <h1 id="ne"></h1>
+        <h1 id="ze"></h1>
+        <script>
+                no=10
+                if(no>0)
+                {
+                    console.log("Positive Number")
+                    document.getElementById("po").innerHTML=`Positive Number=>${no}`;
+                }
+                else if(no<0)
+                {
+                    console.log("Negative Number")
+                    document.getElementById("ne").innerHTML=`Negative Number=>${no}`;
+                }
+                else
+                {
+                    console.log("Number is Zero")
+                    document.getElementById("ze").innerHTML=`Zero Number=>${no}`;
+                }
+        </script>
+</body>
+</html>

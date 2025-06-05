@@ -1,0 +1,73 @@
+<!-- Lab Assignment 
+  Task: 
+o Create a JavaScript program to perform the following: 
+ Add, subtract, multiply, and divide two numbers using arithmetic operators. 
+ Use comparison operators to check if two numbers are equal and if one 
+number is greater than the other. 
+ Use logical operators to check if both conditions (e.g., a > 10 and b < 5) are 
+true. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a progam Javascript operator</title>
+</head>
+
+<body>
+    <h1 id="hh"></h1>
+    <h1 id="h1"></h1>
+    <h1 id="sh"></h1>
+    <h1 id="mm"></h1>
+    <h1 id="dh"></h1>
+    <h1 id="mh"></h1>
+    <h1 id="com"></h1>
+    <h1 id="ce"></h1>
+    <h1 id="cf"></h1>
+    <h1 id="logi"></h1>
+    <h1 id="le"></h1>
+   <h1 id="lo"></h1>
+   <h1 id="ln"></h1>
+
+    <script>
+        // Arithmatic Operator
+        let no1 = 200, no2 = 10
+        console.log("Addition=>", no1 + no2)
+        console.log("Subtraction=>", no1 - no2)
+        console.log("Multification=>", no1 * no2)
+        console.log("Division=>", no1 / no2)
+        console.log("Modulo=>", no1 % no2)
+        document.getElementById("hh").innerHTML = `Arithmatic Operation`;
+        document.getElementById("h1").innerHTML = `Addition=> ${no1 + no2}`;
+        document.getElementById("sh").innerHTML = `Subtraction=> ${no1 - no2}`;
+        document.getElementById("mm").innerHTML = `Multification=> ${no1 * no2}`;
+        document.getElementById("dh").innerHTML = `Addition=> ${no1 / no2}`;
+        document.getElementById("mh").innerHTML = `Modulo=> ${no1 % no2}`;
+
+
+        // comparision operator
+        let no3 = 40, no4 = 40
+        console.log((no3 == no4) ? no3 : no4)
+        console.log((no1 > no2) ? no1 : no2)
+        document.getElementById("com").innerHTML = `Comparision Operator`;
+        document.getElementById("ce").innerHTML = `Both Number Equval=>${(no1 == no2) ? no3 : no4}`;
+        document.getElementById("cf").innerHTML = ` Number One Grether than=>${(no1 > no2) ? no1 : no2}`;
+
+        //  logical operator
+        let lg = no1 > 10 && no2 < 5
+        console.log(lg)
+        let rd = no1 > 10 || no2 < 5
+        console.log(rd)
+        let nm = no1 != no2
+        console.log(nm)
+        document.getElementById("logi").innerHTML = `Logical Operator`;
+        document.getElementById("le").innerHTML = `Condition Check=>${lg}`;
+         document.getElementById("lo").innerHTML = `Condition Check=>${rd}`;
+         document.getElementById("ln").innerHTML = `Condition Check=>${nm}`;
+
+    </script>
+</body>
+
+</html>

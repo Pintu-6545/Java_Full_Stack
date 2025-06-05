@@ -1,0 +1,27 @@
+<!-- Lab Assignment -->
+
+<!-- Task: 
+o Create an HTML page with a paragraph (<p>) that displays "Hello, World!". 
+o Use JavaScript to: 
+ Change the text inside the paragraph to "JavaScript is fun!". 
+ Change the color of the paragraph to blue. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change the Text and Color using JavaScript</title>
+</head>
+<body>
+        <p id="data" onmouseover="textchange()" >Hello, World!</p>
+        <script>
+            let text=document.getElementById("data")
+            function textchange()
+            {
+                text.innerHTML="JavaScript is fun!";
+                text.style.color="blue";
+            } 
+        </script>
+</body>
+</html>

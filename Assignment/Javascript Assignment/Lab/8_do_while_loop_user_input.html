@@ -1,0 +1,32 @@
+<!--  Task 3: 
+o Write a do-while loop that continues to ask the user for input until they enter 
+a number greater than 10.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Greater than 10 than using do while loop </title>
+</head>
+
+<body>
+    <h1></h1>
+    <button onclick="Number()">Click</button>
+    <h1 id="result"></h1>
+
+    <script>
+        function Number() {
+            let no;
+            do {
+                no = parseInt(prompt("Enter Number Greater than 10:"));
+            } while (no <= 10);
+
+            document.getElementById("result").textContent =
+                "New Number: " + no + ", greater than 10.";
+        }
+    </script>
+</body>
+
+</html>

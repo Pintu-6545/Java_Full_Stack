@@ -1,0 +1,28 @@
+<!--  
+Lab Assignment 
+ 
+ Task 1: 
+o Write a program that changes the background color of a webpage after 5 seconds 
+using setTimeout().  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change a Background Color Using a setTimeout Event</title>
+</head>
+<body id="b">
+                <h1>Change the Background color after 5 second in a Webpage</h1>
+        <script>
+            let back=document.getElementById("b")
+            function background()
+            {
+                back.style.background="blue";
+            }
+                setTimeout(()=>{
+                    background()
+                },5000)
+        </script>
+</body>
+</html>

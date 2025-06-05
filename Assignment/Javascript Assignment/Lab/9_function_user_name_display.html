@@ -1,0 +1,25 @@
+<!-- Lab Assignment 
+ 
+ Task 1: (
+o Write a function greetUser that accepts a user’s name as a parameter and displays 
+a greeting message (e.g., "Hello, John!"). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User name display using Function</title>
+</head>
+<body>
+    <h1 id="result"></h1>
+        <script>
+                function greetUser(user_name)
+                {
+                    console.log("Rahul",user_name)
+                    document.getElementById("result").innerHTML=`Rahul, ${user_name}`;
+                }
+                greetUser("Sharma!")
+        </script>
+</body>
+</html>

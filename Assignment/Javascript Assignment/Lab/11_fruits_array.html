@@ -1,0 +1,41 @@
+<!-- Lab Assignment 
+ 
+ Task 1: 
+o Declare an array of fruits (["apple", "banana", "cherry"]). Use JavaScript to: 
+ Add a fruit to the end of the array. 
+ Remove the first fruit from the array. 
+ Log the modified array to the console.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits Array using a array method </title>
+</head>
+<body>
+            <script>
+                  let fruits=["Apple","Banana","Cherry"]
+                  console.log(fruits)
+                document.writeln(fruits,"<br><br>")
+
+                    fruits.push("Mango")
+                    console.log(fruits)
+                    console.log("Add Fruit=>",fruits[3])
+                    document.writeln("Add Fruit End of Array=>",fruits[3],"<br>")
+                    document.writeln("Fruits=>",fruits,"<br><br>")
+
+
+                    let d=fruits.shift()
+                    console.log("Remove First Fruit=>",d)
+                    console.log("After Remove Fruit Array=>",fruits)
+                    document.writeln("Remove First Fruit=>",d,"<br>")
+                    document.writeln("After Remove Fruit Array=>",fruits,"<br><br>")
+
+                    console.log("Modify Fruits Array=>",fruits)
+                    
+    
+
+            </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- Task 2: 
+o Create a JavaScript function calculateSum that takes two numbers as parameters, 
+adds them, and returns the result. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Sum two Number Using Function</title>
+</head>
+
+<body>
+    <h1 id="result"></h1>
+    <script>
+        function calculate(no1, no2) {
+            return no1 + no2;
+        }
+        console.log("Sum=>", calculate(10, 50))
+        document.getElementById("result").innerHTML = `Sum=> ${calculate(10,50)}`;
+    </script>
+</body>
+
+</html>
