@@ -8,15 +8,18 @@ import WelcomeMessage from './Components/WelcomeMessage';
 import Mainprops from './Props/Mainprops';
 import Usercard from './Props/Usercard';
 import Counter from './State/Counter';
+import Hello from './assets/Hello';
+import Welcome from './assets/Welcome';
 
 function App() {
 
   return (
     <div>
+          < Hello />
+          {/* < Welcome /> */}
           {/* < Greeting name ="Pintu!" /> */}
           {/* < WelcomeMessage /> */}
-          {/* < Usercard /> */}
-           < Mainprops />
+           {/* < Mainprops /> */}
            {/* <Counter /> */}
     </div>
   )
