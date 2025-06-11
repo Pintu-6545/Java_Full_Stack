@@ -6,6 +6,7 @@ import { useState } from 'react'
 import Greeting from './Components/Greeting'
 import WelcomeMessage from './Components/WelcomeMessage'
 import Mainprops from './Props/Mainprops'
+import Counter from './State/Counter'
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
           {/* < Greeting name ="Pintu!" /> */}
           {/* < WelcomeMessage /> */}
           {/* < Usercard /> */}
-           < Mainprops />
+           {/* < Mainprops /> */}
+           <Counter />
     </div>
   )
 }
