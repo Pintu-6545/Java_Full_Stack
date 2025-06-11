@@ -8,8 +8,8 @@ import WelcomeMessage from './Components/WelcomeMessage';
 import Mainprops from './Props/Mainprops';
 import Usercard from './Props/Usercard';
 import Counter from './State/Counter';
-import Hello from './Hello';
-import Welcome from './Welcome';
+import Hello from './Lab/Hello';
+import Welcome from './Lab/Welcome';
 
 function App() {
 
