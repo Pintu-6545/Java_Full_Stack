@@ -31,7 +31,7 @@ function Recipesapidata() {
                                     <div className="card-body">
                                         <h5 className="card-title" style={{ fontSize: "25px", fontWeight: "600" }}>{id}</h5>
                                         <h5 className="card-title"style={{fontWeight:"600"}}>{name}</h5>
-                                        <p className='card-text' style={{ fontWeight: "500" }}>{instructions.slice(1, 3)}</p>
+                                        <p className='card-text' style={{ fontWeight: "500" }}>{instructions.slice(1,3)}</p>
                                         <h5 className="card-text" style={{ fontWeight: "600" }}><i class="fa-solid fa-indian-rupee-sign"></i> {caloriesPerServing}</h5>
                                         <h5 className='card-text' style={{ fontWeight: "600" }}><i class="fa-solid fa-globe"></i> {cuisine}</h5>
                                         <h5 className="card-text" style={{ fontWeight: "600" }}><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i> {rating}</h5>
