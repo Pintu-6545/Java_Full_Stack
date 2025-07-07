@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="6">
+        <thead>
+            <th>COM_ID</th>
+            <th>USER_ID</th>
+            <th>USER_NAME</th>
+            <th>FULL_NAME</th>
+            <th>POST_ID</th>
+            <th>LIKES</th>
+            <th>BODY</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+
+        fetch("https://dummyjson.com/comments", {
+            method: "GET"
+        })
+            .then((res) => {
+                return res.json()
+            })
+            .then((data) => {
+                // console.log(users_comment)
+                for (let wel of data.comments) {
+                    // console.log(wel)
+                    let tbody = document.querySelector("tbody")
+                    let trow = tbody.insertRow()
+                    let com_id_cell = trow.insertCell(0)
+                    let Id_cell = trow.insertCell(1)
+                    let user_name_cell = trow.insertCell(2)
+                    let full_name_cell = trow.insertCell(3)
+                    let post_id_cell = trow.insertCell(4)
+                    let likes_cell = trow.insertCell(5)
+                    let body_cell = trow.insertCell(6)
+
+                    com_id_cell.textContent = wel.id
+                    Id_cell.textContent = wel.user.id
+                    user_name_cell.textContent = wel.user.username
+                    full_name_cell.textContent = wel.user.fullName
+                    post_id_cell.textContent = wel.postId
+                    likes_cell.textContent = wel.likes
+                    body_cell.textContent = wel.body
+                }
+
+
+
+
+            })
+
+
+
+
+    </script>
+</body>
+
+</html>

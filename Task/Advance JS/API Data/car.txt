@@ -1,0 +1,594 @@
+[
+  {
+    "model_name": "FORTUNER TRD",
+    "comapnay": "TOYOTA MOTERS",
+    "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2017-05/04/full/1493893657-4365.jpg?im=FeatureCrop,size=(826,465)",
+    "price": 3468000,
+    "country": "Japan",
+    "year": {
+      "model_year": 2012,
+      "purchase_year": 2013
+    },
+    "engine": {
+      "engine_cc": "2750 cc",
+      "engine_type": "2.8L 4-cylinder diesel engine"
+    },
+    "stock": 850,
+    "color": "Red",
+    "rating": 4.5,
+    "id": "1"
+  },
+  {
+    "model_name": "GLANZA",
+    "comapnay": "TOYOTA MOTERS",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/112839/glanza-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80",
+    "price": 968000,
+    "country": "Japan",
+    "year": {
+      "model_year": 2022,
+      "purchase_year": 2023
+    },
+    "engine": {
+      "engine_cc": "1500 cc",
+      "engine_type": "1.2L VVT petrol engine "
+    },
+    "stock": 600,
+    "color": "Marun",
+    "rating": 4.5,
+    "id": "2"
+  },
+  {
+    "model_name": "INOVA CRYSTA",
+    "comapnay": "TOYOTA MOTERS",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/140809/innova-crysta-exterior-right-front-three-quarter-2.png?isig=0&q=80",
+    "price": 1500000,
+    "country": "Japan",
+    "year": {
+      "model_year": 2016,
+      "purchase_year": 2016
+    },
+    "engine": {
+      "engine_cc": "1500 cc",
+      "engine_type": "2.4L 4-cylinder diesel engine"
+    },
+    "stock": 960,
+    "color": "Gray",
+    "rating": 4.5,
+    "id": "3"
+  },
+  {
+    "model_name": "FORTUNER",
+    "comapnay": "TOYOTA MOTERS",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/44709/fortuner-exterior-right-front-three-quarter-20.jpeg?isig=0&q=80",
+    "price": 3400000,
+    "country": "Japan",
+    "year": {
+      "model_year": 2021,
+      "purchase_year": 2022
+    },
+    "engine": {
+      "engine_cc": "2750 cc",
+      "engine_type": "2.8L 4-cylinder,2.7L, 4 Cylinder diesel engine"
+    },
+    "stock": 963,
+    "color": "Black",
+    "rating": 4.5,
+    "id": "4"
+  },
+  {
+    "model_name": "INNOVA CRYSTA",
+    "comapnay": "TOYOTA MOTERS",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/115025/innova-hycross-exterior-right-front-three-quarter-73.jpeg?isig=0&q=80",
+    "price": 1900000,
+    "country": "Japan",
+    "year": {
+      "model_year": 2013,
+      "purchase_year": 2014
+    },
+    "engine": {
+      "engine_cc": "2694 cc",
+      "engine_type": "2.7L 2TR-FE petrol engine, 2.4L 4-cylinder diesel engine"
+    },
+    "stock": 752,
+    "color": "Black",
+    "rating": 4.5,
+    "id": "5"
+  },
+  {
+    "model_name": "VELLFIRE",
+    "comapnay": "TOYOTA MOTERS",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/154483/vellfire-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
+    "price": 8350000,
+    "country": "Japan",
+    "year": {
+      "model_year": 2023,
+      "purchase_year": 2024
+    },
+    "engine": {
+      "engine_cc": "2487 cc",
+      "engine_type": "2.5L hybrid petrol engine"
+    },
+    "stock": 400,
+    "color": "Black",
+    "rating": 4.5,
+    "id": "6"
+  },
+  {
+    "model_name": "BOLERO NEW",
+    "comapnay": "MAHINDRA MOTERS",
+    "image": "https://stimg.cardekho.com/images/car-images/930x620/Mahindra/Bolero-Neo/10766/1739186035902/Bolero-Neo-Pearl-White_d7d8d8.jpg?tr=w-898",
+    "price": 1090000,
+    "country": "India",
+    "year": {
+      "model_year": 2021,
+      "purchase_year": 2022
+    },
+    "engine": {
+      "engine_cc": "1493 cc",
+      "engine_type": " 2.2L 4-cylinder diesel engine"
+    },
+    "stock": 630,
+    "color": "White",
+    "rating": 4.5,
+    "id": "7"
+  },
+  {
+    "model_name": "BOLERO",
+    "comapnay": "MAHINDRA MOTERS",
+    "image": "https://images.autox.com/uploads/2016/03/mahindra-bolero.jpg",
+    "price": 1100000,
+    "country": "India",
+    "year": {
+      "model_year": 2020,
+      "purchase_year": 2021
+    },
+    "engine": {
+      "engine_cc": "2523 cc",
+      "engine_type": "1.5L 3-cylinder diesel engine"
+    },
+    "stock": 630,
+    "color": "Blue",
+    "rating": 4.5,
+    "id": "8"
+  },
+  {
+    "model_name": "XUV300",
+    "comapnay": "MAHINDRA MOTERS",
+    "image": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/143543/mahindra-xuv300-turbosport-right-front-three-quarter1.jpeg?isig=0",
+    "price": 1200000,
+    "country": "India",
+    "year": {
+      "model_year": 2023,
+      "purchase_year": 2024
+    },
+    "engine": {
+      "engine_cc": "2184 cc",
+      "engine_type": "1.2L 3-cylinder,1.5L 4-cylinder diesel engine"
+    },
+    "stock": 1200,
+    "color": "Orange",
+    "rating": 4.5,
+    "id": "9"
+  },
+  {
+    "model_name": "ALTURAS G4",
+    "comapnay": "MAHINDRA MOTERS",
+    "image": "https://imgd.aeplcdn.com/370x208/n/cut9ksa_1469905.jpg?q=80",
+    "price": 2700000,
+    "country": "india",
+    "year": {
+      "model_year": 2022,
+      "purchase_year": 2022
+    },
+    "engine": {
+      "engine_cc": "2157 cc",
+      "engine_type": "2.2L 4-cylinder diesel engine"
+    },
+    "stock": 690,
+    "color": "White",
+   "rating": 4.5,
+    "id": "10"
+  },
+  {
+    "model_name": "MAHINDRA THAR 4X4",
+    "comapnay": "MAHINDRA MOTERS",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/40087/thar-exterior-right-front-three-quarter-37.jpeg?isig=0&q=80",
+    "price": 1800000,
+    "country": "India",
+    "year": {
+      "model_year": 2024,
+      "purchase_year": 2024
+    },
+    "engine": {
+      "engine_cc": "2184 cc",
+      "engine_type": "2.0L mStallion 150 TGDi petrol engine,2.2L 4-cylinder diesel engine, 2.0L 4-cylinder diesel engine"
+    },
+    "stock": 900,
+    "color": "Black",
+    "rating": 4.5,
+    "id": "11"
+  },
+  {
+    "model_name": "ALTROZ FACELIFE",
+    "comapnay": "TATA MOTORS",
+    "image": "https://stimg.cardekho.com/images/car-images/930x620/Tata/Altroz/10847/1718011295331/224_Downtown-Red_811010.jpg?tr=w-898",
+    "price": 800000,
+    "country": "India",
+    "year": {
+      "model_year": 2025,
+      "purchase_year": 2024
+    },
+    "engine": {
+      "engine_cc": "1497 cc",
+      "engine_type": "1.2L petrol+CNG engine, 1.5L 4-cylinder diesel engine"
+    },
+    "stock": 780,
+    "color": "Marun",
+    "rating": 4.5,
+    "id": "12"
+  },
+  {
+    "model_name": "TATA NEXON",
+    "comapnay": "TATA MOTORS",
+    "image": "https://imgd.aeplcdn.com/370x208/n/hfcbmbb_1688463.jpg?q=80",
+    "price": 900000,
+    "country": "India",
+    "year": {
+      "model_year": 2024,
+      "purchase_year": 2024
+    },
+    "engine": {
+      "engine_cc": "1497 cc",
+      "engine_type": "1.5L 4-cylinder diesel engine, 1.2L 3-cylinder diesel engine, 1.2L 3-cylinder CNG engine"
+    },
+    "stock": 850,
+    "color": "White",
+    "rating": 4.5,
+    "id": "13"
+  },
+  {
+    "model_name": "TATA PUNCH",
+    "comapnay": "TATA MOTERS",
+    "image": "https://stimg.cardekho.com/images/car-images/930x620/Tata/Punch/10681/1739271167873/Orcus-White-Dual-Tone_dadada.jpg?tr=w-898",
+    "price": 800000,
+    "country": "India",
+    "year": {
+      "model_year": 2023,
+      "purchase_year": 2023
+    },
+    "engine": {
+      "engine_cc": "1199 cc",
+      "engine_type": "1.2L 3-cylinder diesel engine, 1.5L 3-cylinder CNG engine"
+    },
+    "stock": 450,
+    "color": "Gray",
+    "rating": 4.5,
+    "id": "14"
+  },
+  {
+    "model_name": "TATA HARRIER",
+    "comapnay": "TATA MOTERS",
+    "image": "https://stimg.cardekho.com/images/car-images/930x620/Tata/Harrier/9368/1703308605356/226_seaweed-green_1d1f14.jpg?tr=w-898",
+    "price": 1500000,
+    "country": "India",
+    "year": {
+      "model_year": 2019,
+      "purchase_year": 2020
+    },
+    "engine": {
+      "engine_cc": "1956 cc",
+      "engine_type": "1.5L turbo petrol engine, 2.0L 4-cylinder diesel engine"
+    },
+    "stock": 820,
+    "color": "Green",
+    "rating": 4.5,
+    "id": "15"
+  },
+  {
+    "model_name": "JAGUAR XE",
+    "comapnay": "TATA JAGUAR ",
+    "image": "https://imgd.aeplcdn.com/370x208/n/pwddrsa_1477924.jpg?q=80",
+    "price": 4600000,
+    "country": "India",
+    "year": {
+      "model_year": 2016,
+      "purchase_year": 2018
+    },
+    "engine": {
+      "engine_cc": "1997 cc",
+      "engine_type": "2.0L 4-cylinder diesel engine"
+    },
+    "stock": 900,
+    "color": "Red",
+    "rating": 4.5,
+    "id": "16"
+  },
+  {
+    "model_name": "JAGUAR XJL",
+    "comapnay": "TATA JAGUAR",
+    "image": "https://imgd.aeplcdn.com/370x208/n/vwrmrsa_1478302.jpg?q=80",
+    "price": 9500000,
+    "country": "India",
+    "year": {
+      "model_year": 2014,
+      "purchase_year": 2015
+    },
+    "engine": {
+      "engine_cc": "2993 cc",
+      "engine_type": "3.0L V6 diesel engine, 3.0L V6 petrol engine, 5.0L V8 petrol engine"
+    },
+    "stock": 560,
+    "color": "White",
+    "rating": 4.5,
+    "id": "17"
+  },
+  {
+    "model_name": "BMW X7",
+    "comapnay": "BMW MOTERS",
+    "image": "https://imgd.aeplcdn.com/370x208/n/6datp0b_1638751.jpg?q=80",
+    "price": 13100000,
+    "country": "Germany",
+    "year": {
+      "model_year": 2019,
+      "purchase_year": 2020
+    },
+    "engine": {
+      "engine_cc": "2998 cc",
+      "engine_type": "3.0L inline-6 turbo petrol engine (B58), 3.0L 6-cylinder diesel engine"
+    },
+    "stock": 750,
+    "color": "Black",
+   "rating": 4.5,
+    "id": "18"
+  },
+  {
+    "model_name": "BMW X3",
+    "comapnay": "BMW MOTERS",
+    "image": "https://imgd.aeplcdn.com/370x208/n/lp5p0fb_1809623.jpg?q=80",
+    "price": 7580000,
+    "country": "Germany",
+    "year": {
+      "model_year": 2003,
+      "purchase_year": 2007
+    },
+    "engine": {
+      "engine_cc": "1998 cc",
+      "engine_type": "2.0L turbo-petrol engine, 2.0L 4-cylinder diesel engine"
+    },
+    "stock": 690,
+    "color": "Blue",
+    "rating": 4.5,
+    "id": "19"
+  },
+  {
+    "model_name": "BMW X1",
+    "comapnay": "BMW MOTERS",
+    "image": "https://imgd.aeplcdn.com/370x208/n/mcf050b_1640707.jpg?q=80",
+    "price": 5080000,
+    "country": "Germany",
+    "year": {
+      "model_year": 2009,
+      "purchase_year": 2009
+    },
+    "engine": {
+      "engine_cc": "1499 cc",
+      "engine_type": "2.0L 4-cylinder diesel engine,2.0L 3-cylinder diesel engine, 1.5L three-cylinder petrol engine"
+    },
+    "stock": 635,
+    "color": "White Alpine",
+    "rating": 4.5,
+    "id": "20"
+  },
+  {
+    "model_name": "BMW 7 SERIES",
+    "comapnay": "BMW MOTERS",
+    "image": "https://imgd.aeplcdn.com/370x208/n/j0qgo0b_1636461.jpg?q=80",
+    "price": 18400000,
+    "country": "Germany",
+    "year": {
+      "model_year": 2013,
+      "purchase_year": 2013
+    },
+    "engine": {
+      "engine_cc": "2993 cc",
+      "engine_type": "3.0L 3-cylinder diesel engine"
+    },
+    "stock": 960,
+    "color": "Gray",
+    "rating": 4.5,
+    "id": "21"
+  },
+  {
+    "model_name": "BMW ix1 LWD",
+    "comapnay": "BMW MOTERS",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/196035/ix1-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+    "price": 4900000,
+    "country": "Germany",
+    "year": {
+      "model_year": 2025,
+      "purchase_year": 2025
+    },
+    "engine": {
+      "engine_cc": "1499 cc",
+      "engine_type": "6.6L turbocharged V12 petrol engine, 3.0L 6-cylinder diesel engine"
+    },
+    "stock": 856,
+    "color": "Blue",
+    "rating": 4.5,
+    "id": "22"
+  },
+  {
+    "model_name": "AUDI A4",
+    "comapnay": "AUDI MOTERS",
+    "image": "https://imgd.aeplcdn.com/370x208/n/ittlkbb_1686145.jpg?q=80",
+    "price": 4699000,
+    "country": "Germany",
+    "year": {
+      "model_year": 2022,
+      "purchase_year": 2023
+    },
+    "engine": {
+      "engine_cc": "1499 cc",
+      "engine_type": "4-cylinder turbocharged petrol engine, 2.0L 4-cylinder diesel engine"
+    },
+    "stock": 850,
+    "color": "Red",
+    "rating": 4.5,
+    "id": "23"
+  },
+  {
+    "model_name": "AUDI Q3",
+    "comapnay": "AUDI MOTERS",
+    "image": "https://stimg.cardekho.com/images/car-images/930x620/Audi/Q3/10554/1689744358634/225_mythos-black-metallic_181818.jpg",
+    "price": 4500000,
+    "country": "Germany",
+    "year": {
+      "model_year": 2024,
+      "purchase_year": 2025
+    },
+    "engine": {
+      "engine_cc": "1984 cc",
+      "engine_type": "2.0L 4-cylinder  diesel engine"
+    },
+    "stock": 1200,
+    "color": "Black",
+    "rating": 4.5,
+    "id": "24"
+  },
+  {
+    "model_name": "AUDI A8 L",
+    "comapnay": "AUDI MOTERS",
+    "image": "https://imgd.aeplcdn.com/370x208/n/xvnju3a_1590677.jpg?q=80",
+    "price": 6699000,
+    "country": "Germany",
+    "year": {
+      "model_year": 2022,
+      "purchase_year": 2023
+    },
+    "engine": {
+      "engine_cc": "2995 cc",
+      "engine_type": "3.0L, V6 turbo-petrol engine"
+    },
+    "stock": 460,
+    "color": "Blue",
+    "rating": 4.5,
+    "id": "25"
+  },
+  {
+    "model_name": "Audi Q8",
+    "comapnay": "AUDI MOTERS",
+    "image": "https://imgd.aeplcdn.com/370x208/n/i3a48eb_1765681.jpg?q=80",
+    "price": 11700000,
+    "country": "Germany",
+    "year": {
+      "model_year": 2024,
+      "purchase_year": 2024
+    },
+    "engine": {
+      "enginee_cc": "2995 cc",
+      "engine_type": "3.0L turbocharged V-6 petrol engine"
+    },
+    "stock": 780,
+    "color": "Gold",
+    "rating": 4.5,
+    "id": "26"
+  },
+  {
+    "model_name": "MERECEDES-BENZ C-CLASS",
+    "comapnay": "MERECEDES MOTERS",
+    "image": "https://imgd.aeplcdn.com/370x208/n/4qubpdb_1746087.jpg?q=80",
+    "price": 66250000,
+    "country": "Germany",
+    "year": {
+      "model_year": 2024,
+      "purchase_year": 2025
+    },
+    "engine": {
+      "engine_cc": "1999 cc",
+      "engine_type": "1.5L 4-cylinder  diesel engine, 2.0L 4-cylinder  diesel engine,2.0L 4-cylinder electric engine, 1.5L and 2.0L turbocharged petrol engines"
+    },
+    "stock": 985,
+    "color": "Black",
+    "rating": 4.5,
+    "id": "27"
+  },
+  {
+    "model_name": "MERECEDES-BENZ E-CLASS",
+    "comapnay": "MERECEDES MOTERS",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/162929/e-class-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
+    "price": 7950000,
+    "country": "Germany",
+    "year": {
+      "model_year": 2024,
+      "purchase_year": 2025
+    },
+    "engine": {
+      "engine_cc": "2993 cc",
+      "engine_type": "3.0L M254 2.0L inline-4 petrol engine, 2.0L 4-cylinder  diesel engine, 3.0L 6-cylinder  diesel engine"
+    },
+    "stock": 250,
+    "color": "Blue",
+    "rating": 4.5,
+    "id": "28"
+  },
+  {
+    "model_name": "MERECEDES-BENZ GLE",
+    "comapnay": "MERECEDES MOTERS",
+    "image": "https://imgd.aeplcdn.com/370x208/n/z3u6jeb_1766397.jpg?q=80",
+    "price": 9900000,
+    "country": "Germany",
+    "year": {
+      "model_year": 2023,
+      "purchase_year": 2024
+    },
+    "engine": {
+      "engine_cc": "2989 cc",
+      "engine_type": " 2.0L inline-four gasoline engine, 3.0L 6-cylinder  diesel engine"
+    },
+    "stock": 456,
+    "color": "Silver",
+    "rating": 4.5,
+    "id": "29"
+  },
+  {
+    "model_name": "MERECEDES-BENZ EQB",
+    "comapnay": "MERECEDES MOTERS",
+    "image": "https://stimg.cardekho.com/images/car-images/930x620/Mercedes-Benz/EQB/11835/1725340507100/cosmos-black-metallic_121416.jpg",
+    "price": 7220000,
+    "country": "Germany",
+    "year": {
+      "model_year": 2025,
+      "purchase_year": 2025
+    },
+    "engine": {
+      "engine_cc": "2993 cc",
+      "engine_type": "Electric Engine (EQB)"
+    },
+    "stock": 756,
+    "color": "Black",
+    "rating": 4.5,
+    "id": "30"
+  },
+  {
+    "model_name": "GLANZA 2",
+    "comapnay": "comapnay 31",
+    "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2017-05/04/full/1493893657-4365.jpg?im=FeatureCrop,size=(826,465)",
+    "price": 3500000,
+    "country": "Japan",
+    "year": {
+      "model_year": 2013,
+      "purchase_year": 2015
+    },
+    "engine": {
+      "engine_cc": "1197 cc",
+      "type": "1.2L petrol engine, 1.2L CNG engine"
+    },
+    "model_year": 1747625083,
+    "purchase_year": 1747625083,
+    "stock": 99,
+    "color": "Blue",
+    "rating": 4.5,
+    "id": "31",
+    "company": "TOYOTA MOTERS"
+  }
+]

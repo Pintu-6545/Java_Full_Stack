@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect External File</title>
+</head>
+
+<body>
+    <!-- <button id="myButton">Click Me!</button> -->
+    <!-- <p id="message">Hello World</p>
+    <button id="changeBtn">Hello India</button> -->
+
+    <!-- <p class="note"> Number 1</p>
+    <p class="note">Number 2</p> -->
+
+    <!-- <div class="container">
+        <p class="text">Hello World!</p>
+    </div> -->
+
+
+
+    <script>
+        // let no1=200;
+        // let no2=20;
+        // alert(`Addition=> ${no1+no2}`)
+        // alert(`Subtraction=>${no1-no2}`)
+        // alert(`Multification=> ${no1*no2}`)
+        // alert(`Divison=> ${no1/no2}`)
+        // alert(`Modulo ${no1%no2}`)
+
+        // document.writeln("Addition:",no1+no2,"<br>")
+        // document.writeln("Subtration:",no1-no2,"<br>")
+        // document.writeln("Multification:",no1*no2,"<br>")
+        // document.writeln("Division:",no1/no2,"<br>")
+        // document.writeln("Modulo:",no1%no2,"<br>")
+
+
+        // let no = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        // for (let i = 0; i < no.length; i++) {
+        //     console.log("Number=>", no[i]);
+        // }
+
+        // let i = 0;
+        // while (i <= 10) {
+        //     console.log("Number",i)
+        //     i++;
+        // }
+
+        // let i=0;
+        // do{
+        //     console.log("Number",i)
+        //     i++;
+        // } while(i<=10);
+
+        // function data()
+        // {
+        //     let no1=10,no2=20;
+        //     console.log("Addition:=>",no1+no2);
+        //     console.log("Subtraction:=>",no1-no2);
+        //     console.log("Multification:=>",no1*no2);
+        //     console.log("Division:=>",no1/no2);
+        // }
+        // data()
+
+        // function data1(no1,no2)
+        // {
+        //     console.log("Addition:",no1+no2);
+        //     console.log("Subtraction:",no1-no2);
+        //     console.log("Multification:",no1*no2);
+        //     console.log("Division:",no1/no2);
+
+        // }
+        // data1(60,5)
+
+        // function student(name)
+        // {
+        //     console.log("Name=>",name)
+        // }
+        // student("Rahul Parmar")
+        // function add()
+        // {
+        //     let no1=20,no2=10;
+        //     let sum=no1+no2;
+        //     return sum;
+        // }
+        // function sub()
+        // {
+        //     let no1=20,no2=10;
+        //     let sub=no1-no2;
+        //     return sub
+        // }
+        // function multi()
+        // {
+        //      let no1=20,no2=10;
+        //      let multi=no1*no2;
+        //      return multi
+        // }
+        // function div()
+        // {
+        //      let no1=20,no2=10;
+        //      let div=no1/no2;
+        //      return div
+        // }
+        // console.log("Addition=>",add())
+        // console.log("Subtraction=>",sub())
+        // console.log("Multification=>",multi())
+        // console.log("Division=>",div())
+
+        //  let data = [10, 20, 30, 40, 50, 60, 70]
+        //  data.push(80)
+        //  console.log("Add data=>",data)
+        // data.pop(70)
+        // console.log("Remove Data=>",data)
+
+        // data.shift()
+        // console.log("Remove First Data=>",data)
+
+        // data.unshift(9)
+        // console.log("Add First Data=>",data)
+
+        // let company ={
+        //     id: 15,
+        //     name: "Ganesh Bhai",
+        //     desigmnation : "Sales manager",
+        //     salary: 45000
+        // }
+        // company.salary= 65000 // change dara
+        // console.log(company)
+        // console.log(company.name)
+        // console.log(company.salary)
+
+        // Select the button
+        // let button = document.getElementById("myButton");
+
+        // Add an event listener for clicks
+        // button.addEventListener("click", function () {
+        //     alert("Button was clicked!");
+        // });
+
+        // Access DOM elements
+        // const paragraph = document.getElementById("message");
+        // const button = document.getElementById("changeBtn");
+
+        // Add event listener to change the paragraph text
+        // button.addEventListener("click", function () {
+        //     paragraph.textContent = "Text changed with JavaScript!";
+        // });
+
+        // let elements = document.getElementsByClassName("note");
+        // console.log(elements.length); // Output: 2
+        // console.log(elements[0].textContent); // Output: Note 1
+
+        // let firstText = document.querySelector(".container .text");
+        // console.log(firstText.textContent); // Output: Hello
+
+
+        // console.log(1); console.log(2); console.log(3);console.log(4); console.log(5)
+        // setTimeout(() => {
+        // console.log(6);
+        // }, 2000);
+        // console.log(7)
+        // console.log(8)
+        // console.log(9)
+        // console.log(10)
+
+        // function data()
+        // {
+        //     console.log("Welcome to India")
+        // }
+        // setInterval(data,1000)
+
+        // setInterval(()=>{
+        //     console.log("India and Russia Good Friend")
+        // },1000)
+
+
+        // let count = 5;
+
+        // let intervalId = setInterval(() => {
+        //     console.log(count);
+        //     count--;
+
+        //     if (count < 0) {
+        //         clearInterval(intervalId);
+        //         console.log("Time's up!");
+        //     }
+        // }, 1000);
+
+        // console.log(1)
+
+        function divide(a, b) {
+            try {
+                // Check if b is zero and throw an error if true
+                if (b === 0) {
+                    throw new Error("Cannot divide by zero");
+                }
+
+                let result = a / b;
+                console.log(`Result: ${result}`);
+            } catch (error) {
+                console.log(`Error: ${error.message}`);
+            } finally {
+                console.log("Division attempt completed.");
+            }
+        }
+
+        // Test cases
+        divide(10, 2); // Valid division
+        divide(10, 0); // Triggers error
+
+
+    </script>
+</body>
+
+</html>

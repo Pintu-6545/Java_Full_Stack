@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch("data1.json",{
+            method:"GET"
+        })
+        .then((res)=>{
+            return res.json()
+        })
+        .then((data)=>{
+                document.write(`<h1> User Data`)
+                for(let den of data.user)
+                {
+                    console.log(den)
+                    document.writeln(`<h2> ID : ${den.id} Name : ${den.name} Course : ${den.course}</h2> `)
+
+                }
+                document.write(`<h1> Admin Data</h1>`)
+                for(let ad of data.admin)
+                {
+                    console.log(ad)
+                    document.writeln(`<h2> ID : ${ad.id} Name : ${ad.name} Email : ${ad.email}`)
+                }
+                document.write(`<h1> Product Data</h1>`)
+                for(let pro of data.product)
+                {
+                    console.log(pro)
+                    document.writeln(`<h2> ID : ${pro.id} Name : ${pro.name} Product_Name : ${pro.productname} Price : ${pro.price}</h2>`)
+                    
+                
+                }
+        })
+    </script>
+</body>
+</html>

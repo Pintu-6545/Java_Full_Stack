@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch("data1.json",{
+            method:"GET"
+        })
+        .then((res)=>{
+            return res.json()
+        })
+        .then((data)=>{
+
+            //  without variable declare to print 
+            console.log("User Data")
+        //    console.log(data.user[0].id)
+        //    console.log(data.user[0].name)
+        //    console.log(data.user[0].course)
+        //     document.writeln(`<h2> User Data</h2>`)
+        //    document.writeln(`<h2>ID: ${data.user[0].id} Name: ${data.user[0].name} Course: ${data.user[0].course} </h2>`)
+        //    document.writeln(`<h2>ID: ${data.user[1].id} Name: ${data.user[1].name} Course: ${data.user[1].course} </h2>`)
+        //    document.writeln(`<h2>ID: ${data.user[2].id} Name: ${data.user[2].name} Course: ${data.user[2].course} </h2>`)
+        //         document.writeln(`<h2> Admin Data</h2>`)
+        //    document.writeln(`<h2>ID: ${data.admin[0].id} Name: ${data.admin[0].name} Email: ${data.admin[0].email} </h2>`)
+        //    document.writeln(`<h2>ID: ${data.admin[1].id} Name: ${data.admin[1].name} Email: ${data.admin[1].email} </h2>`)
+            
+            
+        //    document.writeln(`<h2>Name: ${data.user[0].name} </h2>`)
+        //    document.writeln(`<h2>Course:${data.user[0].course}</h2>`)
+
+
+                // Variable decalare to print 
+                 let wel=data.user
+            //  console.log(wel)
+                console.log(wel[0].id,wel[0].name,wel[0].course)
+                console.log(wel[1].id,wel[1].name,wel[1].course)
+                console.log(wel[2].id,wel[2].name,wel[2].course)
+                    document.writeln(`<h1>User Data</h1>`)
+                    document.writeln(`<h2> ID : ${wel[0].id} Name : ${wel[0].name} Course : ${wel[0].course}</h2>`)
+                    document.writeln(`<h2> ID : ${wel[1].id} Name : ${wel[1].name} Course : ${wel[1].course}</h2>`)
+                    document.writeln(`<h2> ID : ${wel[2].id} Name : ${wel[2].name} Course : ${wel[2].course}</h2>`)
+
+                console.log("Admin Data")
+                  let km=data.admin
+                //   console.log(km)
+                console.log(km[0].id,km[0].name,km[0].email)
+                console.log(km[1].id,km[1].name,km[1].email)
+                    document.writeln(`<h1> Admin Data</h1>`)
+                    document.writeln(`<h2> ID : ${km[0].id} Name : ${km[0].name} Email : ${km[0].email} </h2>`)
+                    document.writeln(`<h2> ID : ${km[1].id} Name : ${km[1].name} Email : ${km[1].email} </h2>`)
+
+                console.log("Product Data")
+                let pro1=data.product
+                // console.log(pro1)
+                console.log(pro1[0].id, pro1[0].name,pro1[0].productname,pro1[0].price)
+                console.log(pro1[1].id, pro1[1].name,pro1[1].productname,pro1[1].price)
+                console.log(pro1[2].id, pro1[2].name,pro1[2].productname,pro1[2].price)
+
+                        document.writeln(`<h1> Product Data</h1>`)
+                        document.writeln(`<h2> ID : ${pro1[0].id} Name : ${pro1[0].name} Product_Name : ${pro1[0].productname} Price : ${pro1[0].price} </h2>`)
+                        document.writeln(`<h2> ID : ${pro1[1].id} Name : ${pro1[1].name} Product_Name : ${pro1[1].productname} Price : ${pro1[1].price} </h2>`)
+                        document.writeln(`<h2> ID : ${pro1[2].id} Name : ${pro1[2].name} Product_Name : ${pro1[2].productname} Price : ${pro1[2].price} </h2>`)
+
+
+             })
+    </script>
+</body>
+</html>

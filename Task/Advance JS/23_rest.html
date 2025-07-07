@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Deferences Between:- Rest and Spread Operator -->
+    <!-- JavaScript introduced the Rest Parameter and Spread Operator in ES6 to make handling functions and arrays more flexible and concise. 
+     These operators use the same syntax (…), but they serve different purposes. 
+     The rest parameter collects multiple values into an array, 
+     while the spread operator spreads elements from an array or object. -->
+
+
+    <script>
+        // Syntax:-
+        // Rest Parameter
+        // function myFunc(...args) {
+        //     console.log(args);
+        // }
+        // myFunc(1, 2, 3, 4, 5);
+
+        // rest method:The Rest Parameter allows functions to accept an indefinite number of arguments as an array. It collects multiple arguments into a single array parameter.
+        function Demo(...args)
+        {
+            console.log(args)
+        }
+        Demo(1,2,3,4,5,6,7)
+
+
+        //  print the Number of total 1,2,3,4,5,6,7,8,9,10
+        function Demo1(...args)
+        {
+            let sum=0
+            for(let index in args)
+                {
+                    sum=sum+args[index]
+                }
+                return sum
+        }               
+        console.log(Demo1(1,2,3,4,5,6,7,8,9,10))
+    </script>
+</body>
+
+</html>

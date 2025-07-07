@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="data">
+            <input type="text" class="n1" placeholder="Enter Your Plant Name">
+            <button class="btn"><i class="fa-brands fa-searchengin"></i></button>
+        </div>
+        <div class="hotel-data">
+            <h1 class="hotel-pic"></h1>
+            <h2 class="hotel-title"></h2>
+            <p class="country"></p>
+            <p class="check-time"></p>
+            <p class="check_out_time"></p>
+            <p class="price"></p>
+        </div>
+    </div>
+
+    <!-- https://perenual.com/api/pest-disease-list?key=sk-4Rlz682e78123d1b810578 -->
+    <script>
+        const apiKey = "sk-4Rlz682e78123d1b810578";
+        const apiid = "https://perenual.com/api/pest-disease-list?key=";
+
+        const searchdata = document.querySelector(".n1");
+        const searchbtn = document.querySelector(".btn");
+
+        async function plant(common_name) {
+
+            const res = await fetch(apiid + apiKey + `&common_name=${common_name}`)
+
+            const plant_data = res.json()
+            console.log(plant_data)
+
+            // document.querySelector(".hotel-pic").innerHTML = hotel_data.check_out_date;
+            document.querySelector(".hotel-title").innerHTML = plant_data.common_name;
+            document.querySelector(".hotel-data").style.display = "block";
+        }
+
+        searchbtn .addEventListener("click", () => {
+            plant(searchdata.value);
+        });
+    </script>
+</body>
+
+</html>

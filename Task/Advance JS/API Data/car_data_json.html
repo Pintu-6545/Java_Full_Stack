@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Api Data</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <table border="6">
+        <thead>
+            <th>ID</th>
+            <th>MODEL_NAME</th>
+            <th>COMPANY</th>
+             <th>IMAGE</th>
+             <th>PRICE</th>
+            <th>COUNTRY</th>
+            <th>MODEL_YEAR</th>
+            <th>PURCHASE_YEAR</th>
+            <th>ENGINE_CC</th>
+            <th>ENGINE_TYPE</th>
+            <th>STOCK</th>
+            <th>COLOR</th>
+        </thead>
+            <tbody>
+
+            </tbody>
+    </table>
+
+    <script>
+        const dataread = async () => {
+            const res = await axios.get("https://6829c4ae6075e87073a76ecb.mockapi.io/car_api/cars")
+            console.log(res.data)
+            // console.log(res.data[0].id)
+            for (let car of res.data) {
+                console.log(car)
+
+                 let tbody = document.querySelector("tbody")
+                 let trow = tbody.insertRow()
+                 let id_cell = trow.insertCell(0)
+                 let model_name_cell = trow.insertCell(1)
+                 let company_cell = trow.insertCell(2)
+                 let image_cell = trow.insertCell(3)
+                 let price_cell = trow.insertCell(4)
+                 let country_cell = trow.insertCell(5)
+                 let model_year_cell = trow.insertCell(6)
+                 let purchase_year_cell = trow.insertCell(7)
+                 let engine_cc_cell = trow.insertCell(8)
+                 let engine_type_cell = trow.insertCell(9)
+                 let stock_cell = trow.insertCell(10)
+                 let color_cell = trow.insertCell(11)
+
+                 id_cell.textContent = car.id
+                 model_name_cell.textContent = car.model_name
+                 company_cell.textContent = car.comapnay
+                 image_cell.textContent = car.image
+                 price_cell.textContent = car.price
+                 country_cell.textContent = car.country
+                 model_year_cell.textContent = car.year.model_year
+                 purchase_year_cell.textContent = car.year.purchase_year
+                 engine_cc_cell.textContent = car.engine.engine_cc
+                 engine_type_cell.textContent = car.engine.engine_type
+                 stock_cell.textContent = car.stock
+                 color_cell.textContent = car.color
+            }
+        }
+        dataread()
+
+        let cars = {
+            model_name: "GLANZA 2",
+            company: "TOYOTA MOTERS",
+            country: "Japan",
+            image: "https://bsmedia.business-standard.com/_media/bs/img/article/2017-05/04/full/1493893657-4365.jpg?im=FeatureCrop,size=(826,465)",
+            price: 3500000,
+            year: {
+                model_year: 2013,
+                purchase_year: 2015,
+                stock: 658
+            },
+            engine: {
+                engine_cc: "1999 cc",
+                engine_type: "1.2L VVT petrol engine"
+            },
+            stock: 658,
+            color: "Blue"
+        }
+        const datacreate = async () => {
+            const res = await axios.post("https://6829c4ae6075e87073a76ecb.mockapi.io/car_api/cars", cars)
+            console.log(res.data)
+        }
+        // datacreate()
+    </script>
+</body>
+
+</html>

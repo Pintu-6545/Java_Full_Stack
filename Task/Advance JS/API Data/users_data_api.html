@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <table border="6">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>FIRST_NAME</th>
+                    <th>LAST_NAME</th>
+                    <th>EMAIL</th>
+                    <th>PASSWORD</th>
+                    <th>CITY</th>
+                    <th>STREET</th>
+                    <th>ZIPCODE</th>
+                    <th>NUMBER</th>
+                </tr>
+                </thead>
+            <tbody>
+
+            </tbody>
+      </table>
+      <script>
+                fetch("https://fakestoreapi.in/api/users",{
+                    method:"GET"
+                })
+                .then((res)=>{
+                    return res.json()
+                })
+                .then((user_data)=>{
+                    // console.log(user_data)
+                    for(let user of user_data.users)
+                        {
+                            let tbody = document.querySelector("tbody")
+                            let trow = tbody.insertRow()
+                            let id_cell = trow.insertCell(0)
+                            let first_name_cell = trow.insertCell(1)
+                            let last_name_cell = trow.insertCell(2)
+                            let email_cell = trow.insertCell(3)
+                            let password_cell = trow.insertCell(4)
+                            let city_cell = trow.insertCell(5)
+                            let street_cell = trow.insertCell(6)
+                            let zipcode_cell = trow.insertCell(7)
+                            let number_cell = trow.insertCell(8)
+
+                            id_cell.textContent = user.id
+                            first_name_cell.textContent = user.name.firstname
+                            last_name_cell.textContent = user.name.lastname
+                            email_cell.textContent = user.email
+                            password_cell.textContent = user.password
+                            city_cell.textContent = user.address.city
+                            street_cell.textContent = user.address.street
+                            zipcode_cell.textContent = user.address.zipcode
+                            number_cell.textContent = user.address.number
+                        }
+                })
+      </script>
+</body>
+</html>

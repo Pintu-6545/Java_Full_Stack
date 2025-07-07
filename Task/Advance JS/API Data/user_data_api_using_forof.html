@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="6">
+        <thead>
+            <th>ID</th>
+            <th>FIRST_NAME</th>
+            <th>MIDDLE_NAME</th>
+            <th>LAST_NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>EMAIL</th>
+            <th>PASSWORD</th>
+            <th>PHONE</th>
+            <th>USER_NAME</th>
+            <th>BLOODGROUP</th>
+            <th>HEIGHT</th>
+            <th>WEIGHT</th>
+            <th>EYECOLOR</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+        fetch("https://dummyjson.com/users", {
+            method: "GET"
+        })
+            .then((res) => {
+                return res.json()
+            })
+            .then((user_data) => {
+                // let wel=user_data.comments
+                console.log(user_data)
+                for (let data of user_data.users) {
+                    // console.log(data)
+                    let tbody = document.querySelector("tbody")
+                    let trow = tbody.insertRow()
+                    let id_cell = trow.insertCell(0)
+                    let first_name = trow.insertCell(1)
+                    let middle_name = trow.insertCell(2)
+                    let last_name = trow.insertCell(3)
+                    let age_cell = trow.insertCell(4)
+                    let gen_cell = trow.insertCell(5)
+                    let email_cell = trow.insertCell(6)
+                    let password_cell = trow.insertCell(7)
+                    let phone_cell = trow.insertCell(8)
+                    let user_name_cell = trow.insertCell(9)
+                    let blood_group_cell = trow.insertCell(10)
+                    let height_cell = trow.insertCell(11)
+                    let weight_cell = trow.insertCell(12)
+                    let eyecolor_cell = trow.insertCell(13)
+
+                    id_cell.textContent = data.id
+                    first_name.textContent = data.firstName
+                    middle_name.textContent = data.maidenName
+                    last_name.textContent = data.lastName
+                    age_cell.textContent = data.age
+                    gen_cell.textContent = data.gender
+                    email_cell.textContent = data.email
+                    password_cell.textContent = data.password
+                    phone_cell.textContent = data.phone
+                    user_name_cell.textContent = data.username
+                    blood_group_cell.textContent = data.bloodGroup
+                    height_cell.textContent = data.height
+                    weight_cell.textContent = data.weight
+                    eyecolor_cell.textContent = data.eyeColor
+
+
+                }
+            })
+    </script>
+</body>
+
+</html>

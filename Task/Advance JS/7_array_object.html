@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 1) array inner array
+        // 2) array inner object
+        // 3) object inner object
+        // 4) object inner array    
+
+        // 1. Array inner Array
+        // let data=[1,2,3,4,[5,6,7,[8,9,10]]]
+        // console.log(data)
+        // console.log(data[3])
+        // console.log(data[4][2])
+        // console.log(data[4][3][2])
+        
+        let date=["Pintu","Karan","Manish","Pooja","Shushila","Parina",["Rinku","Radhika","Monika","Kajal","Suman",["Kanchan","Anjali","Aarti","Reena","Veema","nirma"]]]
+        console.log(date)
+        document.writeln(date,"<br><br>")
+        //  print the Shushila
+         document.writeln(date[4],"<br>" )
+        // print only First character Shushila
+         console.log(date[4][0])
+        document.writeln(date[4][0],"<br>")
+        // print the kajal
+        console.log(date[6][3])
+        document.writeln(date[6][3],"<br>")
+        // print only kajal First Character
+        console.log(date[6][3][0])
+        document.write(date[6][3][0],"<br>")
+        // print only radhika last character
+        console.log(date[6][1][6])
+        document.writeln(date[6][1][6],"<br>")
+        // print only Veema 
+        console.log(date[6][5][4])
+         // print only middle character m veema
+        console.log(date[6][5][4][3])
+        document.writeln(date[6][5][4][3],"<br>")
+        // print parina name
+        console.log(date[5])
+        document.writeln(date[5],"<br>")
+        // print only a r parina  middle character
+        console.log(date[5][2])
+        document.writeln(date[5][2],"<br><br>")
+
+
+        //  2. Array inner object
+        let data =[10,20,30,{name:"Pintu Ghanchi",Age:25,Designation:"Software Enginner"},40,50,60,70]
+        console.log(data)
+        document.write("<br><br>")
+        // print the only name
+        console.log(data[3].name)
+        document.write(data[3].name,"<br>")
+        // print the only age
+        console.log(data[3].Age)
+        document.writeln(data[3].Age,"<br>")
+        // print the Designation 
+        console.log(data[3].Designation)
+        document.writeln(data[3].Designation,"<br><br>")
+        // print the 60 value
+        console.log(data[6])
+        document.writeln(data[6],"<br><br>")
+
+
+        // 3 .Object inner Object
+        let company={Emp_id:120,Emp_name:"Rahul Ghandi",Age:60,Designation:"Opozisation Leader",Education:"BCA",
+          Children :
+            {
+                chid_id :202,
+                child_name : "Punita",
+                Place : "Ahmedabad"
+            }
+        }
+            console.log(company)
+            // print the Emp_id 
+            console.log(company.Emp_id)
+            document.writeln(company.Emp_id,"<br>")
+            //  print the Emp_name
+            console.log(company.Emp_name)
+            document.writeln(company.Emp_name,"<br>")
+            //  print the Age Emp
+            console.log(company.Age)
+            document.writeln(company.Age,"<br>")
+            // print the Designation 
+            console.log(company.Designation)
+            document.writeln(company.Designation,"<br>")
+            // print the Education
+            console.log(company.Education)
+            document.writeln(company.Education,"<br>")
+
+            // print the Children value
+            console.log(company.Children)
+            // print the child_id
+            console.log(company.Children.chid_id)
+            document.writeln(company.Children.chid_id,"<br>")
+            // print the child_name
+            console.log(company.Children.child_name)
+            document.writeln(company.Children.child_name,"<br>")
+            // print the Child Place
+            console.log(company.Children.Place)
+            document.writeln(company.Children.Place,"<br><br><br>")
+
+
+
+               let Student = {name:"Lalit", standard: 10, institute : "Tops Technologies",
+                    courses : {
+                                    front_end: "React",
+                                    back_end : "Java",
+                                    full_stack: "Ract+Java SpringBoot"
+                    }
+               }
+            //    print the Student value
+               console.log(Student)
+            //  print the name
+            console.log(Student.name)
+            document.writeln(Student.name,"<br>")
+            //  print the standard
+            console.log(Student.standard)
+            document.writeln(Student.standard,"<br>")
+            // print the Institute 
+            console.log(Student.institute)
+            document.writeln(Student.institute,"<br><br>")
+
+            //  print the Courses
+              console.log(Student.courses)
+            // print the Front_end
+            console.log(Student.courses.front_end)
+            document.writeln(Student.courses.front_end,"<br>")
+            // print the back_end 
+            console.log(Student.courses.back_end)
+            document.writeln(Student.courses.back_end,"<br>")
+            // print the full stack
+            console.log(Student.courses.full_stack)
+            document.writeln(Student.courses.full_stack,"<br><br><br>")
+
+
+        // 4. Object inner Array
+           
+                let country = {cont1:"India",Cont2:"America",cont3:"Russia",cont4:"Maxico", cont5:"Japan",cont6:"Singapore",conts7:"Nepal",
+                    Number : [10,20,30,40,50,60,70]
+                }
+                //  print the country
+                console.log(country)
+                // print the country russia
+                console.log(country.cont3)
+                document.writeln(country.cont3,"<br>")
+                // print the country singapore
+                console.log(country.cont6)
+                document.writeln(country.cont6,"<br>")
+                // print the country Nepal
+                console.log(country.conts7)
+                document.writeln(country.conts7,"<br>")
+                // print the country India
+                console.log(country.cont1)
+                document.writeln(country.cont1,"<br><br>")
+
+                // print the Number
+                console.log(country.Number)
+                document.writeln(country.Number,"<br>")
+                // print the Numbder 10
+                console.log(country.Number[0])
+                document.writeln(country.Number[0],"<br>")
+                // print the Number 20
+                console.log(country.Number[1])
+                document.writeln(country.Number[1],"<br>")
+                // print the Number 50
+                console.log(country.Number[4])
+                document.writeln(country.Number[4],"<br>")
+                // print the Number 60
+                console.log(country.Number[5])
+                document.writeln(country.Number[5])
+
+        </script>
+</body>
+
+</html>

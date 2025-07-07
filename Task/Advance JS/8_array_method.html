@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Array method  -->
+    <script>
+       let  data = [10, 20, 30, 40, 50, 60, 70]
+        data1 = ["Pintu", "Vivek", "Ravi", "Karan", "Manish", "Rahul", "Laxman"]
+
+        // length method:- find array total length
+        console.log(" Data1 Array Length=>", data1.length)
+        document.writeln("Data1 Array Length=>", data1.length, "<br><br>")
+        console.log("Data Array Length=>", data.length)
+        document.writeln("Data Array Length=>", data.length, "<br><br>")
+
+        //   concat method: merge two array
+        let result = data.concat(data1)
+        console.log(result)
+        document.writeln("Concatnation=>", result, "<br><br>")
+        // console.log(data.concat(data1))
+        // document.writeln(data.concat(data1),"<br>")
+
+        // push method:- add data
+        data.push(80)
+        console.log("Data Push Array=>", data)
+        document.writeln("Data Push Array=>", data, "<br>")
+
+        //  push method:- add the data
+        data.push(90)
+        console.log("Data Push Array=>", data)
+        document.writeln("Data Push Array=>", data, "<br>")
+        //  push method :- add the Name
+        data1.push("Pooja")
+        console.log("Data1 Push Array =>", data1)
+        document.writeln("Data1 Push Array=>", data1, "<br>")
+        //     push method :- add the Name
+        data1.push("Ramesh")
+        console.log("Data1 Push Array=>", data1)
+        document.writeln("Data1 Push Array=>", data1, "<br><br><br>")
+
+        //  pop method:- Remove the Data
+        // after Remove data array
+        let wel = data.pop()
+        console.log("Remove Data =>", wel)
+        console.log("Remove After Array=>", data)
+        document.writeln("Remove Data =>", wel, "<br>")
+        document.writeln("Remove After Array=>", data, "<br><br>")
+
+        // pop method:- Remove the Data
+        // after Remove data array
+        let gh = data.pop()
+        console.log("Remove Data=>", gh)
+        console.log("Remove After Array=>", data)
+        document.writeln("Remove Data=>", gh, "<br>")
+        document.writeln("Remove After Array=>", data, "<br><br>")
+
+        // pop method:- Remove the data data1 name
+        //   after remove data array
+        let c = data1.pop()
+        console.log("Remove Name:=>", c)
+        console.log("Remove After Array=>", data1)
+        document.writeln("Remove Name=>", c, "<br>")
+        document.writeln("Remove After Array=>", data1, "<br><br>")
+        console.log("Remove Name=>", data1.pop())
+        console.log("Remove After Array=>", data1)
+        document.writeln("Remove Name=>", data1.pop(), "<br>")
+        document.writeln("Remove After Array=>", data1, "<br><br>")
+
+        // unshift method:- Before add the Data Array
+        console.log("After Array=>", data1)
+        document.writeln("After Array=>", data1, "<br>")
+        let j = data1.unshift("Rajiv")
+        console.log("Before Add Data=>", j)
+        console.log("Array Data=>", data1)
+        document.writeln("Before Add Data=>", data1.unshift(), "<br>")
+        document.writeln("Befor Array=>", data1, "<br><br>")
+
+        // shift method:- Before Remove  Data Array
+        console.log(data1)
+        document.writeln("Before Data=>", data1, "<br><br>")
+        let u = data1.shift()
+        console.log("Remove Before Data=>", u)
+        console.log("Remove Before Array=>", data1)
+        document.writeln("Remove Before Data=>", u, "<br>")
+        document.writeln("Remove Before Array=>", data1, "<br><br><br>")
+
+        // slice method:- slicing  method
+        console.log("Array Data =>", data)
+        console.log("Length=>", data.length)
+        document.writeln("Array Data=>", data, "<br>")
+        document.writeln("Length=>", data.length, "<br><br>")
+        // print the 20,30,40,50,60 values
+        let tm = data.slice(1, 6)
+        console.log("Slice Array Data =>", tm)
+        document.writeln("Slice Array Data =>", tm, "<br>")
+        // print the 40,50,60
+        console.log("Slice Array Data =>", data.slice(3, 6))
+        document.writeln("Slice Array Data =>", data.slice(3, 6), "<br><br>")
+
+        // print the 60,70
+        console.log("Slice Array Data=>", data.slice(5, 7))
+        document.writeln("Slice Array Data=>", data.slice(5, 7), "<br><br>")
+
+
+        // for each method:- This is array method
+        data.forEach((value, index) => {
+            console.log("Array Value=>", value, "Array Index=>", index)
+            // console.log("Array Index=>",index)
+            document.writeln("Array Value=>", value, "Array Index=>", index, "<br><br>")
+        })
+
+
+        // reverse method:- print the Reverse array
+        document.writeln("Reverse Data=>", data1.reverse(), "<br>")
+        let hm = data.reverse()
+        console.log("Reverse Data=>", hm)
+        console.log("Reverse Data=>", data.reverse())
+        console.log("Reverse Data1=>", data1.reverse())
+        console.log("Reverse Data=>", data1.reverse())
+        document.writeln("Rervse Data=>", data1.reverse())
+        // filter method:- filter data
+        let jeam = ["Uttam", "Pintu", "Manan", "Rahul", "Manisha", "Lalu", "Rajsthan", "Gujarat"]
+        console.log(jeam)
+        let vel = jeam.filter((word) => word.length > 5)
+        console.log(vel)
+        document.writeln(vel)
+    </script>
+</body>
+
+</html>

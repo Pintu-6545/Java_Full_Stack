@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #222;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 800px;
+            background: linear-gradient(135deg, #00feba, #5b548a);
+            color: #fff;
+            margin: 100px auto 0;
+            border-radius: 20px;
+            padding: 40px 35px;
+            text-align: center;
+            display: none;
+        }
+
+        .apod-image {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .apod-title {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .apod-explanation {
+            font-size: 18px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .apod-date {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .search-input {
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .search-button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search-container">
+        <input type="text" class="search-input" pattern="\d{4}-\d{2}-\d{2}" placeholder="yyyy-mm-dd">
+        <button class="search-button">Search</button>
+    </div>
+    <div class="card">
+        <h1 class="apod-image"></h1>
+        <h1 class="apod-title"></h1>
+        <p class="apod-explanation"></p>
+        <p class="apod-date"></p>
+    </div>
+
+    <script>
+        
+        // const apikey = "rD2mAjsShmAq19XLPRFCje7u";
+        const apikey = "sKM+bY0k5ffud5kKq8kwsg==iEKtY0XhYuTaRj2S";
+ 
+        const apiid = "https://api.api-ninjas.com/v1/country?api_key=";
+
+        const searchdata = document.querySelector("search-input");
+        const searchbtn = document.querySelector(".search-button");
+         
+            async function hotel(name) {
+                const res = await fetch(apikey + apiid + `&name${name}` )
+                const data = res.json();
+                console.log(data)
+                document.querySelector(".apod-image").innerHTML = `<image src="${data.thumbnaill}" width="300px" height="300px"`;
+                Document.querySelector(".apod-title").innerHTML = data
+
+            }
+    </script>
+</body>
+
+</html>

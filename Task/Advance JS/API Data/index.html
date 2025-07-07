@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <!-- 1. Array inner Array
+            2. Array inner Object
+            3. Object inner Object
+            4. Oject inner Array -->
+            <script>
+            // <!-- 1. Array inner Array -->
+             let data=[10,20,30,40,50,[25,10,52,60,80,[75,12,61]]]
+             console.log(data)
+             console.log(data[5][2])
+             console.log(data[5][5][1])
+             console.log(data[5][2])
+
+            // 2. Array inner Object
+             let wel=[36,35,63,20,45,32,{
+                    name:"Pintu",
+                    id:101,
+                    standard:"BCA"
+
+             }]
+            //  console.log(wel)
+            // console.log(wel[6].name)
+            for(let rv in wel)
+            {
+                console.log(rv,wel[rv])
+            }
+
+            </script>
+             </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card 7</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .data1{
+                display: flex;
+                justify-content: start;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row data1">
+
+        </div>
+    </div>
+    <script>
+        fetch("https://fakestoreapi.in/api/products", {
+            method: "GET"
+        })
+            .then((res) => {
+                return res.json()
+            })
+            .then((product_data) => {
+                // console.log(product_data)
+                for (let pro of product_data.products) {
+                    // console.log(pro)
+
+                    let data = `  <div class="col-md-3 g-2">
+                        <div class="card" style="width: 18rem;">
+                                <img src="${pro.image}" width="350px" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">${pro.id}</h5>
+                                    <h4 class="card-title">${pro.title.slice(0,15)}</h5>
+                                    <p class="card-text h6">${pro.description.slice(0,50)}</p>
+                                    <p class="card-text h6">${pro.model}</p>
+                                    <p class="card-text h6">${pro.brand}</p>
+                                    <p class="card-text h6">${pro.color}</p>
+                                    <p class="card-text h6">${pro.category}</p>
+                                    <p class="card-text h6">${pro.discount}</p>
+                                    <p class="card-text h5"> <i class="fa-solid fa-dollar-sign"> </i> ${pro.price}</p>
+                                    <a href="#" class="btn btn-primary ms-5 ps-4 pe-4SS">ADD TO CART</a>
+                                </div>
+                                </div>
+                                </div>`;
+                     document.querySelector(".row").innerHTML += data
+                }
+            })
+    </script>
+</body>
+
+</html>

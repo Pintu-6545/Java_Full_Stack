@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let json = `[
+            {
+                "id": 1,
+                "name": "Uttam",
+                "course": "Fron-end"
+            },
+            {
+                "id": 2,
+                "name": "Pintu",
+                "course": "Back-end"
+            },
+            {
+                "id": 3,
+                "name": "manav",
+                "course": "Full-stack"
+            }
+        ]`;
+                    // console.log(json)
+                    // javscript not read json
+                    // document.write(json)
+
+                         // method format json convert object/array 
+
+                        let data = JSON.parse(json)
+                        //  console.log(data)
+                         for(let student of data)
+                         {
+                            console.log(student.course)
+                            document.writeln(`<h2> ID:${ student.id} Name: ${student.name } course: ${student.course}</h2>`)
+                         }
+
+                         
+
+    </script>
+</body>
+
+</html>

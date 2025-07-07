@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for looping Structure
+        let wel=[10,20,30,40,50,60,70,80,90,100]
+        console.log(wel)
+        for(let i=0;i<wel.length;i++)
+            {
+                console.log(i,wel[i])
+            }
+        // Advanve for looping structure
+        // 1. for of
+        // 2. for in
+        // 3. for each
+
+        // 1. for of
+          for(let data of wel )
+          {
+            console.log(data)
+            document.writeln(data,"<br>")
+          }
+
+        //   for in 
+        for(let index in wel)
+        {
+            console.log(index)
+            document.writeln(wel[index])
+        }
+
+        // forEach Loop
+                // 1. value
+                // 2. index
+                // 3. Array
+        wel.forEach((value,index,wel)=>{
+            console.log(value)
+            console.log(index)
+            console.log(wel)
+        })
+
+    </script>
+</body>
+</html>

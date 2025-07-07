@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <table border="6">
+                        <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>FIRST_NAME</th>
+                                    <th>LAST_NAME</th>
+                                    <th>EMAIL</th>
+                                    <th>PASSWORD</th>
+                                    <th>CITY</th>
+                                    <th>STREET</th>
+                                    <th>NUMBER</th>
+                                    <th>PHONE</th>
+                                    <th>ZIPCODE</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+            </table>
+    <script>
+            fetch("https://fakestoreapi.com/users",{
+                method:"GET"
+            })
+            .then((res)=>{
+                return res.json()
+            })
+            .then((data)=>{
+                // console.log(data)
+               
+                data.forEach((value,index)=>{
+                    // console.log(value)
+                    // console.log(index)
+                    let tbody = document.querySelector("tbody")
+                    let trow = tbody.insertRow()
+                    let idcell = trow.insertCell(0)
+                    let fname_cell = trow.insertCell(1)
+                    let lname_cell = trow.insertCell(2)
+                    let email_cell =trow.insertCell(3)
+                    let password_cell = trow.insertCell(4)
+                    let city_cell = trow.insertCell(5)
+                    let street_cell = trow.insertCell(6)
+                    let number_cell = trow.insertCell(7)
+                    let phone_cell = trow.insertCell(8)
+                    let zipcode_cell = trow.insertCell(9)
+
+                    idcell.textContent=value.id
+                    fname_cell.textContent=value.name.firstname
+                    lname_cell.textContent=value.name.lastname
+                    email_cell.textContent=value.email
+                    password_cell.textContent=value.password
+                    city_cell.textContent=value.address.city
+                    street_cell.textContent=value.address.street
+                    number_cell.textContent=value.address.number
+                    phone_cell.textContent=value.phone
+                    zipcode_cell.textContent=value.address.zipcode
+                })
+            
+            })
+    </script>
+</body>
+</html>
