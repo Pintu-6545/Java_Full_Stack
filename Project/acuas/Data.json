@@ -1,0 +1,298 @@
+{
+    "admin": [
+        {
+            "id": "1",
+            "name": "Admin",
+            "email": "admin5252@gmail.com",
+            "password": " 987654321"
+        }
+    ],
+    "users": [
+        {
+            "name": "Harry Modi",
+            "email": "user@gmail.com",
+            "password": "123456789",
+            "id": "1"
+        },
+        {
+            "id": "2",
+            "name": "Ganesh Purohit",
+            "email": "ganeshpurohi2525@gmail.com",
+            "password": "9828850536",
+            "status": "block"
+        },
+        {
+            "name": "Pintu  Modi",
+            "email": "pmodi8800@gmail.com",
+            "password": "7600941476",
+            "id": "1751471023041"
+        },
+        {
+            "id": "1751471180796",
+            "name": "Mukesh Kumar Patel",
+            "email": "mmodi8655@gmail.com",
+            "password": "9724697756",
+            "status": "unblock"
+        }
+    ],
+    "blogs": [
+        {
+            "id": "1",
+            "title": "Mineral Water",
+            "image": "https://media.gettyimages.com/id/1552781935/photo/water-bottles-on-an-automated-conveyor-belt.jpg?s=612x612&w=0&k=20&c=vjYAdVl-LiRa5BxlAJPzWPr2uix1Ui8bzZdCvTAg1zE=",
+            "desc": "Mineral water is natural or processed water that contains essential minerals like calcium, magnesium, and potassium, beneficial for health. It is often sourced from underground springs and is commonly consumed for hydration and mineral supplementation.",
+            "date": "Jul 04 2025"
+        },
+        {
+            "id": "2",
+            "title": "Spring Water",
+            "image": "https://images.unsplash.com/photo-1653898419730-3aae8c1ae980?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHNwcmluZyUyMHdhdGVyfGVufDB8fDB8fHww",
+            "desc": "Spring water is natural water that flows to the surface from an underground source. It is typically rich in minerals and considered pure, as it is filtered naturally through layers of rock and soil.",
+            "date": "Jul 06 2025"
+        },
+        {
+            "id": "3",
+            "title": "Black Water",
+            "image": "https://media.gettyimages.com/id/1329510401/photo/woman-running-in-the-park.jpg?s=612x612&w=0&k=20&c=-3gl4nS5NGlv0oSuUV8tRyX9-F7NGoJ4DuOzazazFeA=",
+            "desc": "Black water is mineral-rich alkaline water infused with fulvic acid, giving it a dark color. It's claimed to offer health benefits like improved hydration, detoxification, and better nutrient absorption.",
+            "date": "Jul 10 2025"
+        },
+        {
+            "id": "4",
+            "title": "Distilled water",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPvvJzQ3s7ngTFXEQi2bMdhVUrWmL8IITL3Q&s",
+            "desc": "Distilled water is purified by boiling and condensing steam, removing impurities, minerals, and contaminants. It is very pure and often used in laboratories, medical equipment, and appliances, but lacks essential minerals for regular drinking.",
+            "date": "Jul 25 2025"
+        }
+    ],
+    "services": [
+        {
+            "id": "1",
+            "title": "Residential Waters",
+            "logo": "https://cdn-icons-png.flaticon.com/128/18144/18144240.png",
+            "desc": "Residential water is the water supplied to homes for daily use such as drinking, cooking, cleaning, and bathing. It typically comes from municipal sources and is treated to meet safety and quality standards."
+        },
+        {
+            "id": "2",
+            "title": "Commercial Waters",
+            "logo": "https://cdn-icons-png.flaticon.com/128/9746/9746852.png",
+            "desc": "Commercial water refers to water used by businesses and industries for operations like manufacturing, cleaning, and cooling. It is typically supplied by municipal systems or private sources and must meet regulatory quality standards for its intended use."
+        },
+        {
+            "id": "3",
+            "title": "Filtration Plants",
+            "logo": "https://cdn-icons-png.flaticon.com/128/10164/10164412.png",
+            "desc": "Filtration plants are facilities that purify water by removing impurities, contaminants, and particles through various filtration processes. They ensure the water is safe and clean for residential, commercial, or industrial use."
+        } 
+      ],
+        "services1": [
+        {
+            "id": "4",
+            "title": "Water Softening",
+            "logo": "https://cdn-icons-png.flaticon.com/128/18817/18817504.png",
+            "desc": "Water softening is the process of removing hardness-causing minerals like calcium and magnesium from water. This helps prevent scale buildup in pipes and appliances, improving water quality for household and industrial use."
+        },
+        {
+            "id": "5",
+            "title": "Market Research",
+            "logo": "https://cdn-icons-png.flaticon.com/128/18853/18853522.png",
+            "desc": "Water market research involves analyzing trends, consumer behavior, and demand in the water industry, including bottled, filtered, and utility water. It helps companies understand market needs, competition, and opportunities for growth and innovation."
+        },
+        {
+            "id": "6",
+            "title": "Project Planning",
+            "logo": "https://cdn-icons-png.flaticon.com/128/11160/11160432.png",
+            "desc": "Water project planning involves outlining goals, resources, timelines, and strategies for developing water-related infrastructure, such as supply systems or treatment plants. It ensures efficient use of resources and successful project execution."
+        }
+    ],
+    "feature": [
+        {
+            "id": "1",
+            "title": "Quality Check",
+            "logo": "https://cdn-icons-png.flaticon.com/128/18144/18144240.png",
+            "desc": "Water quality check involves testing water for physical, chemical, and biological parameters to ensure it is safe for consumption and use. It helps detect contaminants, maintain health standards, and comply with regulatory guidelines."
+        },
+        {
+            "id": "2",
+            "title": "5 Steps Filtration",
+            "logo": "https://cdn-icons-png.flaticon.com/128/9746/9746852.png",
+            "desc": "Water quality check involves testing water for physical, chemical, and biological parameters to ensure it is safe for consumption and use. It helps detect contaminants, maintain health standards, and comply with regulatory guidelines."
+        },
+        {
+            "id": "3",
+            "title": "Composition",
+            "logo": "https://cdn-icons-png.flaticon.com/128/8758/8758620.png",
+            "desc": "Water Composition refers to the physical, chemical, and biological constituents present in water, including minerals, salts, gases, and organic matter. Understanding its composition is essential for assessing water quality, safety, and suitability for various uses."
+        },
+        {
+            "id": "4",
+            "title": "Lab Control",
+            "logo": "https://cdn-icons-png.flaticon.com/128/7927/7927785.png",
+            "desc": "Lab Control ensures accurate testing and quality assurance of water by regularly monitoring samples in a controlled laboratory environment. It helps detect contaminants, verify compliance with standards, and maintain consistency in treatment processes."
+        }
+    ],
+    "products": [
+        {
+            "id": "1",
+            "image": "https://m.media-amazon.com/images/I/51RIBzZJM-L._SX679_PIbundle-9,TopRight,0,0_AA679SH20_.jpg",
+            "water_type": "Miniral Water Bottle",
+            "quantity": "2L 1 Bottle",
+            "price": "35",
+            "icon": "https://cdn-icons-png.flaticon.com/128/7204/7204809.png"
+        },
+        {
+            "id": "2",
+            "image": "https://thumbs.dreamstime.com/b/two-water-bottles-isolated-white-background-33020022.jpg?w=768",
+            "water_type": "RO Water Bottle",
+            "quantity": "4L 2 Bottle",
+            "price": "70",
+            "icon": "https://cdn-icons-png.flaticon.com/128/7204/7204809.png"
+        },
+        {
+            "id": "3",
+            "image": "https://thumbs.dreamstime.com/b/three-water-bottles-isolated-white-background-128320045.jpg?w=768",
+            "water_type": "UV Water Bottle",
+            "quantity": "6L 3 Bottle",
+            "price": "120",
+            "icon": "https://cdn-icons-png.flaticon.com/128/7204/7204809.png"
+        },
+        {
+            "id": "4",
+            "image": "https://media.istockphoto.com/id/474108366/photo/two-big-bottle-of-water-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=nmdD1xwX-36rxpnjfKlFjKw22rs0CU5rbTWmvJKW5xg=",
+            "water_type": "Fresh Water Can",
+            "quantity": "20 Litter",
+            "price": "150",
+            "icon": "https://cdn-icons-png.flaticon.com/128/7204/7204809.png"
+        },
+        {
+            "id": "5",
+            "image": "https://www.shutterstock.com/shutterstock/photos/1426125527/display_1500/stock-vector-lime-flavor-sparkling-water-ads-on-bokeh-beach-background-in-d-illustration-1426125527.jpg",
+            "water_type": "Sparkling Water Bottle",
+            "quantity": "4L 2 Bottle  ",
+            "price": "250",
+            "icon": "https://cdn-icons-png.flaticon.com/128/7204/7204809.png"
+        },
+        {
+            "id": "6",
+            "image": "https://www.aquasafewater.in/wp-content/uploads/Cool-Water-Cans.jpg",
+            "water_type": "Soft Water Can",
+            "quantity": "20 Litter",
+            "price": "120",
+            "icon": "https://cdn-icons-png.flaticon.com/128/7204/7204809.png"
+        },
+        {
+            "id": "7",
+            "image": "https://thumbs.dreamstime.com/b/bottle-water-splash-blue-background-42672186.jpg?w=768",
+            "water_type": "Spring Water Bottle",
+            "quantity": "2L Bottle",
+            "price": "70",
+            "icon": "https://cdn-icons-png.flaticon.com/128/7204/7204809.png"
+        },
+        {
+            "id": "8",
+            "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSxLYfQdX-hkZkTBn8UTrTAlTHo7dXghk7-m15PmT13UlCiWR9sTh79WBtuPgt0GJE9bZd-f2U1x6uH31aANvufHfM0yav6ScCZR6Lh8Yizcm1s_tzuZ1MuXDI",
+            "water_type": "Black Water Bottle",
+            "quantity": "2L Bottle",
+            "price": "299",
+            "icon": "https://cdn-icons-png.flaticon.com/128/7204/7204809.png"
+        },
+         {
+            "id": "9",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRm_0l9Dq76WLK6WBRAPUQvY-Rb1Te6XyzEA&s",
+            "water_type": "Alkaline Water Bottle",
+            "quantity": "6L 3 Bottle",
+            "price": "350",
+            "icon": "https://cdn-icons-png.flaticon.com/128/7204/7204809.png"
+        },
+         {
+            "id": "10",
+            "image": "https://media.istockphoto.com/id/1089173910/photo/woman-drinking-water.jpg?s=612x612&w=0&k=20&c=04UWUiHoGetlP1-KuE1Sz5dkI2O6wVAgvLLBv2uNpPE=",
+            "water_type": "Purify Water",
+            "quantity": "2L Bottle",
+            "price": "150",
+            "icon": "https://cdn-icons-png.flaticon.com/128/7204/7204809.png"
+        }
+    ],
+    "Team": [
+          {
+            "id": "1",
+            "name": "Mukesh Patel",
+            "image": "https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.webp",
+            "designation": "CEO & Founder"
+          },
+           {
+            "id": "2",
+            "name": "Rahul Sharma",
+            "image": "https://media.istockphoto.com/id/1369199360/photo/portrait-of-a-handsome-young-businessman-working-in-office.jpg?b=1&s=612x612&w=0&k=20&c=-zIXXuXi1Bufza1-8Pay9Q-a65BbNxolOJJlMY62siI=",
+            "designation": "General Manager (GM)"
+          },
+           {
+            "id": "3",
+            "name": "Ganesh Purohit",
+            "image": "https://media.istockphoto.com/id/1325154957/photo/young-man-smiling-with-arms-crossed-on-gray-background-stock-photo.jpg?s=612x612&w=0&k=20&c=RCAoQfqWvgDOM9MwKmyRRXwZcXYS0wL3CcCKQ37eNOU=",
+            "designation": "Water Treatment Engineer"
+          },
+          {
+            "id": "4",
+            "name": "Pintu  Modi",
+            "image": "https://media.istockphoto.com/id/1369746033/photo/portrait-of-a-handsome-young-businessman-working-in-office.jpg?b=1&s=612x612&w=0&k=20&c=wZAOYpGDl8RmvqXR81tijUcPdi3zGiHvR6T8vg9LjcY=",
+            "designation": "Quality Control Officer"
+          },
+          {
+            "id": "5",
+            "name": "Laxman Borana",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnB7ReKghSxNBxCnrUQ_sAxK5cWm6SQ3cV8w&s",
+            "designation": "Lab Technician (Water Testing)"
+          },
+          {
+            "id": "6",
+            "name": "Yuvraj Singh",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRklvpwcinYPkHcj51i9UZNuMfhFBo6u-lULA&s",
+            "designation": "Maintenance Engineer"
+          },
+          {
+            "id": "7",
+            "name": "Devilal Ghanchi",
+            "image": "https://media.istockphoto.com/id/1500828207/photo/portrait-of-a-confident-young-indian-teenager-boy-wearing-suit-standing-with-his-arms-cross.jpg?s=612x612&w=0&k=20&c=_UWzL1cNxz39woYUcFEpnuqjDxF7B_jx2DWc9zXuJcw=",
+            "designation": "Packaging Supervisor"
+          },
+          {
+            "id": "8",
+            "name": "Pratik Prajapati",
+            "image": "https://media.istockphoto.com/id/638979180/photo/his-confidence-sets-him-apart-from-other-entrepreneurs.jpg?s=612x612&w=0&k=20&c=IwgJIdUqXXwSLfTdKRwjb_aLrfRvohmFdDDTnPjZO1w=",
+            "designation": "Logistics Manager"
+          }
+
+
+    ],
+    "feedback" : [
+        {
+             "id": "1",
+             "name": "Rajesh Patel",
+             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-GzNfcLh9aEM3DudMOHfYMe47Z2Dt_B0GBA&s",
+             "Designation": "Software Engineer",
+             "desc":"This spring water is incredibly pure, crisp, and naturally refreshing—like drinking straight from a mountain stream. It keeps me feeling hydrated and energized all day. You can really taste the difference in quality. It's now the only water my family trusts!"
+        },
+         {
+             "id": "2",
+             "name": "Uttam Bhai",
+             "image": "https://media.istockphoto.com/id/1562983249/photo/portrait-of-happy-and-successful-businessman-indian-man-smiling-and-looking-at-camera.jpg?s=612x612&w=0&k=20&c=tfBv6taG9nTidFwENcrvEEvRHABN5gDAmg-K1G1Etnc=",
+             "Designation": "Frontend Developer",
+             "desc":"This purified water is crystal clear, great-tasting, and consistently reliable. I feel confident knowing it's free from impurities and safe for my entire family. It’s refreshing, clean, and perfect for daily hydration. Truly a high-quality choice you can trust!"
+        },
+        {
+             "id": "3",
+             "name": "Pintu Ghanchi",
+             "image": "https://media.istockphoto.com/id/1250504146/photo/indian-businessman-stock-photo.jpg?s=612x612&w=0&k=20&c=lNIdjypVUkd2uVXamC34zHeFer6LQI3qivzSNwR-KQs=",
+             "Designation": "Java Developer",
+             "desc":"After using black water, I truly feel the difference—more energy, better digestion, and quicker recovery after workouts. The unique mineral content gives it an edge over regular water. It’s not just a drink, it’s a lifestyle upgrade. Highly recommended for anyone serious about health!"
+        },
+        {
+             "id": "4",
+             "name": "Mohan Purohit",
+             "image": "https://media.istockphoto.com/id/840531052/photo/smiling-businessman-or-worker-standing-in-suit-near-office-building.jpg?s=612x612&w=0&k=20&c=15m58u4P5X-hznFRlhPCI-nGOdZBxqVktfXS1vS98yQ=",
+             "Designation": "Data Scientist",
+             "desc":"This mineral water is incredibly refreshing with a clean, crisp taste. Packed with natural minerals, it keeps me hydrated and feeling revitalized throughout the day. It’s the perfect balance of purity and health benefits. A must-have for daily wellness!"
+        }
+    ]
+}
