@@ -47,7 +47,7 @@ export const studentData = createAsyncThunk(
 export const editStudent = createAsyncThunk(
     'editStudent', async (data, { rejectWithValue }) => {
         try {
-            const res = await axios.put(`http://localhost:3000/students/${id}`, data)
+            const res = await axios.put(`http://localhost:3000/students/${data.id}`, data)
             const result = await res.data
             return result;
         } catch (error) {
@@ -124,22 +124,22 @@ export const studentSlice = createSlice({
             })
 
 
-             // Update Student Data 
+            
+            // Update Student Data 
             .addCase(editStudent.pending, (state, action) => {
-                state.loading = true
+                state.loading = true;
             })
             .addCase(editStudent.fulfilled, (state, action) => {
-                state.loading = false
-
-                state.student = state.student.map((ele)=>
-                    ele.id = action.payload.id ? action.payload : ele
-                )
-
+                state.loading = false;
+                state.student = state.student.map((ele) =>
+                    ele.id === action.payload.id ? action.payload : ele
+                );
             })
             .addCase(editStudent.rejected, (state, action) => {
-                state.loading = false
-                state.error = action.payload
+                state.loading = false;
+                state.error = action.error.message;
             })
+
 
     }
 

@@ -60,13 +60,10 @@ function Read() {
                                             <button className="custom-btn view" data-bs-toggle="modal" data-bs-target="#viewModal" onClick={() => viewStudentData(data.id)}>
                                                View
                                             </button>
-                                            {/* <button className="custom-btn edit" >
-                                                 Edit
-                                            </button> */}
-                                            <Link className="custom-btn edit" to={`/profile/${data.id}`}>Edit</Link>
+
+                                            <Link className="custom-btn edit" to={`/profile/${data.id}`} style={{textDecoration:"none"}}>Edit</Link>
                                             <button className="custom-btn delete" onClick={()=> dispatch(studentData(data.id))}>
-                                                 Delete
-                                               
+                                                 Delete     
                                             </button>
                                         </div>
 
