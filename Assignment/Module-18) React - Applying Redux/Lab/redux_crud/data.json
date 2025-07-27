@@ -1,0 +1,91 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Rahul Patel",
+      "email": "rahu525@gmail.com",
+      "password": "12312ss",
+      "phone": "7698199685",
+      "gender": "Male",
+      "course": "Frontend Development",
+      "image": "https://t4.ftcdn.net/jpg/05/31/37/89/240_F_531378938_xwRjN9e5ramdPj2coDwHrwk9QHckVa5Y.jpg",
+      "status": "Active"
+    },
+    {
+      "id": "2",
+      "name": "Manish Purohit",
+      "email": "mpurohit412@gmail.com",
+      "password": "7852554555",
+      "phone": "7863983219",
+      "gender": "Male",
+      "course": "Java Full Stack",
+      "image": "https://media.istockphoto.com/id/1369199360/photo/portrait-of-a-handsome-young-businessman-working-in-office.jpg?b=1&s=612x612&w=0&k=20&c=-zIXXuXi1Bufza1-8Pay9Q-a65BbNxolOJJlMY62siI=",
+      "status": "Active"
+    },
+    {
+      "id": "3",
+      "name": "Pratik Sharma",
+      "email": "prasharma@gmail.com",
+      "password": "6978412532",
+      "phone": "7863145232",
+      "gender": "Male",
+      "course": "Mern Stack Development",
+      "image": "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?_gl=1*rl4qvn*_ga*MTA4MDIwNzg2MS4xNzUyMDQ3OTk0*_ga_8JE65Q40S6*czE3NTIwNDc5OTMkbzEkZzEkdDE3NTIwNDgwMzckajE2JGwwJGgw",
+      "status": "Drop"
+    },
+    {
+      "id": "4",
+      "name": "Devilal Ghanchi",
+      "email": "devigh321@gmail.com",
+      "password": "32598745244",
+      "phone": "9632148525",
+      "gender": "Male",
+      "course": "Cyber Security",
+      "image": "https://images.pexels.com/photos/819530/pexels-photo-819530.jpeg?_gl=1*1a3suv3*_ga*MTA4MDIwNzg2MS4xNzUyMDQ3OTk0*_ga_8JE65Q40S6*czE3NTIxMjQ2NDAkbzMkZzEkdDE3NTIxMjQ2NjQkajM2JGwwJGgw",
+      "status": "Active"
+    },
+    {
+      "id": "5",
+      "name": "Darji Nidhi",
+      "email": "darnidhi442@gmail.com",
+      "password": "96145236578",
+      "phone": "6345781240",
+      "gender": "Female",
+      "course": "Data Scientist",
+      "image": "https://images.pexels.com/photos/1391499/pexels-photo-1391499.jpeg?_gl=1*zbtnev*_ga*MTA4MDIwNzg2MS4xNzUyMDQ3OTk0*_ga_8JE65Q40S6*czE3NTM1OTc0ODQkbzkkZzEkdDE3NTM1OTc1NTgkajU5JGwwJGgw",
+      "status": "Active"
+    },
+    {
+      "id": "6",
+      "name": "Suhani Singh",
+      "email": "shusingh632@gmail.com",
+      "password": "85635445441",
+      "phone": "7496459636",
+      "gender": "Female",
+      "course": "Data Analysis",
+      "image": "https://media.istockphoto.com/id/1353588870/photo/young-indian-woman-on-yellow-copy-space-background-stock-photo.jpg?b=1&s=612x612&w=0&k=20&c=HZ7uvm-zZHgXVJb0dmbPApghCVer5KJiUoWJxkIkYZQ=",
+      "status": "Active"
+    },
+    {
+      "id": "7",
+      "name": " Karan Parmar",
+      "email": "kpar8314@gmail.com",
+      "password": "963645454545",
+      "phone": "8536418574",
+      "gender": "Male",
+      "course": "Graphic Designer",
+      "image": "https://images.pexels.com/photos/27442252/pexels-photo-27442252.jpeg?_gl=1*eprnci*_ga*MTA4MDIwNzg2MS4xNzUyMDQ3OTk0*_ga_8JE65Q40S6*czE3NTM1OTc0ODQkbzkkZzEkdDE3NTM1OTgwNzYkajU5JGwwJGgw",
+      "status": "Active"
+    },
+    {
+      "id": "1753636922400",
+      "name": "Karna Sharma",
+      "image": "https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?_gl=1*tu24*_ga*MTA4MDIwNzg2MS4xNzUyMDQ3OTk0*_ga_8JE65Q40S6*czE3NTM2MzQ3MDAkbzEwJGcxJHQxNzUzNjM1ODcwJGo1OSRsMCRoMA..",
+      "email": "krshamr455@gmail.com",
+      "phone": "6352453512",
+      "course": "Backend Development",
+      "gender": "Male",
+      "status": "Drop"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    position: relative;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link.nav-hover::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s;
+}
+
+.nav-link.nav-hover:hover::after,
+.nav-link.nav-hover.active::after {
+    width: 100%;
+}
+
+.add-student-btn {
+    border-radius: 30px;
+    padding: 12px 22px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 250px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.add-student-btn:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
